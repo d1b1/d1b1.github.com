@@ -2,6 +2,7 @@
 layout: post
 title: My second sample post.
 summary: This is a summary of the second blog post.
+tag: drupal
 ---
 
 ads asdf lkjasdf asd fasd lkjfas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdkjlkjf alkjs dfa sdlkjlf asdf asd fads asdf asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas dlkjf asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd fads asdf asdf asd fasd fas lkjlkjdfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf aljasdljk fads asdlkj l asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd
