@@ -15,14 +15,48 @@ layout: default
     {% endfor %}
   </ul>
   
-  <ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script src="/javascript/jquery.delicious.js"></script>
+
     <script>
     var tag = '{{ page.tag }}';
     alert(tag);
     
+    $(function(){
+	    feedMe('stephansmith93');
+	    $('#usericious').bind('blur',function(){
+	  	if(this.value.length)
+			  feedMe(this.value);
+	   });
+	   //$('#tags').bind('blur', function(){
+		 //tagMe(this.value)
+	  })
+   });
+
+lastuser = '';
+function feedMe(username){
+	if(username == lastuser) return;
+	
+	alert('here we are');
+	$('#delicious-posts').delicious(username,{popopen:true});
+	//$('#delicious-tags').delicious(username,{type:'tags',popopen:true});
+	//$('#delicious-network').delicious(username,{type:'network'});
+	//$('#delicious-fans').delicious(username,{type:'fans'});
+	//$('span.deluser').html(username);
+	//lastuser = username;
+}
+
+
+
     </script>
-  </ul>
+
+  
+    <div class="container">
+	  <h2>Delicious.com Posts for <span class="deluser"></span></h2>
+	  <div id="delicious-posts"></div>
+	  
+</div>
+
 </div>
 
 <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/d1b1/embed.js"></script><noscript><a href="http://d1b1.disqus.com/?url=ref">View comments.</a></noscript>
