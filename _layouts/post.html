@@ -20,19 +20,15 @@ layout: default
      
   <script type="text/javascript">
     $(function(){
-	    $('#delicious-posts').delicious('stephansmith93',{tag:'kkk{{ page.tag }}',popopen:true});
-	    
-	    if ($('#delicious-posts')=='') {
-	      alert('this is done');
-	    }
+	    $('#delicious-posts').delicious('stephansmith93',{tag:'{{ page.tag }}',popopen:true});
     });
-
   </script>
   
-  <div class="container">
-    <h2>Delicious.com Posts for <span class="deluser"></span></h2>
-  <div id="delicious-posts"></div>
-	  
+  <div>
+    <h2>Delicious.com Posts</h2>
+    <div id="delicious-posts"></div>
+  </div>
+  
 </div>
 
 </div>
