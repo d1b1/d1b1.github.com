@@ -14,9 +14,6 @@ layout: default
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-    <script src="/javascript/jquery.delicious.js"></script>
 
     <script type="text/javascript">
     var tag = '{{ page.tag }}';
@@ -27,7 +24,7 @@ layout: default
 
     function feedMe(username){
 	    alert(username);
-	    $('#delicious-posts').delicious(username,{popopen:true});
+	    $('#delicious-posts').delicious(username,{popopen:false});
     }
 
     </script>
