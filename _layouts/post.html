@@ -19,18 +19,15 @@ layout: default
   <script type="text/javascript" src="/javascripts/jquery.delicious.js"></script>
      
   <script type="text/javascript">
-    var tag = '{{ page.tag }}';
-
     $(function(){
-	    $('#delicious-posts').delicious('stephansmith93',{tag:'mamp',popopen:true});
+	    $('#delicious-posts').delicious('stephansmith93',{tag:'{{ page.tag }}',popopen:true});
     });
 
-    </script>
-
+  </script>
   
-    <div class="container">
-	  <h2>Delicious.com Posts for <span class="deluser"></span></h2>
-	  <div id="delicious-posts">loading...</div>
+  <div class="container">
+    <h2>Delicious.com Posts for <span class="deluser"></span></h2>
+  <div id="delicious-posts">loading...</div>
 	  
 </div>
 

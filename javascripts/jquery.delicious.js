@@ -41,9 +41,7 @@ $.fn.delicious = function(user,options,tOptions,cbFnc){
 		url = 'http://feeds.delicious.com/v2/json/' + (opts.type=='posts'?'':opts.type+'/') + user
 			+ (opts.type=='posts' && opts.tag? '/'+opts.tag : '') + '?',
 		rOpts = $.extend({raw:'true',callback:name(fn)},$.delicious.types[opts.type],tOptions);
-
-    alert(url);
-    
+ 
 	// prepare tag names for DOM Creator
 	opts.itemTag = opts.itemTag.toUpperCase();
 	opts.wrapTag = opts.wrapTag.toUpperCase();
