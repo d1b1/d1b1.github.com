@@ -8,6 +8,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 
+alert('inm the call funciton');
 (function($){
 
 /**
