@@ -23,23 +23,13 @@ layout: default
     alert(tag);
     
     $(function(){
-    alert('asdfasdf');
 	    feedMe('stephansmith93');
-   });
+    });
 
-function feedMe(username){
-
-	alert(username);
-	
-	$('#delicious-posts').delicious(username,{popopen:true});
-	//$('#delicious-tags').delicious(username,{type:'tags',popopen:true});
-	//$('#delicious-network').delicious(username,{type:'network'});
-	//$('#delicious-fans').delicious(username,{type:'fans'});
-	//$('span.deluser').html(username);
-	//lastuser = username;
-}
-
-
+    function feedMe(username){
+	    alert(username);
+	    $('#delicious-posts').delicious(username,{popopen:true});
+    }
 
     </script>
 

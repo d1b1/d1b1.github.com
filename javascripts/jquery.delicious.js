@@ -42,6 +42,7 @@ $.fn.delicious = function(user,options,tOptions,cbFnc){
 			+ (opts.type=='posts' && opts.tag? '/'+opts.tag : '') + '?',
 		rOpts = $.extend({raw:'true',callback:name(fn)},$.delicious.types[opts.type],tOptions);
 
+    alert(url);
 	// prepare tag names for DOM Creator
 	opts.itemTag = opts.itemTag.toUpperCase();
 	opts.wrapTag = opts.wrapTag.toUpperCase();
