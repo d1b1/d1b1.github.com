@@ -2,7 +2,7 @@
 layout: post
 title: My first sample post.
 summary: This is a summary of the first blog post.
-tag: dddddtag
+tag: mamp
 ---
 
 ads asdf asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd fads asdf asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd fads asdf asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd fads asdf asdf asd fasd fas dfa df asdf asdf asd fas df asdf asdf asd fas dfas df asdf asd fas df asdf asdf asd fas df asdf as dfa sdf asdf asd
