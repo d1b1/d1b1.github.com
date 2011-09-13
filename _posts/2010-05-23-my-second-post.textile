@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My second sample post.
+title: My second sample post. kjh
 summary: This is a summary of the second blog post.
 tag: drupal
 ---
