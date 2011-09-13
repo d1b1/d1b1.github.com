@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My little jekyll posting
-summary: adsfa sdfa sdf asdf asdf asdf asd fasd fasdfas dfasdf
+summary: adsfa sdfa sdf asdf
 tag: jenkins
 ---
 
