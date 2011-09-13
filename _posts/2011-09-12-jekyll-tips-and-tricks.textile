@@ -5,6 +5,12 @@ summary: Brain dump of issues and solutions with textile/jekyll.
 tag: jekyll
 ---
 
+* An item in a bulleted (unordered) list
+* Another item in a bulleted list
+** Second Level
+** Second Level Items
+
+
 Reference: <a href="https://github.com/mojombo/jekyll/wiki/_pages">Pages</a>
 <h3>Notes</h3>
 All posts need to go into a _posts folder. The file need to have naming convertion of YYYY-MM-DD-title-of-post.textile. This interesting by poorly doced app appears to tear apart the filename to create a date and title clean URL. 
