@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Develoment Seeds take on Git+Github+Jykell
-summary: Thoughts on the Development Seed Post on the github solution that drives this blog; git+jekyll
+summary: Thoughts on the Development Seed Post on the github solution that drives this blog; git+github+jekyll.
 tag: jekyll
 ---
-Interesting intersection with with drupal community. 
+Interesting intersection with with drupal community. "Using Jekyll and GitHub Pages for Our Site":http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/
 
-Today Development Seeds, the creators of Aegir and a number of very useful drupal projects posted an article about the use of jekyll and github for site solutions. They propose a number of rapid development and prototyping pathways. From my stand point, having just started a jekyll blog using the github site features, I am very interested in by one favor of SCM (Source Control Management) has opened up so many new pathways for innovation. This makes me should source control be consider as base feature of a number of products. The ability to have a db-less, easy to update and easy to host blog is a nice win. While the blog features in drupal are great (maybe), the framework is not. It takes time, energy and effort to install, support and develop. 
+Today Development Seeds, the creators of Aegir and a number of very useful drupal projects posted an article about the use of jekyll and github for site solutions. They propose a number of rapid development and prototyping pathways. From my stand point, having just started a "jekyll":https://github.com/mojombo/jekyll blog using the github site features, I am very interested in by one favor of SCM (Source Control Management) has opened up so many new pathways for innovation. This makes me should source control be consider as base feature of a number of products. The ability to have a db-less, easy to update and easy to host blog is a nice win. While the blog features in drupal are great (maybe), the framework is not. It takes time, energy and effort to install, support and develop. 
 
-One point that the Development Seed author, Young Hahn, noted, 'no entry point to hack', is a nice bi-product of the github SSH security model. "Unless a hacker":http://ccn.com can grab a private SSH key (and has the passphrase) the github servers are the only point of entry. If a hacker defaces the github files, git would allow a simple 'git push origin master' to clear the offending content. 
+One point that the Development Seed author, Young Hahn, noted, 'no entry point to hack', is a nice bi-product of the github SSH security model. Unless a hacker can grab a private SSH key (and has the passphrase) the github servers are the only point of entry. If a hacker defaces the github files, git would allow a simple 'git push origin master' to clear the offending content. 
 
 One limitation to note is that jekyll is not a full blog in as far as the blogger does not have a UI for creating the _posts files, as a blogger would with traditional blog solution (tumblr, Blogspot, etc). All changes to the github hosted blog have to come from the git repo, via an git add & git commit & git push. This makes me wonder if an edit using the github interface will make it into the repo and onto the site. So if you want to upload an image to a post, you need to drop the file into the an images folder in git and make the manual HTML or textile link in the post. 
 
