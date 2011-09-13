@@ -5,14 +5,9 @@ summary: Brain dump of issues and solutions for getting started with textile in 
 tag: jekyll
 ---
 
-<a href="https://github.com/mojombo/jekyll/wiki/_pages">Pages</a>
-
-<br>
-
+Reference: <a href="https://github.com/mojombo/jekyll/wiki/_pages">Pages</a>
 <h3>Notes</h3>
 All posts need to go into a _posts folder. The file need to have naming convertion of YYYY-MM-DD-title-of-post.textile. This interesting by poorly doced app appears to tear apart the filename to create a date and title clean URL. 
-
-
 
 <h3>Configuration: _configure.yml</h3>
 <a href="https://github.com/mojombo/jekyll/wiki/configuration">Configuration</a>
@@ -48,12 +43,14 @@ sudo su -
 
 or
 
-{% highlight sh %}
+{% highlight js %}
+<pre>
 <script type="text/javascript">
     $(function(){
 	    $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
     });
 </script>
+</pre>
 {% endhighlight %}
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
