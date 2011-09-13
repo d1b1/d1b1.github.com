@@ -33,24 +33,26 @@ The title tells jekyll to use the following string as the page title.
 
 With a little testing I found that anything can be placed into this pattern, and then be available in the layout files namespace when the layout is processed. To give the blog the ability to store and feed specific delicious tags to the post.html page, I added the tag (as a test) to the Front Matter content. On the post.html page, I was able to print and use the value in the jQuery that calls the feed for a json list of all posts matching the tag values.
 
-<pre>
+{% highlight sh %}
 ---
 layout: post
 title: Title of the Post
 tag: drupal+mamp
 ---
-</pre>
+{% endhighlight %}
 
-<pre>
+{% highlight sh %}
 <title>{{ page.title }}</title>
 </pre>
+
 or
-<pre>
+
+{% highlight sh %}
 <script type="text/javascript">
     $(function(){
 	    $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
     });
-  </script>
-</pre>
+</script>
+{% endhighlight %}
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
