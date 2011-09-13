@@ -41,6 +41,7 @@ sudo su -
 
 or
 
+{% highlight js %}
 <pre>
 <script type="text/javascript">
     $(function(){
@@ -48,6 +49,6 @@ or
     });
 </script>
 </pre>
-
+{% endhighlight %}
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
