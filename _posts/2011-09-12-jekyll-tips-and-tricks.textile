@@ -57,8 +57,10 @@ $(function(){
 </script>
 {% endhighlight %}
 
+<pre>
 "View the sample code(my Sample Code)":http://github.github.com/github-flavored-markdown/sample_content.html
+</pre>
 
-This is a test of the inline link f3ature.[This link](http://example.net/) has no title attribute. asdfadsf
+"View the sample code(my Sample Code)":http://github.github.com/github-flavored-markdown/sample_content.html
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
