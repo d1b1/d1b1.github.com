@@ -45,13 +45,11 @@ sudo su -
 or
 
 {% highlight js %}
-<pre>
 <script type="text/javascript">
-    $(function(){
-	    $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
-    });
+$(function(){
+  $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
+});
 </script>
-</pre>
 {% endhighlight %}
 
 
