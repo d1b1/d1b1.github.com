@@ -57,8 +57,8 @@ $(function(){
 </script>
 {% endhighlight %}
 
-''This is a test''
 
 "View the sample code(my Sample Code)":http://github.github.com/github-flavored-markdown/sample_content.html
+"Textile Reference Page(Textile Reference)":http://en.wikipedia.org/wiki/Textile_(markup_language)
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
