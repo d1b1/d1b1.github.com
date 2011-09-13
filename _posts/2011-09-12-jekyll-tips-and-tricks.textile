@@ -42,13 +42,13 @@ sudo su -
 {% endhighlight %}
 or
 
-<pre>
+{% highlight js %}
 <script type="text/javascript">
 $(function(){
   $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
   });
 </script>
-</pre>
+{% endhighlight %}
 
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
