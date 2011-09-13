@@ -42,6 +42,7 @@ tag: drupal+mamp
 {% endhighlight %}
 
 {% highlight sh %}
+sudo su -
 <title>{{ page.title }}</title>
 </pre>
 
