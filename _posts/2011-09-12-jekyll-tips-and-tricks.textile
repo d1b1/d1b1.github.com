@@ -35,12 +35,12 @@ title: Title of the Post
 tag: drupal+mamp
 ---
 
-<pre>
+
 {% highlight js %}
 sudo su -
 <title>{{ page.title }}</title>
 {% endhighlight %}
-</pre>
+
 
 or
 
