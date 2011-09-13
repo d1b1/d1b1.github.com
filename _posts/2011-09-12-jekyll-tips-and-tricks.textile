@@ -6,9 +6,51 @@ tag: jekyll tips
 ---
 
 <a href="https://github.com/mojombo/jekyll/wiki/_pages">Pages</a>
+
 <br>
 
-<h2>Custom Data for Post</h2>
-It appears that data entered into the name value pairs at the top of the _posts/mypost.textile 
-file will be available in the posts namespace. This feature was used in these pages to allow
-tags which the templates will use to tell the delicious feeds which tag to use to filter.
+<h3>Notes</h3>
+All posts need to go into a _posts folder. The file need to have naming convertion of YYYY-MM-DD-title-of-post.textile. This interesting by poorly doced app appears to tear apart the filename to create a date and title clean URL. 
+
+
+
+<h3>Configuration: _configure.yml</h3>
+<a href="https://github.com/mojombo/jekyll/wiki/configuration">Configuration</a>
+At first glass, the _config.yml file does not seem to be required. I started by adding individual pages from the git repo created by <a href="http://jqr.github.com/">Elijah Miller</a>. 
+
+<h3>YAML Front Matter</h3>
+To make a file show up in the github processor, include the following, as noted in the following docs. 
+
+<pre>
+---
+layout: post
+title: Title of the Post
+---
+</pre>
+
+The layout value tells jekyll to look for a _layouts/post.html.
+The title tells jekyll to use the following string as the page title.
+
+With a little testing I found that anything can be placed into this pattern, and then be available in the layout files namespace when the layout is processed. To give the blog the ability to store and feed specific delicious tags to the post.html page, I added the tag (as a test) to the Front Matter content. On the post.html page, I was able to print and use the value in the jQuery that calls the feed for a json list of all posts matching the tag values.
+
+<pre>
+---
+layout: post
+title: Title of the Post
+tag: drupal+mamp
+---
+</pre>
+
+<pre>
+<title>{{ page.title }}</title>
+</pre>
+or
+<pre>
+<script type="text/javascript">
+    $(function(){
+	    $('#delicious-posts').delicious('username',{tag:'{{ page.tag }}',popopen:true});
+    });
+  </script>
+</pre>
+
+To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
