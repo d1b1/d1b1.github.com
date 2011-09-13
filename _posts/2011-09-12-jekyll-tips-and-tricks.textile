@@ -1,0 +1,14 @@
+---
+layout: post
+title: Jekyll Tips and Tricks
+summary: This is a summary of the second blog post.
+tag: jekyll tips
+---
+
+<a href="https://github.com/mojombo/jekyll/wiki/_pages">Pages</a>
+<br>
+
+<h2>Custom Data for Post</h2>
+It appears that data entered into the name value pairs at the top of the _posts/mypost.textile 
+file will be available in the posts namespace. This feature was used in these pages to allow
+tags which the templates will use to tell the delicious feeds which tag to use to filter.
