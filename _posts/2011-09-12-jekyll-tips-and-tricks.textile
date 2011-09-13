@@ -42,7 +42,6 @@ sudo su -
 {% endhighlight %}
 or
 
-{% highlight js %}
 <pre>
 <script type="text/javascript">
 $(function(){
@@ -50,8 +49,6 @@ $(function(){
   });
 </script>
 </pre>
-{% endhighlight %}
-
 
 
 To research: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
