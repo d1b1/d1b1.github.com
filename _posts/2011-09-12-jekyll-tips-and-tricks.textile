@@ -57,9 +57,7 @@ $(function(){
 </script>
 {% endhighlight %}
 
-<pre>
-"View the sample code(my Sample Code)":http://github.github.com/github-flavored-markdown/sample_content.html
-</pre>
+==This is a test==
 
 "View the sample code(my Sample Code)":http://github.github.com/github-flavored-markdown/sample_content.html
 
