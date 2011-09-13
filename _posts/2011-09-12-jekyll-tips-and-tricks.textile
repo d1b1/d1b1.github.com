@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Tips and Tricks
-summary: Brain dump of issues and solutions for getting started with textile in jekyll.
+summary: Brain dump of issues and solutions with textile/jekyll.
 tag: jekyll
 ---
 
