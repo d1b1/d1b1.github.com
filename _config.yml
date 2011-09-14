@@ -18,3 +18,5 @@ drupal-username:        406333
 github-username:        d1b1
 feedburner-username:    d1b1
 delicious-username:     stephansmith93
+
+enabled-delicious:      true
