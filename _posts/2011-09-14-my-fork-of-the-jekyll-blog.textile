@@ -7,10 +7,10 @@ tag: elijah miller
 
 First, thanks to "Elijah Miller":http://jqr.github.com for his work on a forkable jekyll blog. His design work made for a very clean site. I got interesting in this blogging solution after reading an article by "John Story":http://johnstorey.org/2011/03/20/jenkins-drupal-ci-setup on Drupal CI configurations on Jenkins. 
 
-<i>Note: I did not fork the repo correctly. So my repo will not show in the fork chain as it should. So to do this correctly, start at the source repo, and use the 'Fork' option (not sure why I missed this). The seems to think the chain of forking should be preserved as the code base changes.</i>
+<i>Note: I did not fork the repo correctly. So my repo will not show in the fork chain as it should. So to do this correctly, start at the source repo, and use the 'Fork' option (not sure why I missed this). I think the chain of forking should be preserved as the code base changes, so I will be pulling the code local, and redoing the process in the future.</i>
 
 <h2>Customizations</h2>
-I made a few changes to make it easier to reuse the blog; mostly moving some of the blogger specific information into the _config.yml. Then I updated the _layout/default.html file to use the variables available in site namespace. This should make a site setup one step easier. 
+I made a few changes to make it easier to repurpose the blog; mostly moving some of the blogger specific information into the _config.yml. Then I updated the _layout/default.html file to use the variables available in site namespace. This should make a site setup one step easier. 
 
 {% highlight cs %}
 site-title:             Stephan Smith
@@ -28,7 +28,7 @@ github-username:        d1b1
 feedburner-username:    d1b1
 {% endhighlight %}
 
-Second, I added code to the _post/xxxx.textile files to pass tag values into the template files. This allows the blog to use the tags to gather other resources. Specifically to call the delicious feeds for posts in my account with the same tag. This approach allows me to be lazy, and just tag as I find interesting articles. The goal being to post to the blog once, and let new information find they way in without having to revisit and groom old posts. 
+Second, I added code to the _post/xxxx.textile files to pass tag values into the template files. This allows the blog to use the tags to gather other resources. Specifically to call the delicious feeds for posts in my delicious account with the same tag. This approach allows me to be lazy, and just tag as I find interesting articles. The goal being to post to the github blog once, and let new information find its way into the related posts having to revisit and groom the backlog. 
 
-<i>Note: The original forked code used prototype, and I the plugin for delicious uses jQuery. So this site has a bit a hack, in that I am running two js frameworks in each page. Not a great solution. The jQuery plugin used, "jQuery.Delicious.js":https://bitbucket.org/pmclanahan/jquery-delicious/src (from Paul McLanahan) is included in this repo, in the /javascripts folder.</i>
+<i>Note: The original forked code used prototype, and the plugin for delicious is written in jQuery. So this site has a bit a hack, in that I am running two javascript frameworks in each page. Not a great solution. The jQuery plugin used, "jQuery.Delicious.js":https://bitbucket.org/pmclanahan/jquery-delicious/src (from Paul McLanahan) is included in this repo, in the /javascripts folder.</i>
 
