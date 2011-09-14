@@ -3,6 +3,8 @@ layout: post
 title: Jekyll Tips and Tricks
 summary: Brain dump of issues and solutions with textile/jekyll.
 tag: jekyll
+categories: 
+- github
 ---
 
 * An item in a bulleted (unordered) list
