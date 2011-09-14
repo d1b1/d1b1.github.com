@@ -12,7 +12,7 @@ First, thanks to "Elijah Miller":http://jqr.github.com for his work on a forkabl
 <h2>Customizations</h2>
 I made a few changes to make it easier to reuse the blog; mostly moving some of the blogger specific information into the _config.yml. Then I updated the _layout/default.html file to use the variables available in site namespace. This should make a site setup one step easier. 
 
-{% highlight cs %>
+{% highlight cs %}
 site-title:             Stephan Smith
 bio-fullname:           Stephan Smith
 bio-nickname:           d1b1
