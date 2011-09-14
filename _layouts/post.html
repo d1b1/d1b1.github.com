@@ -5,6 +5,9 @@ layout: default
 <div id="post">
   <h2>{{ page.title }}</h2>
   {{ content }}
+  <br>
+  <br>
+  Tags: {{ page.tags }} <a href="http://feeds.delicious.com/v2/json/{{ site.delicious-username }}/{{ page.tags }}" target="_parent">Delicious</a>
 </div>
 
 <div id="related">
