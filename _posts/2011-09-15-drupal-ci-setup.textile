@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Git & SVN SCM Bridge
-summary: This outlines a simple way to make two the SCMs, GIT & SVN work in two different development environments, while keeping both working for different deployment and testing setups.
-tag: git svn subversion
+title: Drupal CI Setups
+summary: Working outline of drupal CI, using Jenkins, Aegir, Bromine and Selenium
+tag: ci
 categories:
 - CI
 - Drupal
