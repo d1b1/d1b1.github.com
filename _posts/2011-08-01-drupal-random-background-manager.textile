@@ -1,0 +1,8 @@
+---
+layout: post
+title: Drupal Random Background Manager Module
+summary: D6 module to provides a fast loading, random background images.
+tag: drupal module
+---
+
+Coming soon. This is a stub post as I migrate my old content into jekyll.

@@ -1,0 +1,8 @@
+---
+layout: post
+title: Drupal Integration with AWS Route 53
+summary: Skunkworks project to find a way to integrate a rapid distributed DNS service with Aegir.
+tag: r53
+---
+
+Coming soon. This is a stub post as I migrate my old content into jekyll.

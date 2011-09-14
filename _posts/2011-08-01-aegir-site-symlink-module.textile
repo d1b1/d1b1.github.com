@@ -1,0 +1,8 @@
+---
+layout: post
+title: Aegir Site Symlink Manager for Themers
+summary: Aegir module to provides site symlinks for easier theming and rollout.
+tag: drupal module
+---
+
+Coming soon. This is a stub post as I migrate my old content into jekyll.
