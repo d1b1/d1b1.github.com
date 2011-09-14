@@ -5,7 +5,6 @@ summary: Working outline of drupal CI, using Jenkins, Aegir, Bromine and Seleniu
 tag: ci
 categories:
 - CI
-- Drupal
 ---
 
 This article is still coming....
