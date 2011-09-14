@@ -1,8 +1,0 @@
----
-layout: post
-title: How to setup a Github Jekyll Blog
-summary: Jekyll/Ruby/Textile Newbie blog setup on Github.
-tag: git blog github
----
-
-Coming soon. This will outline the setup process for getting this blog setup working.
