@@ -7,13 +7,13 @@
        {% if page.title %}
          {{ page.title }} //
        {% endif %}
-       Stephan Smith
+       {{ site.site-title }}
      </title>
-     <meta name="author" content="Stephan Smith" />
+     <meta name="author" content="{{ site.bio-fullname }}" />
      {% if page.summary %}
        <meta namne="description" content="{{ page.summary }}" />
      {% endif %}
-     <link href="http://feeds2.feedburner.com/d1b1" rel="alternate" title="Stephan Smith" type="application/atom+xml" />
+     <link href="http://feeds2.feedburner.com/{{ site.feedburner-username }}" rel="alternate" title="{{ site.site-title }}" type="application/atom+xml" />
 
      <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
      <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
@@ -25,10 +25,10 @@
 
   </head>
   <body>
-    <a href="http://github.com/d1b1"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/{{ site.github-username }}"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" /></a>
 
     <div id="site">
-      <a id="subscribe" href="http://feeds2.feedburner.com/d1b1"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
+      <a id="subscribe" href="http://feeds2.feedburner.com/{{ site.feedburner-username }}"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
 
       <div id="search_area" style="display: none">
         <label for="search" style="display: none">Search</label>
@@ -36,7 +36,7 @@
         <input id="search" />
       </div>
       
-      <h1><a href="/">Stephan Smith</a></h1>
+      <h1><a href="/">{{ site.site-title }}</a></h1>
       
       <div class="clear"></div>
       
@@ -44,25 +44,31 @@
         <h3>Me</h3>
         <dl id="contact">
           <dt>Name</dt>
-          <dd><a class="fn url" href="/">Stephan Smith</a> / <span class="nickname">d1b1</span></dd>
+          <dd><a class="fn url" href="/">{{ site.bio-fullname }}</a> / <span class="nickname">{{ site.bio-nickname }}</span></dd>
 
           <dt>Email</dt>
-          <dd class="email"><a href="mailto:stephan.smith.bc93@gmail.com">stephan.smith.bc93@gmail.com</a></dd>
+          <dd class="email"><a href="mailto:{{ site.bio-email-address }}">{{ site.bio-email-address }}</a></dd>
 
           <dt>Telephone</dt>
-          <dd class="tel">+1 617 953 7947</a></dd>
+          <dd class="tel">{{ site.bio-phone-number }}</a></dd>
           
         </dl>
         <h3>And then some</h3>
         <ul id="profiles">
-          <li><a href="http://twitter.com/d1b1ish">Twitter</a></li>
-          <li><a href="http://github.com/d1b1">GitHub</a></li>
-          <li><a href="http://www.linkedin.com/in/stephansmithbc93">LinkedIn</a></li>
-          <li><a href="http://drupal.org/user/406333">Drupal.org</a></li>
+          <li><a href="http://twitter.com/{{ site.twitter-username }}">Twitter</a></li>
+          <li><a href="http://github.com/{{ site.github-username }}">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/in/{{ site.linkedin-username }}">LinkedIn</a></li>
+          <li><a href="http://drupal.org/user/{{ site.drupal-username }}">Drupal.org</a></li>
         </ul>
 
+        <style>
+        #delicious-posts { width: 300px; }
+        #delicious-posts li { padding: 5px 0px 5px 0px; margin: 0px 3px; border-bottom:1px solid #DFDFDF;}
+        #delicious-posts li:last-child { border-bottom:0px;}
+        </style>
+        
         <h3>with links</h3>
-        <span id="delicious-posts"></span>
+        <div id="delicious-posts"></div>
   
         <div class="adr">
           <span class="locality">Boston</span>
@@ -97,34 +103,25 @@
     				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
     			}
     		}
-        document.write('<script type="text/javascript" src="http://disqus.com/forums/d1b1/get_num_replies.js' + query + '"></' + 'script>');
+        document.write('<script type="text/javascript" src="http://disqus.com/forums/{{ site.disqus-username }}/get_num_replies.js' + query + '"></' + 'script>');
     	})();
     //]]>
     </script>
 
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-254246-10");
-      pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google-web-property-id }}']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 
-    <script type="text/javascript">
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id',
-                       '4dd0582ef5a1f51b35000002');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
+
   </body>
 </html>
