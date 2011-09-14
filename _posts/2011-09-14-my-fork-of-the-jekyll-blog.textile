@@ -30,5 +30,6 @@ feedburner-username:    d1b1
 
 Second, I added code to the _post/xxxx.textile files to pass tag values into the template files. This allows the blog to use the tags to gather other resources. Specifically to call the delicious feeds for posts in my delicious account with the same tag. This approach allows me to be lazy, and just tag as I find interesting articles. The goal being to post to the github blog once, and let new information find its way into the related posts having to revisit and groom the backlog. 
 
+<h2>ProtoType/JQuery Tech Debt</h2>
 <i>Note: The original forked code used prototype, and the plugin for delicious is written in jQuery. So this site has a bit a hack, in that I am running two javascript frameworks in each page. Not a great solution. The jQuery plugin used, "jQuery.Delicious.js":https://bitbucket.org/pmclanahan/jquery-delicious/src (from Paul McLanahan) is included in this repo, in the /javascripts folder.</i>
 
