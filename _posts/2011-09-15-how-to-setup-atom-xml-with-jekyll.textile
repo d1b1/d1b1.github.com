@@ -26,7 +26,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>\{\{ site.site-title \}\}</title>
+ <title>\{{ site.site-title \}}</title>
  <link href="http://\{\{ site.github-username \}\}.github.com/atom.xml" rel="self"/>
  <link href="http://\{\{ site.github-username \}\}.github.com/"/>
  <updated>\{\{ site.time | date_to_xmlschema \}\}</updated>
