@@ -17,10 +17,10 @@ Jykell is a viable solution because it reads your git repo and creates local HTM
 
 So to close the loop, create an atom.xml file. And include the following code. When the repo is parsed by jekyll, the front matter alerts the parser (for lack of a better word) to process the atom.xml into an actual XML file containing all the posts in the _post folder, in the same manner that the index.html lists all posts. Each time you push to the repo, the process runs again, and the XML feed file gets updated. 
 
-The actual code in the jekyll file are not run each time a page is requested. Only on a git push. Nice
+The actual code in the jekyll file are not run each time a page is requested, only on a <i>git push</i>. Nice
 
 <h2>Code</h2>
 Review the code in the "atom.xml":https://github.com/d1b1/d1b1.github.com/blob/master/atom.xml in the code repo.
 
-<h2>Attributes</h2>
-The code for this solution was included in the jqr.github.com repo. I have added some customizations to the _config.yml to make the atom.xml file easier to reuse, meaning no hardcoded names, emails or URLs paths.
+<h2>Attribution</h2>
+The code for this solution was included in the jqr.github.com repo. I have added some customizations to the <b>_config.yml</b> to make the atom.xml file easier to reuse, meaning no hardcoded names, emails or URLs paths.
