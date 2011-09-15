@@ -19,6 +19,7 @@ So to close the loop, create an atom.xml file. And include the following code. W
 
 <h2>Code</h2>
 
+{% highlight xml %} 
 <pre>
 ---
 layout: nil
@@ -48,6 +49,7 @@ layout: nil
  
 </feed>
 </pre>
+{% endhighlight %} 
 
 <h2>Attributes</h2>
 The code for this solution was included in the jqr.github.com repo. I have added some customizations to the _config.yml to make the atom.xml file easier to reuse, meaning no hardcoded names, emails or URLs paths.
