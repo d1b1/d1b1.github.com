@@ -5,6 +5,16 @@ javascript:
   - /javascripts/home.js
 ---
 
+<div id="post">
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+  <br>
+  <br>
+  Tags: {{ page.tags }} <a href="http://www.delicious.com/{{ site.delicious-username }}/{{ page.tags }}" target="_parent">Delicious</a>
+</div>
+
+THIS IS THE RESUME POST.
+
 <div id="search_results_area">
   <h2>Posts <span id="result_count"></span></h2>
   <ul id="search_results" class="posts">

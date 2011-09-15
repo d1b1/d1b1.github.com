@@ -1,0 +1,8 @@
+---
+layout: post
+title: Test Resume
+summary: Brain dump of issues and solutions with textile/jekyll.
+tag: jekyll
+categories: 
+- github
+---
