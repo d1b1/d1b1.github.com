@@ -27,25 +27,25 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>{{ site.site-title }}</title>
- <link href="http://{{ site.github-username }}.github.com/atom.xml" rel="self"/>
- <link href="http://{{ site.github-username }}.github.com/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://{{ site.github-username }}.github.com/</id>
+ <title>&#123;&#123; site.site-title }}</title>
+ <link href="http://&#123;&#123; site.github-username &#125;&#125;.github.com/atom.xml" rel="self"/>
+ <link href="http://&#123;&#123; site.github-username &#125;&#125;.github.com/"/>
+ <updated>&#123;&#123; site.time | date_to_xmlschema &#125;&#125;</updated>
+ <id>http://&#123;&#123; site.github-username &#125;&#125;.github.com/</id>
  <author>
-   <name>{{ site.site-title }}</name>
-   <email>{{ site.bio-email-address }}</email>
+   <name>&#123;&#123; site.site-title &#125;&#125;</name>
+   <email>&#123;&#123; site.bio-email-address &#125;&#125;</email>
  </author>
  
- {% for post in site.posts %}
+ &#123;% for post in site.posts %&#125;
    <entry>
-     <title>{{ post.title }}</title>
-     <link href="http://{{ site.github-username }}.github.com{{ post.url }}"/>
-     <updated>{{ post.date | date_to_xmlschema }}</updated>
-     <id>http://{{ site.github-username }}.github.com{{ post.id }}</id>
-     <content type="html">{{ post.content | xml_escape }}</content>
+     <title>&#123;&#123; post.title &#125;&#125;</title>
+     <link href="http://&#123;&#123; site.github-username &#125;&#125;.github.com&#123;&#123; post.url &#125;&#125;"/>
+     <updated>&#123;&#123; post.date | date_to_xmlschema &#125;&#125;</updated>
+     <id>http://&#123;&#123; site.github-username &#125;&#125;.github.com&#123;&#123; post.id &#125;&#125;</id>
+     <content type="html">&#123;&#123; post.content | xml_escape &#125;&#125;</content>
    </entry>
- {% endfor %}
+ &#123;% endfor %&#125;
  
 </feed>
 </pre>
