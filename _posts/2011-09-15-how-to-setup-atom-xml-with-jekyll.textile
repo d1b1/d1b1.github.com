@@ -11,43 +11,16 @@ How do I get a XML feed of my posts on a jekyll blog?
 <h2>Solution</h2>
 The simple answer is to use the same approach used to create a post. 
 
-If you come from the drupal or wordpress world, you might make the problem a little more complex then is needs to be. A good thing to keep in mind with jekyll and github, is that github is crazy. They would hosting a blog, website, or project site for free, it was going to require the same level of support that comes with a traditional db driven blog.
+If you come from the drupal or wordpress worlds, you might make the problem a little more complex then is needs to be. A good thing to keep in mind with jekyll and github, is that github is not crazy. They would not be up for hosting a blog for free, if it was going to require the same level of support that comes with a traditional db driven blog; db backups, setup, security patches etc.
 
-Jykell is a viable solution because it reads your git repo and creates local HTML files. HTML files use the web server as a standard file server, so fast and safe. There are no calls to an application layer, like php, asp etc. Web servers are at their simplest, very fast file servers. 
+Jykell is a viable solution because it reads your git repo and creates local HTML files. HTML files use the web server as a standard file server, so fast and safe. There are no calls to application layers, like php, asp etc. Web servers are at their simplest, very fast file servers.
 
-So to close the loop, create an atom.xml file. And include the following code. When the repo is parsed by jekyll, the front matter alerts the parse to process the atom.xml. This parse results in a local XML file. Each time to push to the repo the process runs again, and the XML feed file gets updated. 
+So to close the loop, create an atom.xml file. And include the following code. When the repo is parsed by jekyll, the front matter alerts the parser (for lack of a better word) to process the atom.xml into an actual XML file containing all the posts in the _post folder, in the same manner that the index.html lists all posts. Each time you push to the repo, the process runs again, and the XML feed file gets updated. 
+
+The actual code in the jekyll file are not run each time a page is requested. Only on a git push. Nice
 
 <h2>Code</h2>
-
-<pre>
----
-layout: nil
----
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>\{{ site.site-title \}}</title>
- <link href="http://\{\{ site.github-username \}\}.github.com/atom.xml" rel="self"/>
- <link href="http://\{\{ site.github-username \}\}.github.com/"/>
- <updated>\{\{ site.time | date_to_xmlschema \}\}</updated>
- <id>http://\{\{ site.github-username \}\}.github.com/</id>
- <author>
-   <name>\{\{ site.site-title \}\}</name>
-   <email>\{\{ site.bio-email-address \}\}</email>
- </author>
- 
- {\% for post in site.posts %\}
-   <entry>
-     <title>\{\{ post.title \}\}</title>
-     <link href="http://\{\{ site.github-username \}\}.github.com\{\{ post.url \}\}"/>
-     <updated>\{\{ post.date | date_to_xmlschema \}\}</updated>
-     <id>http://\{\{ site.github-username \}\}.github.com\{\{ post.id \}\}</id>
-     <content type="html">\{\{ post.content | xml_escape \}\}</content>
-   </entry>
- {\% endfor %\}
- 
-</feed>
-</pre>
+Review the code in the "atom.xml":https://github.com/d1b1/d1b1.github.com/blob/master/atom.xml in the code repo.
 
 <h2>Attributes</h2>
 The code for this solution was included in the jqr.github.com repo. I have added some customizations to the _config.yml to make the atom.xml file easier to reuse, meaning no hardcoded names, emails or URLs paths.
