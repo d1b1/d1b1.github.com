@@ -9,13 +9,13 @@ https://github.com/api/v2/json/repos/show/d1b1
 
 <script type="text/javascript" >
 function loadrepos() {
- alert("asdfasdf");
  var url = "https://github.com/api/v2/json/repos/show/d1b1";
- alert(url);
- 
-	$.getJSON(url, function(data) {
-	  var items = [];
 
+ $.getJSON(url, function(data) {
+    alert('ddddd');
+    var items = [];
+
+	alert(data);
 	  $.each(data, function(key, val) {
 		items.push('<li id="' + key + '">' + val + '</li>');
 	  });
