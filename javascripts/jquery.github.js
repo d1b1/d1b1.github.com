@@ -96,19 +96,16 @@ $.github = {
 		posts : function(data,opts){
 			var lis = [];
 			alert('we are here');
-			return data;
-
 			$.each(data,function(i,oPost){
 			    alert(oPost.name);
-			    //alert(i + ' ' + oPost);
 				var fIcon, oSpan;
 				if(opts.favicon)
 					fIcon = $.IMG({src:oPost.u.split('/').splice(0,3).join('/')+'/favicon.ico',height:16,width:16,border:0})
-				var a_opts = {href:oPost.url}
+				var a_opts = {href:oPost.u}
 				if(opts.popopen) a_opts['target'] = '_blank';
 				lis[lis.length] = $[opts.itemTag]({},
 					$.A(a_opts, opts.favicon ? fIcon : '',
-						oSpan = $.SPAN({},oPost.name)
+						oSpan = $.SPAN({},oPost.d)
 					)
 				);
 				if(opts.favicon){
