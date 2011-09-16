@@ -100,7 +100,7 @@ $.github = {
 			alert('Raw' + data);
 			$.each(data,function(i,oPost){
 				var fIcon, oSpan;
-				//alert(oPost);
+				alert('Rec: ' + oPost);
 				//if(opts.favicon)
 				//	fIcon = $.IMG({src:oPost.u.split('/').splice(0,3).join('/')+'/favicon.ico',height:16,width:16,border:0})
 				var a_opts = {href:oPost.url}
