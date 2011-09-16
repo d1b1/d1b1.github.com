@@ -97,7 +97,8 @@ $.github = {
 			var lis = [];
 			alert('we are here');
 			$.each(data,function(i,oPost){
-			    alert(oPost);
+			    alert(oPost.name);
+			    //alert(i + ' ' + oPost);
 				var fIcon, oSpan;
 				if(opts.favicon)
 					fIcon = $.IMG({src:oPost.u.split('/').splice(0,3).join('/')+'/favicon.ico',height:16,width:16,border:0})
@@ -105,7 +106,7 @@ $.github = {
 				if(opts.popopen) a_opts['target'] = '_blank';
 				lis[lis.length] = $[opts.itemTag]({},
 					$.A(a_opts, opts.favicon ? fIcon : '',
-						oSpan = $.SPAN({},oPost.d)
+						oSpan = $.SPAN({},oPost.name)
 					)
 				);
 				if(opts.favicon){
