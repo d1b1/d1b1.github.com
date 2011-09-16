@@ -93,10 +93,10 @@ $.github = {
 
 	// Prebuilt Callback Functions
 	parsers : {
-		posts : function(data-in,opts){
+		posts : function(datain,opts){
 			var lis = [];
 			
-			var data = data.repositories[0];
+			var data = datain.repositories[0];
 
 			alert('we are here');
 
