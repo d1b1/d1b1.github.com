@@ -14,6 +14,8 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+p { line-height: 22px; }
+
 a:hover, a:active, #sidebar a:active, #sidebar a:hover, #content a {
   color: #b40 !important;
 }
