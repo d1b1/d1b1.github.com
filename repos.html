@@ -13,7 +13,20 @@ function loadrepos() {
  var url = "https://github.com/api/v2/json/repos/show/d1b1";
  alert(url);
  
- $('#repo-list').html('we are here.');
+	$.getJSON(url, function(data) {
+	  var items = [];
+
+	  $.each(data, function(key, val) {
+		items.push('<li id="' + key + '">' + val + '</li>');
+	  });
+
+	  $('<ul/>', {
+		'class': 'my-new-list',
+		html: items.join('')
+	  }).appendTo('body');
+	});
+
+  $('#repo-list').html('we are here.');
 }
 
 $(document).ready(function() {
