@@ -96,6 +96,7 @@ $.github = {
 		posts : function(data,opts){
 			var lis = [];
 			alert('we are here');
+			return data;
 			var d = data.repositories[0];
 			alert(d.title);
 			$.each(data,function(i,oPost){
