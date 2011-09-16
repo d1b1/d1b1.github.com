@@ -5,23 +5,14 @@ title: My Git Repositories
 
 https://github.com/api/v2/json/repos/show/d1b1
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script> 
-
-<script type="text/javascript" >
-function loadrepos() {
- var url = 'http://github.com/api/v2/json/repos/show/d1b1?ddd=12';
-
- $.getJSON(url, function(json) {
-    alert('asdfasdfasdfasdf');
-    //alert(json.photos[1].photoUrl);
- });
-
-  $('#repo-list').html('we are here.');
-}
-
-$(document).ready(function() {
-  loadrepos();
-});
-</script>
-
-<div id="repo-list">Loading...</div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
+     
+  <script type="text/javascript">
+    $(function(){
+	    $('#github-repos').github('stephansmith93',{tag:'{{ page.tag }}',popopen:true});
+    });
+  </script>
+  
+  
+<div id="github-repos">Loading...</div>
