@@ -97,7 +97,8 @@ $.github = {
 			var lis = [];
 			alert('we are here');
 			$.each(data,function(i,oPost){
-			    alert(oPost.name);
+			    return oPost;
+			    //alert(oPost.name);
 				var fIcon, oSpan;
 				if(opts.favicon)
 					fIcon = $.IMG({src:oPost.u.split('/').splice(0,3).join('/')+'/favicon.ico',height:16,width:16,border:0})
