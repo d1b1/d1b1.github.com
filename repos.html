@@ -9,12 +9,12 @@ https://github.com/api/v2/json/repos/show/d1b1
 
 <script type="text/javascript" >
 function loadrepos() {
- var url = "http://github.com/api/v2/json/repos/show/d1b1?ddd=12";
+ var url = 'http://github.com/api/v2/json/repos/show/d1b1?ddd=12';
 
-  $.getJSON(url, function(data) {
-    alert('ddddd');
-    var items = [];
-  });
+ $.getJSON(url, function(json) {
+    alert('asdfasdfasdfasdf');
+    //alert(json.photos[1].photoUrl);
+ });
 
   $('#repo-list').html('we are here.');
 }
