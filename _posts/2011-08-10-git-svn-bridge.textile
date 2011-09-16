@@ -28,5 +28,5 @@ There are a number of posts about how to migration repos between SCMs. Since we 
 
 We are now looking at other options, "Effectively Using Git With Subversion":http://www.viget.com/extend/effectively-using-git-with-subversion. Our workflow solution might be better called 'Poor Mans Git/SVN Bridge'
 
-One final note, we did a few tests with "WinMerge":http://winmerge.org, which will initially successful, was too old school for our needs. 
+One final note, we did a few tests with "WinMerge":http://winmerge.org, which while initially successful, was too old school for our needs. 
 
