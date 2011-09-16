@@ -95,7 +95,7 @@ $.github = {
 	parsers : {
 		posts : function(datain,opts){
 			var lis = [];
-			var data = datain.repositories[0];
+			var data = datain.repositories;
 
 			alert('Raw' + data);
 			$.each(data,function(i,oPost){
