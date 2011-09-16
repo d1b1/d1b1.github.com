@@ -11,20 +11,11 @@ https://github.com/api/v2/json/repos/show/d1b1
 function loadrepos() {
  var url = "https://github.com/api/v2/json/repos/show/d1b1";
 
- $.getJSON(url, function(data) {
+  $.getJSON(url, function(data) {
     alert('ddddd');
     var items = [];
 
-	//alert(data);
-	  $.each(data, function(key, val) {
-		items.push('<li id="' + key + '">' + val + '</li>');
-	  });
-
-	  $('<ul/>', {
-		'class': 'my-new-list',
-		html: items.join('')
-	  }).appendTo('body');
-	});
+  });
 
   $('#repo-list').html('we are here.');
 }
