@@ -5,4 +5,26 @@ summary: This outlines a simple way to make two the SCMs, GIT & SVN work in two 
 tag: git svn subversion
 ---
 
-This article is still coming....
+<h2>The Problem</h2>
+I recently encountered a project where I had to work in two different version control systems; git and SVN. The client wanted to move the project development into github so that the distributed developers on the projects could communicate. In the early phase of the project, this worked well. The repo was private and hosted on github. Each developer could keep in touch using the either accounts, each time a commit or pull request was created, everyone know what was expected. 
+
+The issue developed when it came time to roll the code out. The client managers assume, wrongly, the we would roll a gz file and email it off. No luck. At launch time, we were introduced to the end client's, lovely, provisioning system. This system combined all the traditional IT solutions; Cisco VPN, SVN Accounts, Cruise Control and individual dev, staging and production URLS. All nicely hidden from the development team by the VPN. Together all the clients solution added up to a great big bottle next for delivery. Several rounds of call to their off-shore IT support staff, resulted in a single windows Vista machine that would reliably connect to the VPN (the bottleneck).
+
+Additional the client wanted all code pushed to happen through their SVN system. We learned very quickly to only grab the portion of the SVN file tree that represented the top of our project. So the workflow was a little painful, and getting the code from GIT to SVN, and in some cased back again was not an issue we wanted to fight very often. And we really did not want to fight the code migration in the middle of the night when we pushing to complete a deadline.
+
+To be specific, copying and pasting code from git to SVN is ok. Copying and pasting from a SVN tree to Git is not so fun. SVN creates local .SVN folders at each level. If we tool the folders back into git, there was a slight change we would bring them back into the SVN on the next manual code push. This was an issue, since SVN does not react well when old .SVN folders are dropped back into a repo. 
+
+We needed a way to make git and SVN manage the same set of files. And we needed to make the process easy to use, so code pushes could occur over time, by different members of the team. 
+
+<h2>The Solution</h2>
+The solution was <b>.gitignore</b> and <b>.svnignore</b> files. We found that we could add these files to each of the SCMs with values to tell each to ignore the SCM files of the other. Git needed to ignore all .svn folders in the tree. SVN needed to ignore the .git folder at the root. We added these files to their respective repos before attempting to merge. We committed placeholder changes to each system. The we merge the two by moving into the SVN folder and adding the git settings. This entailed 'git init' and 'git remote add github git://repo.git'. The first time we did a 'git status' we could see the differences between the version in SVN and the version in github. We resolved a new differences and pushed to both one last time. 
+
+This solve our workflow completely. When the designers made changes to the CSS or templates, they could commit to git. When we were ready to push to SVN, we would visit our VPN workspace, and do a git fetch and SVN update. Then we could rebase our changes form the origin/master to the local master branch, followed by a 'svn commit'. If the client had a change in the SVN, maybe to handle a change in the DB settings, these commits would appears in the 'git status'. We could them migrate the SVN commits back up to github and out to the devlopment team. 
+
+This approach proved its value when we had to move code between the SVN dev and prod branches. For this code push, we had a git production branch. When in the SVN Prod repo, we always checked out the appropriate git branch. The one time we forgot and did a manual copy and post between the SVN branches, the .SVN folders moved between trees screamed and we returned to our git/svn integration.
+
+<h2>Follow Ups</h2> 
+There are a number of posts about how to migration repos between SCMs. Since we needed to support both system, the commit history was not important. And this code migration needed to occur more then once and both direction. 
+
+We are now looking at other options, "Effectively Using Git With Subversion":http://www.viget.com/extend/effectively-using-git-with-subversion. Our workflow solution might be better called 'Poormans Git SVN Bridge'
+
