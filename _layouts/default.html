@@ -51,25 +51,41 @@
           <dd><a class="fn url" href="/"><span property="foaf:name">{{ site.bio-fullname }}</span></a> / <span class="nickname">{{ site.bio-nickname }}</span></dd>
 
           <dt>Email</dt>
-          <dd class="email"><a href="mailto:{{ site.bio-email-address }}">{{ site.bio-email-address }}</a></dd>
+          <dd class="email" ><a href="mailto:{{ site.bio-email-address }}" rel="foaf:mbox">{{ site.bio-email-address }}</a></dd>
 
           <dt>Telephone</dt>
-          <dd class="tel">{{ site.bio-phone-number }}</a></dd>
+          <dd class="tel" rel="foaf:phone">{{ site.bio-phone-number }}</a></dd>
           
         </dl>
         <h3>And then some</h3>
         <span rel="foaf:holdsAccount">
         <ul id="profiles" typeof="foaf:OnlineAccount">
-          <li><a href="http://twitter.com/{{ site.twitter-username }}" rel="foaf:accountServiceHomepage">Twitter</a></li>
-          <li><a href="http://github.com/{{ site.github-username }}" rel="foaf:accountServiceHomepage">GitHub</a></li>
-          <li><a href="http://www.linkedin.com/in/{{ site.linkedin-username }}" rel="foaf:accountServiceHomepage">LinkedIn</a></li>
-          <li><a href="http://drupal.org/user/{{ site.drupal-username }}" rel="foaf:accountServiceHomepage">Drupal.org</a></li>
+          <li>
+            <a href="http://twitter.com/{{ site.twitter-username }}" rel="foaf:accountServiceHomepage">Twitter</a>
+            <span property="foaf:accountName">{{ site.twitter-username }}</span></li>
+          <li>
+            <a href="http://github.com/{{ site.github-username }}" rel="foaf:accountServiceHomepage">GitHub</a>
+            <span property="foaf:accountName">{{ site.github-username }}</span></li>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/{{ site.linkedin-username }}" rel="foaf:accountServiceHomepage">LinkedIn</a>
+            <span property="foaf:accountName">{{ site.linkedin-username }}</span>
+          </li>
+          </li>
+          <li>
+            <a href="http://drupal.org/user/{{ site.drupal-username }}" rel="foaf:accountServiceHomepage">Drupal.org</a>
+            <span property="foaf:accountName">{{ site.drupal-username }}</span></li>
+          </li>
+          <li>
+            <a href="http://drupal.org/user/{{ site.drupal-username }}" rel="foaf:accountServiceHomepage">AIM</a>
+            <span property="foaf:aimChatId">stephansmith93</span></li>
+          </li>
         </ul>
         </span>
 
         <div class="adr" typeof="vcard:VCard">
-          <span class="locality" property="vcard:locality" >Boston</span>
-          <span class="region" >MA</span>
+          <span class="locality" property="vcard:locality">Boston</span>
+          <span class="region" property="vcard:region">MA</span>
           <span class="postal-code" property="vcard:postal-code" >02118</span>
           <span class="country-name" property="vcard:country-name">USA</span>
           <span property="vcard:workTel" >{{ site.bio-phone-number }}</span>

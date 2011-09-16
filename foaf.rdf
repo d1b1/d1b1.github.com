@@ -19,4 +19,6 @@
 <foaf:homepage rdf:resource="http://d1b1.github.com"/>
 <foaf:phone rdf:resource="tel:617-953-7947"/>
 <foaf:workplaceHomepage rdf:resource="617-953-7947"/></foaf:Person>
+<foaf:homepage rdf:resource="http://d1b1.github.com"/>
+<foaf:depiction rdf:resource="http://d1b1.github.com/images/photo.jpg"/></foaf:Person>
 </rdf:RDF>
