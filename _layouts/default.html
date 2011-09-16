@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
   <head>
      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf" />
      <title>
        {% if page.title %}
          {{ page.title }} //
@@ -40,11 +41,11 @@
       
       <div class="clear"></div>
       
-      <div id="sidebar" class="vcard">
+      <div id="sidebar" about="#me" typeof="foaf:Person" class="vcard">
         <h3>Me</h3>
         <dl id="contact">
           <dt>Name</dt>
-          <dd><a class="fn url" href="/">{{ site.bio-fullname }}</a> / <span class="nickname">{{ site.bio-nickname }}</span></dd>
+          <dd><a class="fn url" property="foaf:name" href="/">{{ site.bio-fullname }}</a> / <span class="nickname">{{ site.bio-nickname }}</span></dd>
 
           <dt>Email</dt>
           <dd class="email"><a href="mailto:{{ site.bio-email-address }}">{{ site.bio-email-address }}</a></dd>
@@ -54,13 +55,14 @@
           
         </dl>
         <h3>And then some</h3>
-        <ul id="profiles">
-          <li><a href="http://twitter.com/{{ site.twitter-username }}">Twitter</a></li>
+        <span rel="foaf:holdsAccount">
+        <ul id="profiles" typeof="foaf:OnlineAccount">
+          <li><a href="http://twitter.com/{{ site.twitter-username }}" rel="foaf:accountServiceHomepage">Twitter</a></li>
           <li><a href="http://github.com/{{ site.github-username }}">GitHub</a></li>
           <li><a href="http://www.linkedin.com/in/{{ site.linkedin-username }}">LinkedIn</a></li>
           <li><a href="http://drupal.org/user/{{ site.drupal-username }}">Drupal.org</a></li>
-          <li><a href="/resume"><b>Resume</b></a></li>
         </ul>
+        </span>
 
         <div class="">
         Attribution: Jekyll template cloned from <a href="http://github.com/jqr">Elijah Miller</a>
