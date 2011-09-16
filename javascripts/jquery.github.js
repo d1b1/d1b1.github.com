@@ -93,14 +93,13 @@ $.github = {
 
 	// Prebuilt Callback Functions
 	parsers : {
-		posts : function(data,opts){
+		posts : function(data-in,opts){
 			var lis = [];
 			
-			var d = data.repositories[0];
-			alert(d);
+			var data = data.repositories[0];
+
 			alert('we are here');
-			return data;
-			
+
 			$.each(data,function(i,oPost){
 				var fIcon, oSpan;
 				if(opts.favicon)
