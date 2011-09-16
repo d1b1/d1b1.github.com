@@ -58,18 +58,27 @@
         <span rel="foaf:holdsAccount">
         <ul id="profiles" typeof="foaf:OnlineAccount">
           <li><a href="http://twitter.com/{{ site.twitter-username }}" rel="foaf:accountServiceHomepage">Twitter</a></li>
-          <li><a href="http://github.com/{{ site.github-username }}">GitHub</a></li>
-          <li><a href="http://www.linkedin.com/in/{{ site.linkedin-username }}">LinkedIn</a></li>
-          <li><a href="http://drupal.org/user/{{ site.drupal-username }}">Drupal.org</a></li>
+          <li><a href="http://github.com/{{ site.github-username }}" rel="foaf:accountServiceHomepage">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/in/{{ site.linkedin-username }}" rel="foaf:accountServiceHomepage">LinkedIn</a></li>
+          <li><a href="http://drupal.org/user/{{ site.drupal-username }}" rel="foaf:accountServiceHomepage">Drupal.org</a></li>
         </ul>
         </span>
 
+        <div class="adr" typeof="vcard:VCard">
+          <span class="locality" property="vcard:locality" >Boston</span>
+          <span class="region" >MA</span>
+          <span class="postal-code" property="vcard:postal-code" >02118</span>
+          <span class="country-name" property="vcard:country-name">USA</span>
+          <span property="vcard:workTel" >{{ site.bio-phone-number }}</span>
+        </div>
+        
         <div class="">
         Attribution: Jekyll template cloned from <a href="http://github.com/jqr">Elijah Miller</a>
         </div>
         <br>
         <br>
             
+      
         <style>
         #delicious-posts { width: 300px; }
         #delicious-posts li { padding: 5px 0px 5px 0px; margin: 0px 3px; border-bottom:1px solid #DFDFDF;}
@@ -79,12 +88,6 @@
         <h3 class="delicious-posts-header">with links</h3>
         <div id="delicious-posts">Oops nothing found.</div>
   
-        <div class="adr">
-          <span class="locality">Boston</span>
-          <span class="region">MA</span>
-          <span class="postal-code">02118</span>
-          <span class="country-name">USA</span>
-        </div>
 
            
         <script type="text/javascript"><!--
