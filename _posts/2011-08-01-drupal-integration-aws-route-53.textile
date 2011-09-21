@@ -5,4 +5,12 @@ summary: Skunkworks project to find a way to integrate a rapid distributed DNS s
 tag: r53
 ---
 
-Coming soon. This is a stub post as I migrate my old content into jekyll.
+<h2>Project</h2>
+I did some work in early 2011 to allow a project to have a better way to handle DNS records, within the context of the Aegir, Drupal and the AWS Services. We were looking for a way to handle failover between EC2 regions. The Amazon Route 53 service provided a nice solution, but was very developer focused, and no AWS web interface. After digging into the r53 api, trying out a few of the existing desktop apps, I decided to integrate the feature directly into Aegir. 
+
+<h2>Drupal.org SandBox</h2>
+
+{% highlight git %}
+git clone --branch master d1b1@git.drupal.org:sandbox/d1b1/1185616.git amazon_r53
+cd amazon_r53
+{% highlightend %}
