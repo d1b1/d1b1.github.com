@@ -40,7 +40,8 @@ Assuming you have a jenkins CI server, up and running, and have a drupal site re
 <h2>Wrap Up</h2>
 The drupal_ci project, as of the writing of this post, has two scripts. 
 
-1. drupal_basic.sh - This script will run the syntax and coder standards steps. 
-2. drupal_full.sh - This script will run all three of the test; syntax, coding standards and simpletest. Additionally this script has jenkins parameters added to allow the job to alter the testing information for each job. 
+1. <b>drupal_basic.sh</b> - This script will run the syntax and coder standards steps. 
+2. <b>drupal_full.sh</b> - This script will run all three of the test; syntax, coding standards and simpletest. Additionally this script has jenkins parameters added to allow the job to alter the testing information for each job. 
 
-More coming...
+<h2>Props</h2>
+Special thanks to "Justin Ellison":http://sysadminsjourney.com for his post "Drupal, meet Hudson; Hudson, Drupal...":http://sysadminsjourney.com/content/2010/01/20/drupal-meet-hudson-hudson-drupal. His article was a great starting point and kicked our my interest in bridging the two system.
