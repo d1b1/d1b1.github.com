@@ -1,0 +1,45 @@
+---
+layout: post
+title: Drupal Jenkins CI Scripts
+summary: Simple set of scripts for settings up CI jobs in Jenkins
+tag: jekyll
+---
+
+<h2>Problem</h2>
+How do I get drupal to plug into the Jenkins CI Application?
+
+<h2>Solution</h2>
+Jenkins CI (Continious Integration) application is a large and growing OS project and community. With the 2011 forking of the project away from the Oracle/Sun project, the project continues to expand the options for using the project for non Java coding projects. Several major development projects in the drupal community use Jenkins (formerly Hudson) to drive and manage the testing and development work of their members.
+
+For the layman, Jenkins and Drupal integration is not a simple process. You need a number of splinter skills to get a system working, as well as a commitement to getting CI principles implemented. I have found the CI and development processes used in Maven, Apache, Ant as a great source of insperation.
+
+The skills I needed to get this working were/are:
+
+1. ubuntu chops; permissions, users, apt-get, ps, init.d scripts etc.
+2. php - need an understanding of command line php.
+3. drupal - setup, module development.
+4. bash - need the ability to read, write and tweak bash scripts.
+5. simpletest - need an understanding of the simpletest classes used in drupal.
+6. jenkins - need an understanding of the jenkins job setup and structure.
+7. source control - git or svn.
+8. ssh - basic ssh key setup and management.
+9. ci - need a general understanding of the CI processes used in code development.
+
+This is not a short list. None of these skills is beyond a determined newbie to pickup. To be honest, this took a year plus to tease out. I will post a setup post on how to get drupal working with CI. I have a number of evolving bash scripts in a "drupal-ci":https://github.com/d1b1/drupal_ci repo. 
+
+<h2>Code</h2>
+Assuming you have a jenkins CI server, up and running, and have a drupal site ready to work with, the following are the CI processes available in the scripts I am working on. These will change over time. The layout of these scripts are set to make the test fail as quickly as possible. There is no need to run unit or functional tests againsts code that does not meet coding standards, or have syntax issues. The sooner we get a job report to the developer, the cheaper the issue or bug is to solve. 
+
+1. PHP Syntax Test - This is the first test run in the script, after the job grabs the code from your repo. The script loops through the files in the jobs workspace and runs a basic 'php -l' on each file. The goal being to stop the script early if there is syntax issue that will cause a run time error. 
+
+2. Coder Check - The second check is to make sure the drupal code complies with the drupal coding standards. I recommend you use a persistent drupal site for this test, as you will need to setup some of the configurations in the drupal UI. I am working on some drush commands that will alter the coder settings from the bash script. But for now, open the target site, and explore the coder settings. Set the level of checking to your requirements.
+
+3. SimpleTest - The third, and most resource intensive test, is the call to drupal sites simpltests. The Coder module allows a job to run only these simpletests attached to a specific module. If you run the entire suite, you might catch testing issue that are not directly associated with the code being checked in. <i>See the post about module specific jenkins tests for a better summary.</i>
+
+<h2>Wrap Up</h2>
+The drupal_ci project, as of the writting of this post, has two scripts. 
+
+1. drupal_basic.sh - This script will run the syntax and coder standards steps. 
+2. drupal_full.sh - This scirpt will run all three of the test; syntax, coding standards and simpletest. Additionally this script has jenkins parameters added to allow the job to alter the testing information for each job. 
+
+More coming...
