@@ -2,7 +2,7 @@
 layout: post
 title: Drupal Jenkins CI Scripts
 summary: Simple set of scripts for settings up CI jobs in Jenkins
-tag: jekyll
+tag: drupal
 ---
 
 <h2>Problem</h2>
