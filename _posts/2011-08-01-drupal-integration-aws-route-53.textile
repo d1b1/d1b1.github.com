@@ -13,4 +13,4 @@ I did some work in early 2011 to allow a project to have a better way to handle 
 {% highlight git %}
 git clone --branch master d1b1@git.drupal.org:sandbox/d1b1/1185616.git amazon_r53
 cd amazon_r53
-{% highlightend %}
+{% endhighlight %}
