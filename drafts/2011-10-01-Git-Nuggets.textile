@@ -35,3 +35,10 @@ I have plowed through an unknown number of post, articles and slides on git on m
 
 The following book by Jon Loeliger, 'Version Control with Git' has been an amazing source of information. I wish I had found this book earlier. For the average user, of which I am on, knowing how git builds its blob, index and references is of little importance, but the author does a great job in making the tech understandable and usable. Good luck!
 
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/link-enhancer?tag=soencoll-20&o=1">
+</script>
+<noscript>
+    <img src="http://www.assoc-amazon.com/s/noscript?tag=soencoll-20" alt="" />
+</noscript>
+
+
