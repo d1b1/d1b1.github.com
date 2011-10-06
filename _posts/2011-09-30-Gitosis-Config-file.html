@@ -1,0 +1,21 @@
+---
+layout: post
+title: Gitosis Configuration File
+summary: Notes on common issues setting up gitosis as a git server.
+tag: gitosis
+---
+
+<h2>Problem</h2>
+Docs on gitosis are less then helpful. During a resent setup of gitosis as our company git server, I ran into a number of small issues with a number of blog posts and documentation pages for gitosis. These issues seems to reflect some changing requirements in the project itself, and not typos or errors in the documentation.
+
+<h2>Git vs Gitosis User</h2>
+The first issue we encountered was a change in the expected user for gitosis managed repositories. In some docs, the sudo call appears to be looking for a linux users 'git', with secondary posts mentioning a linux user: gitosis. Either will work depending upon the method you take to install the base project. The apt-get package will create a user named 'gitosis'. 
+
+sudo -H -u git gitosis-init < /path/to/public_key.pub
+sudo -H -u gitosis gitosis-init < /tmp/user.pub  
+
+It might help to break this down, first the <b>-H</b> tells sudo to set the HOME environment variable to the homedir of the target user. By default sudo will not do this. Second, the <b>-u</b> option causes sudo to run the command as a user other than root. The third option passes the path to a pub key. Gitosis will attach the pub key to the gitosis account.
+
+<h2>Reference Links</h2>
+https://wiki.archlinux.org/index.php/Gitosis#Installation
+http://www.lunix.com.au/blog/install-gitosis-on-centos5/
