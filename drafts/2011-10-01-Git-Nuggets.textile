@@ -10,8 +10,6 @@ I joined the herd of people interested in git two years ago, mostly because it w
 <h2>1. First Win</h2>
 First, the github feature sure should be pushed to the front of my credits list. I have found little better in the way of online documentation then the help available on the github.com site. When I return to a bookmarked link often enough, its time to make it official. If you need help with SSH, Keys, Passphrases, git workflows, and common git related issues, the github guys have done a hands down amazing job. Git articles can get very tech heavy very quickly, github help smooths our the bumps.
 
-<h2>Common Reference Articles on Github</h2>
-
 Getting familiar with the social features of github, means you start watching repos. With the 600k of public repos it is impossible to not find block of code that interested you and is worth tracking over time. When bored, I often dig into the repos watched by the repo owners that interest me. This is something akin to mining the reading lists of others.
 
 Development process. I found out very quickly github repos were a great bell weather for development treads and directions. I have long had a wish for github, tags. I would love to watch repos and projects by tags. Running a histogram of tags and commits gives (oops would give) a great way to understand how developers are moving around in different frameworks, cloud providers, data storage solutions etc.
