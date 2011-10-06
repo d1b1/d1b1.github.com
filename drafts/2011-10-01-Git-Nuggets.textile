@@ -5,56 +5,33 @@ summary: Ten Advanced things to know about git.
 tag: git
 ---
 
-I joined the herd of people interested in git two years ago, mostly because it was the new and sparkly. When I review
-my tech learning curved for the past three years, I have to give credit to git. It has opened up a number of venues and
-opportunities. This posting is not just a raw raw session for git, or an opportunity to show an Amazon affiliate promo, 
-but an opportunity to give some credit, and show the way. 
+I joined the herd of people interested in git two years ago, mostly because it was the new and sparkly. When I reviewmy tech learning curved for the past three years, I have to give credit to git. It has opened up a number of venues and opportunities. This posting is not just a raw raw session for git, or an opportunity to show an Amazon affiliate promo, but an opportunity to give some credit, and show the way. 
 
 <h2>1. First Win</h2>
-First, the github feature sure should be pushed to the front of my credits list. I have found little better in the way
-of online documentation then the help available on the github.com site. When I return to a bookmarked link often enough, its 
-time to make it official. If you need help with SSH, Keys, Passphrases, git workflows, and common git related issues, the github guys
-have done a hands down amazing job. Git articles can get very tech heavy very quickly, github help smooths our the bumps.
+First, the github feature sure should be pushed to the front of my credits list. I have found little better in the way of online documentation then the help available on the github.com site. When I return to a bookmarked link often enough, its time to make it official. If you need help with SSH, Keys, Passphrases, git workflows, and common git related issues, the github guys have done a hands down amazing job. Git articles can get very tech heavy very quickly, github help smooths our the bumps.
 
 <h2>Common Reference Articles on Github</h2>
 
-Getting familiar with the social features of github, means you start watching repos. With the 600k of public repos it is
-impossible to not find block of code that interested you and is worth tracking over time. When bored, I often dig into the repos watched 
-by the repo owners that interest me. This is something akin to mining the reading lists of others.
+Getting familiar with the social features of github, means you start watching repos. With the 600k of public repos it is impossible to not find block of code that interested you and is worth tracking over time. When bored, I often dig into the repos watched by the repo owners that interest me. This is something akin to mining the reading lists of others.
 
-Development process. I found out very quickly github repos were a great bell weather for development treads and directions. I 
-have long had a wish for github, tags. I would love to watch repos and projects by tags. Running a histogram of tags and commits gives (oops would give)
-a great way to understand how developers are moving around in different frameworks, cloud providers, data storage solutions etc.
+Development process. I found out very quickly github repos were a great bell weather for development treads and directions. I have long had a wish for github, tags. I would love to watch repos and projects by tags. Running a histogram of tags and commits gives (oops would give) a great way to understand how developers are moving around in different frameworks, cloud providers, data storage solutions etc.
 
 <h2>2. Git Based Blogging</h2>
 Truly the most geeky way to write a blog: git + github + jekyll. See blog post.
 
 <h2>3. Gerrit Project</h2>
-Find the Gerrit project was long term investment, which has not quite paid off yet. In early 2010, I worked on team that needed, or throught
-it needed team code review. We had tried a number of solution which never met the need. The google team provides a solution in the form of 
-the gerrit project. This project code runs on a server, and acts as a gatekeeper for git commits. The setup if easy, the implementation
-takes some imagination. The code may have improved. Its still on my long term list of projects to work into a development workflow.
+Find the Gerrit project was long term investment, which has not quite paid off yet. In early 2010, I worked on team that needed, or thought it needed team code review. We had tried a number of solution which never met the need. The google team provides a solution in the form of the gerrit project. This project code runs on a server, and acts as a gatekeeper for git commits. The setup if easy, the implementation takes some imagination. The code may have improved. Its still on my long term list of projects to work into a development workflow.
 
 <h2>4. Drupal Move to Git in 2011</h2>
-At the "2011 Chicago Drupalcon":http://chicago2011.drupal.org/, the drupal commit made the move to git. Prior to 2011 the source control for the community was CVS. 
-While I am sure there are some advantages to CVS, git was great solution. In the 'Git on Drupal.org: It's Easier Than You Think!':http://chicago2011.drupal.org/sessions/git-drupal-org-it-s-easier-you-think,
-Randy Fay and Alan Burke made it happen. It was clear from the session, that they were excited by move. From a sociological standpoint
-it was like watching a mass migration; 300 laptop totting developers followed the session sides, posted their public SSH keys and created
-their first sandboxes. I would love to see that stats on the number of git repos created during the session and in the days following. 
-Its hard to imagine a single event or happening that could move more code out of individual developers domains and into publicly available
+At the "2011 Chicago Drupalcon":http://chicago2011.drupal.org/, the drupal commit made the move to git. Prior to 2011 the source control for the community was CVS. While I am sure there are some advantages to CVS, git was great solution. In the 'Git on Drupal.org: It's Easier Than You Think!':http://chicago2011.drupal.org/sessions/git-drupal-org-it-s-easier-you-think, Randy Fay and Alan Burke made it happen. It was clear from the session, that they were excited by move. From a sociological standpoint it was like watching a mass migration; 300 laptop totting developers followed the session sides, posted their public SSH keys and created their first sandboxes. I would love to see that stats on the number of git repos created during the session and in the days following. Its hard to imagine a single event or happening that could move more code out of individual developers domains and into publicly available
 repositories. 
 
 <h2>Book Recommendation</h2>
-I have plowed through an unknown number of post, articles and slides on git on my learning curve. I use git on a daily basis for everything
-from private dev projects, sandbox modules and blogging. In the past month I helped a number of friend get a jumpstart on the learning
-process. In the process of helping others, a number of questions have arisen; whats in the .git folder? How to does git store commits? What
-makes git fast in a distributed workflow? And most importantly what is a SHA1 commit key?
+I have plowed through an unknown number of post, articles and slides on git on my learning curve. I use git on a daily basis for everything from private dev projects, sandbox modules and blogging. In the past month I helped a number of friend get a jumpstart on the learning process. In the process of helping others, a number of questions have arisen; whats in the .git folder? How to does git store commits? What makes git fast in a distributed workflow? And most importantly what is a SHA1 commit key?
 
 <div style="float:left; width: 130px;">
 <iframe src="http://rcm.amazon.com/e/cm?t=soencoll-20&o=1&p=8&l=as1&asins=0596520123&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </div>
 
-The following book by Jon Loeliger, 'Version Control with Git' has been an amazing source of information. I wish I had found this 
-book earlier. For the average user, of which I am on, knowing how git builds its blob, index and references is of little importance, but
-the author does a great job in making the tech understandable and usable. Good luck!
+The following book by Jon Loeliger, 'Version Control with Git' has been an amazing source of information. I wish I had found this book earlier. For the average user, of which I am on, knowing how git builds its blob, index and references is of little importance, but the author does a great job in making the tech understandable and usable. Good luck!
 
