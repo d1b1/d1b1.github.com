@@ -27,9 +27,10 @@ At the "2011 Chicago Drupalcon":http://chicago2011.drupal.org/, the drupal commi
 repositories. 
 
 <h2>Book Recommendation</h2>
-<div style="float:left; width: 130px; margin:0px; margin-right: 10px; padding:0px; ">
-<iframe src="http://rcm.amazon.com/e/cm?t=soencoll-20&o=1&p=8&l=as1&asins=0596520123&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<div style="float:left; border:1px solid #000000; width: 130px; margin:0px; margin-right: 10px; padding:0px; ">
+<a href="http://www.amazon.com/gp/product/0596520123/ref=as_li_tf_il?ie=UTF8&tag=soencoll-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=0596520123"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL160_&ASIN=0596520123&MarketPlace=US&ID=AsinImage&WS=1&tag=soencoll-20&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.com/e/ir?t=soencoll-20&l=as2&o=1&a=0596520123&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 </div>
+
 I have plowed through an unknown number of post, articles and slides on git on my learning curve. I use git on a daily basis for everything from private dev projects, sandbox modules and blogging. In the past month I helped a number of friend get a jumpstart on the learning process. In the process of helping others, a number of questions have arisen; whats in the .git folder? How to does git store commits? What makes git fast in a distributed workflow? And most importantly what is a SHA1 commit key?
 
 The following book by Jon Loeliger, 'Version Control with Git' has been an amazing source of information. I wish I had found this book earlier. For the average user, of which I am on, knowing how git builds its blob, index and references is of little importance, but the author does a great job in making the tech understandable and usable. Good luck!
