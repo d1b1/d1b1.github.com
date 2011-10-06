@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Nuggets
+title: My Git Learning Curve
 summary: Ten Advanced things to know about git.
 tag: git
 ---
