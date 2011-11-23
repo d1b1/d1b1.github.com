@@ -15,6 +15,4 @@ One limitation to note is that jekyll is not a full blog in as far as the blogge
 One final note, a friend summarized the use of git+github+jekyll for a blog as a very techie way to blog anything. His actual phrase was 'a developers developer solution'. I agree with him 100%, but still love the git approach to blogging.
 
 
-
-
-
+Added a comment
