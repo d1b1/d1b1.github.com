@@ -22,14 +22,11 @@
      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
      <script type="text/javascript" src="/javascripts/jquery.lightbox-0.5.min.js"></script>
         
-    <script type="text/javascript">
-    $(function() {
-      alert('dkkkdd');
-    	$('a.lightbox').lightBox(); // Select all links with lightbox class
-    });
-    </script>
-    
-     
+     <script type="text/javascript">
+     $(function() {
+    	 $('a.lightbox').lightBox(); // Select all links with lightbox class
+     });
+     </script>
 
      {% for css in page.css %}
        <link rel="stylesheet" href="{{ css }}" type="text/css" />
