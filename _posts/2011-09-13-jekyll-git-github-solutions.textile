@@ -13,6 +13,3 @@ One point that the Development Seed author, Young Hahn, noted, 'no entry point t
 One limitation to note is that jekyll is not a full blog in as far as the blogger does not have a UI for creating the _posts files, as a blogger would with traditional blog solution (tumblr, Blogspot, etc). All changes to the github hosted blog have to come from the git repo, via an git add & git commit & git push. This makes me wonder if an edit using the github interface will make it into the repo and onto the site. So if you want to upload an image to a post, you need to drop the file into the an images folder in git and make the manual HTML or textile link in the post. 
 
 One final note, a friend summarized the use of git+github+jekyll for a blog as a very techie way to blog anything. His actual phrase was 'a developers developer solution'. I agree with him 100%, but still love the git approach to blogging.
-
-
-Added a comment

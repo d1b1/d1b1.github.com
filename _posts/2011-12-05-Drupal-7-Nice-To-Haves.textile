@@ -1,0 +1,13 @@
+---
+layout: post
+title: Drupal 7 Nice-To-Haves
+summary: Dumping ground for features that were in d6, but have been left on the drupal cutting room floor. 
+tag: drupal
+---
+
+<h2>Export a Content Type</h2>
+Drupal 7 does things a little bit differently then d6, for good reason, considering we now have the concept of fields, instances and bundles. I get fields and instances, but bundles are not clear for me, yet. 
+
+Some of the examples provides to get d6 module developers, up to speed provide some really nice starting points for defining new content types and their fields in a modules install function. What is missing, is a nice clean way to export a content type. So the first feature in d7nths, is function that drops in to the content type UI and provides the same feature (with a little more) that use to exist in CCK. Mainly, export content types.
+
+<img src="/images/posts/exportcontent.png">
