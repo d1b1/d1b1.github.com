@@ -11,4 +11,4 @@ Drupal 7 does things a little bit differently then d6, for good reason, consider
 Some of the examples provides to get d6 module developers, up to speed provide some really nice starting points for defining new content types and their fields in a modules install function. What is missing, is a nice clean way to export a content type. So the first feature in d7nths, is function that drops in to the content type UI and provides the same feature (with a little more) that use to exist in CCK. Mainly, export content types.
 
 
-<a href="/images/posts/exportcontent.png"><img src="/images/posts/exportcontent.png" class="colorbox" width="72" height="72" alt="" /></a>
+<a href="/images/posts/exportcontent.png" class="colorbox" ><img src="/images/posts/exportcontent.png" width="72" height="72" alt="" /></a>
