@@ -19,27 +19,21 @@ The following are my criteria for listing a site, service or solution.
 The age of the cloud has given the tech-centric an awesome selection of tools for doing something as simple as blogging.  
 
 # "Google AppEngine":http://code.google.com/appengine/ - This service provides a fast and interesting way to host a blog or site online. Users have the option to choose from three different languages: java, go (google own) and python. Google provides a nice (but buggie) SDK app for both Windows and Mac for building local and pushing to the cloud. With a free account, a developer can host up to 10 apps. And have the option to choose three different storage options: bigtable (High Repl), bigtable (hub), and MySQL. 
-
 # "Iris Couch":http://www.iriscouch.com - This site takes the free-cloud-techie cake. You will need to read the manual on this one. In just under the time it takes for enter your name and check your email, you will get a CouchDB on your own subdomain. Take a look at the following for some ready-made-apps you can push to your new couchdb. "CouchApp.org":http://couchapp.org/page/index
-
 # "Github":http://github.com - Github provides the ability to create both project pages and user sites. Its free, and very techie. This blog is built using it, using git, jekyll, markdown. Create a local git repo, name it correctly, and push to github, and you are live. Its a blog with no db, no os, php or db upgrades required. And if you have not learned about textile and markdown yet, this is a great starting point.
-
 # "Amazon EC2":http://aws.amazon.com/ec2 - Amazon makes the list, because they are nice enough to offer a year of free services and entry level quotes for a micro ec2 instance. If you stay below the quote limits you can install just about anything you want on an instance which you have root access.  
 
 <h3>Close but not Greats</h3>
 The following are nice solutions, but do not make the cut.
 
 # "Google Sites":http://www.google.com/apps/intl/en/group/index.html - For a number of years there has been a nice, but low tech option for hosting a site. Setup your domain to use Google Apps, and you can access the sites features. With a little work in your DNS records, you can make seamless user experience. No coding options, but it works. 
-
 # "Drupal Gardens":http://www.drupalgardens.com/ - For a drupal inclined, gardens is free. The feature set is a trimmed down set of features that drupal administrator will normally see, but it works, and is very easy to setup. This missed the list because it has no coding option, its UI only.
 
 <h3>In the Research Queue</h3>
 The following are solutions that ticle my techie requirements, but are not yet working for me. 
 
 # "MongoDB":http://www.mongodb.org - Since CouchDB offers it, I am hoping to find a way to move Mongo to the top.
-
 # "Heroku":http://www.heroku.com - I am not a ruby dev, so I am still parsing the set of features they offer. Still a maybe for the list.
-
 # "Akiban":http://www.akiban.com - I have heard that I can push an app into the Akiban db. So if I find a free host, and can build a proof of concept, this will hit the list. Akiban is an interesting blend of old school MySQL and new fangled document db. 
 
 <h3>Feedback?</h3>
