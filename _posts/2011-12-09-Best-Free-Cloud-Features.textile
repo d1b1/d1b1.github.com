@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2011 Best Free Cloud Features
-summary: This is collection of the best free and techie cloud servers and solutions, for hosting a simple blog. 
+summary: This is collection of the best free and techie cloud servers and solutions, for hosting a simple application or blog. Couchdb, AppEngine, EC2, Github etc.
 tag: cloud, appengine, ec2, github
 ---
 
@@ -13,6 +13,7 @@ The following are my criteria for listing a site, service or solution.
 
 # Service must be free. No license fees etc.
 # Must involve new tech. FTP and hand coding HTML does not count.
+# When possible it must involve a blend of edge solutions. 
 
 <h3>The Solutions</h3>
 The age of the cloud has given the tech-centric an awesome selection of tools for doing something as simple as blogging.  
