@@ -11,6 +11,8 @@ The Jenkins SCM Polling feature is not working. No matter what we have tried it 
 <h2>Solution: Git Hooks</h2>
 Git Hooks are a nice way to get the same feature we had in Hudson. When a commit is made to a git branch, a job is trigger and runs. Here is how we made it work. First we are using "Gitosis":https://github.com/res0nat0r/gitosis to provides a central git repo. This solution will work on github using their implementation of repo hooks.
 
+# Login into your "Jenkins":http://jenkins-ci.org/ Server.
+# Edit a job.
 # Disable the 'Poll SCM' feature in the 'Build Triggers' section of the jobs configuration options.
 # Enable the  'Trigger builds Remotely'. Set a Authentication Token.
 # Copy the URL from below the description below. (Notice the /buildWithParameters options)
@@ -30,6 +32,7 @@ echo ""
 # The <i>-s</i> makes the curl call silent. 
 # You will need to make sure curl is install on your server.
 # The 'echo' commands in the post-recieve call will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
+# Check your DNS. The git account must be able to access the Jenkins Job URL. Use the following command to run the post-receive hook at the cli. You should see a echo messages, and the jenkins job will trigger. No trigger? Try testing the external URL from a browser first.
 
 {% highlight js %}
 bash /srv/gitosis/repositories/hooks/post-receive
