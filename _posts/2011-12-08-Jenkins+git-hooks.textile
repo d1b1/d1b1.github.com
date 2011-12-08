@@ -19,7 +19,7 @@ Git Hooks are a nice way to get the same feature we had in Hudson. When a commit
 # Edit the post-receive file in the repo you want to monitor. ( example: nano /srv/gitosis/repositories/hooks/post-receive)
 # Add the following:
 
-{% highlight sh linenos %}
+{% highlight bash linenos %}
 curl -s http://Jenkins.MyServer.com/job/myJob/buildWithParameters?token=1
 echo "Triggering Jenkins 'myJob' Job on Server..."
 echo ""
