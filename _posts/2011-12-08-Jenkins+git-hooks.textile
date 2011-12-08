@@ -1,0 +1,43 @@
+---
+layout: post
+title: Jenkins Trigger + Git Work-Around
+summary: Found an easy work around for getting the Jenkins SCM Polling to work. 
+tag: jenkins
+---
+
+<h2>Problem</h2>
+The Jenkins SCM Polling feature is not working. No matter what we have tried it runs the same job every minute, even after cloning a git repository and passing all tests. In Hudson, this feature worked like a charm. After the upgrade, no love, the job keeps on building. We have a feeling Jenkins is not storing the .git commit info correctly. Over time, I am certain we will tease out the issue.
+
+<h2>Solution: Git Hooks</h2>
+Git Hooks are a nice way to get the same feature we had in Hudson. When a commit is made to a git branch, a job is trigger and runs. Here is how we made it work. First we are using "Gitosis":https://github.com/res0nat0r/gitosis to provides a central git repo. This solution will work on github using their implementation of repo hooks.
+
+# Disable the 'Poll SCM' feature in the 'Build Triggers' section of the jobs configuration options.
+# Enable the  'Trigger builds Remotely'. Set a Authentication Token.
+# Copy the URL from below the description below. (Notice the /buildWithParameters options)
+# Test the URL in a different browser. Your job should trigger and run.
+# Login into the git server as the gitosis user.
+# Edit the post-receive file in the repo you want to monitor. ( example: nano /srv/gitosis/repositories/hooks/post-receive)
+# Add the following:
+
+{% highlight js %}
+curl -s http://Jenkins.MyServer.com/job/myJob/buildWithParameters?token=1
+echo "Triggering Jenkins 'myJob' Job on Server..."
+echo ""
+{% endhighlight %}
+
+Note: the <i>-s</i> makes the curl call silent. You will need to make sure curl is install on your server.
+Note: the echo and trigger will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
+
+Finally, you will need to remember to chmod 777 the post-recieve file. You can test the hook using bash post-receive. 
+
+{% highlight js %}
+bash post-receive
+{% endhighlight %}
+
+Add this type of curl call to all your repos so they trigger the correct Jenkins jobs.
+
+<h2>Options</h2>
+You can use wget if that is better for the curl call. Using a silent option keeps the remote users git push command a little cleaner.
+
+<h2>Feedback</h2>
+Are there other options for doing the same thing?
