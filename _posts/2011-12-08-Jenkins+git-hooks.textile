@@ -5,11 +5,11 @@ summary: Found an easy work around for getting the Jenkins SCM Polling to work.
 tag: jenkins
 ---
 
-<h3>The Problem</h3>
+<h3>The Problem:</h3>
 The Jenkins SCM Polling feature is not working. No matter what we have tried it runs the same job every minute, even after cloning a git repository and passing all tests. In Hudson, this feature worked like a charm. After the upgrade, no love, the job keeps on building. We have a feeling Jenkins is not storing the .git commit info correctly. Over time, I am certain we will tease out the issue.
 
-<h1>Solution: Git Hooks</h1>
-Git Hooks are a nice way to get the same feature we had in Hudson. When a commit is made to a git branch, a job is trigger and runs. Here is how we made it work. First we are using "Gitosis":https://github.com/res0nat0r/gitosis to provides a central git repo. This solution will work on github using their implementation of repo hooks.
+<h3>The Solution:</h3>
+<b>Git Hooks</b> are a nice way to get the same feature we had in Hudson. When a commit is made to a git branch, a job is trigger and runs. Here is how we made it work. First we are using "Gitosis":https://github.com/res0nat0r/gitosis to provides a central git repo. This solution will work on github using their implementation of repo hooks.
 
 # Login into your "Jenkins":http://jenkins-ci.org/ Server.
 # Edit a job.
@@ -38,8 +38,8 @@ echo ""
 bash /srv/gitosis/repositories/hooks/post-receive
 {% endhighlight %}
 
-<h2>Options</h2>
+<h3>Options</h3>
 You can use <b>wget</b> if that is better for the curl call. Using a silent option keeps the remote users git push command a little cleaner.
 
-<h2>Feedback</h2>
-Are there other options for doing the same thing?
+<h3>Feedback</h3>
+Are there other options for doing the same thing? 
