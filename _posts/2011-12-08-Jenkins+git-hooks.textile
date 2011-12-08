@@ -27,9 +27,9 @@ echo ""
 {% endhighlight %}
 
 <b>Notes:</b> 
-* The <i>-s</i> makes the curl call silent. 
-* You will need to make sure curl is install on your server.
-* The 'echo' commands in the post-recieve call will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
+*   The <i>-s</i> makes the curl call silent. 
+*   You will need to make sure curl is install on your server.
+*   The 'echo' commands in the post-recieve call will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
 
 {% highlight js %}
 bash /srv/gitosis/repositories/hooks/post-receive
