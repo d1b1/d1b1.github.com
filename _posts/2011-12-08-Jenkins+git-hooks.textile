@@ -17,6 +17,7 @@ Git Hooks are a nice way to get the same feature we had in Hudson. When a commit
 # Test the URL in a different browser. Your job should trigger and run.
 # Login into the git server as the <b>gitosis</b> user.
 # Edit the post-receive file in the repo you want to monitor. ( example: nano /srv/gitosis/repositories/hooks/post-receive)
+# chmod 777 post-recieve
 # Add the following:
 
 {% highlight bash linenos %}
@@ -25,10 +26,10 @@ echo "Triggering Jenkins 'myJob' Job on Server..."
 echo ""
 {% endhighlight %}
 
-Note: the <i>-s</i> makes the curl call silent. You will need to make sure curl is install on your server.
-Note: the echo and trigger will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
-
-Finally, you will need to remember to chmod 777 the post-recieve file. You can test the hook using bash post-receive. 
+<b>Notes:</b> 
+- The <i>-s</i> makes the curl call silent. 
+- You will need to make sure curl is install on your server.
+- The 'echo' commands in the post-recieve call will show on the git push message for any remote users. This is optional, but nice to have, since it lets your developers know that jenkins is getting its alter.
 
 {% highlight js %}
 bash /srv/gitosis/repositories/hooks/post-receive
