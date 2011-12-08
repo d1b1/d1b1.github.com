@@ -15,11 +15,11 @@ Git Hooks are a nice way to get the same feature we had in Hudson. When a commit
 # Enable the  'Trigger builds Remotely'. Set a Authentication Token.
 # Copy the URL from below the description below. (Notice the /buildWithParameters options)
 # Test the URL in a different browser. Your job should trigger and run.
-# Login into the git server as the gitosis user.
+# Login into the git server as the <b>gitosis</b> user.
 # Edit the post-receive file in the repo you want to monitor. ( example: nano /srv/gitosis/repositories/hooks/post-receive)
 # Add the following:
 
-{% highlight js %}
+{% highlight sh linenos %}
 curl -s http://Jenkins.MyServer.com/job/myJob/buildWithParameters?token=1
 echo "Triggering Jenkins 'myJob' Job on Server..."
 echo ""
@@ -31,13 +31,11 @@ Note: the echo and trigger will show on the git push message for any remote user
 Finally, you will need to remember to chmod 777 the post-recieve file. You can test the hook using bash post-receive. 
 
 {% highlight js %}
-bash post-receive
+bash /srv/gitosis/repositories/hooks/post-receive
 {% endhighlight %}
 
-Add this type of curl call to all your repos so they trigger the correct Jenkins jobs.
-
 <h2>Options</h2>
-You can use wget if that is better for the curl call. Using a silent option keeps the remote users git push command a little cleaner.
+You can use <b>wget</b> if that is better for the curl call. Using a silent option keeps the remote users git push command a little cleaner.
 
 <h2>Feedback</h2>
 Are there other options for doing the same thing?
