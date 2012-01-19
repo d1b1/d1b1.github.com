@@ -1,0 +1,27 @@
+---
+layout: post
+title: NoSQL, CI and Schema-Less Hosting Tools
+summary: List of datastore and developer services.
+tag: datastores nosql
+---
+
+<h2>Cloudbees:https://grandcentral.cloudbees.com/</h2>
+This service is a must have for developers working with open source projects or trying to get up to speed on continuous integration practices. This company was founded in early 2010, with one of the first employees being the project founder of Hudson (aka Jenkins). The product offering has come a long way, and the UI/UX of their PaaS shows it. As with many emerging development practices and services, they offer a free package to get developer familiar with their service. 
+
+<h2>Redis Hosting with Redis4you:http://redis4tyou.com</h2>
+Great idea, but painful design. I should be able to look beyond the developer-ugly site design, but I am having a hard time. Feature-wise, this is a great intro into the world of hosted redis. They offer a 5m free account for developers to explore and test the datastore features. Unfortunately the user-experience is not better then the UI. 
+
+The redis:http://redis.io official site is great, it is pleasure to browse and provides a great source of developer focused materials.  
+
+<h2>Couch DB on Cloudant:http://cloudant.com/</h2>
+Fast, easy, free and well-designers couchdb hosting. This service adds some polish to the developer ugly admin tools often found on NoSQL interfaces. Cloudant offers their own UI for adding and editing couch documents, with the option to switch over to the futon web interface. They offer a free package that gives the ability to create and host couchdb. Nice.
+
+<h2>Couch DB on IrisCouch:http://iriscouch.com</h2>
+Fast, easy and free couch hosting. This is a great service, with a super small learning curve. This site lacks the UI/UX wrapper that makes the Cloudant offering so easy to browse, but is simple to get into an use. The only issue I have encountered is the availability. I have found that my POCs for couchapps keep getting 'No DB Available' messages. I have a feeling the couch servers drop out of service when vhosts are reset. Or there is a problem load balancer in the mix. Iris Support is fast and response to issue. Worth the time to explore.
+
+<h2>"Joyent Node":https://no.de/</h2>
+Joyent offers a node.js PaaS service, with a free package. 
+
+<h2>Dynamo DB</h2>
+No links yet, strange that it gets announced, but is not accessible on the AWS site.
+

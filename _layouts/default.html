@@ -4,8 +4,9 @@
   <head>
      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
      <meta name="google-site-verification" content="CMJFeC2UGma_JfXCsJYXIhPKW1At8TaPXw7V1OTFkbM" />
-     
+
      <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf" />
+     
      <title>
        {% if page.title %}
          {{ page.title }} //
@@ -18,15 +19,53 @@
      {% endif %}
      <link href="http://feeds.feedburner.com/{{ site.feedburner-username }}" rel="alternate" title="{{ site.site-title }}" type="application/atom+xml" />
 
+     <link rel="stylesheet" href="/stylesheets/default.css" type="text/css"  />
      <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
-     <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
-     
+
      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+ 
+     <script type="text/javascript" src="/javascripts/jquery.center.js"></script>
+ 
+     <script type="text/javascript">
+     /*
+       jQuery(document).ready(function($){
+         $(window).resize(function() { $("div#resizeinfo").text('w:'+$(this).width()); });
+       });
+     */
+     
+     jQuery(document).ready(function($){
+     
+       $('.toggleme').hide();
+       
+       $('.biolink').click(function() {
+         $('#sidebar').toggle();
+         $('.toggleme').show();
+       });
+
+       $(window).resize(function() { 
+       
+         //d = $(this).width();
+         if ($(this).width() > 850) {
+          $('#sidebar').show();
+          //alert('killing');
+          }
+        
+         //d = $(this).width();
+         if ($(this).width() < 850) {
+          $('#sidebar').hide();
+          //alert('killing');
+          } 
+           
+       });
+       
+       // TODO: this is not working. $(window).resize(function() { $('.reset').show(); });
+     });
+     </script>
+     
      <script type="text/javascript" src="/javascripts/colorbox/jquery.colorbox.js"></script>
      
      <link rel="stylesheet" href="/javascripts/colorbox/colorbox.css" type="text/css" />
 
-     
      <script type="text/javascript">
      $(function() {
     	 $('a.colorbox1').colorbox({rel:'colorbox1'});
@@ -37,39 +76,60 @@
        <link rel="stylesheet" href="{{ css }}" type="text/css" />
      {% endfor %}
 
-
   </head>
   <body>
-    <a href="http://github.com/{{ site.github-username }}"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+    <a id="forkme" href="http://github.com/{{ site.github-username }}"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" /></a>
 
     <div id="site">
       <a id="subscribe" href="http://feeds.feedburner.com/{{ site.feedburner-username }}"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
 
-      <div id="search_area" style="display: none">
+      <div id="search_area">
         <label for="search" style="display: none">Search</label>
         <img src="http://www.famfamfam.com/lab/icons/silk/icons/cancel.png" alt="X"/>
         <input id="search" />
       </div>
       
-      <h1><a href="/">{{ site.site-title }}</a></h1>
+      <h1 class="header"><a href="/">{{ site.site-title }}</a><div style="display: none" id="resizeinfo">--</div></h1>
+      
+      <div id="HeaderMenu"><a class="biolink" href="#bio">Biography >></a></div>
       
       <div class="clear"></div>
       
-      <div id="sidebar" about="#me" typeof="foaf:Person" class="vcard">
-        <h3>Me</h3>
+      <div id="content">
+        {{ content }}
+      </div>
+      
+      <div id="sidebar" about="#me" typeof="foaf:Person" class="vcard reset">
+
+        <div class="biolink toggleme" style="dssisplay: none;">Back</div>
+        
         <span rel="foaf:img">
-          <img style="display: none;" src="http://d1b1.github.com/images/photo.jpg" alt="{{ site.bio-fullname }}">
+          <img style="display: nsone;" class="bio-image" src="/images/photo.jpg" alt="{{ site.bio-fullname }}">
         </span>
-        <dl id="contact">
+
+        <dl id="contact" class="bio">
           <dt>Name</dt>
           <dd><a class="fn url" href="/"><span property="foaf:name">{{ site.bio-fullname }}</span></a> / <span class="nickname">{{ site.bio-nickname }}</span></dd>
 
           <dt>Email</dt>
           <dd class="email" ><a href="mailto:{{ site.bio-email-address }}" rel="foaf:mbox">{{ site.bio-email-address }}</a></dd>
 
+          <dt>Biography</dt>
+          <dd class="biography-copy toggleme" >
+            <p>
+            Is a Boston based web developer. With a strong
+            interest in leading edge technologies and a focus
+            on implementations. 
+            </p>
+  
+            <p>
+            Currently working for NPR, Fort Point Channel. Previously with
+            NGP VAN Inc in Davis Square.
+            </p>
+          </dd>
+          
           <dt>Telephone</dt>
           <dd class="tel" rel="foaf:phone">{{ site.bio-phone-number }}</a></dd>
-          
         </dl>
         
         <span style="display: none;">
@@ -81,7 +141,7 @@
         
         <h3>And then some</h3>
         <span rel="foaf:holdsAccount">
-        <ul id="profiles" typeof="foaf:OnlineAccount">
+        <ul id="profiles" class="bio" typeof="foaf:OnlineAccount">
           <li>
             <a href="http://twitter.com/{{ site.twitter-username }}" rel="foaf:accountServiceHomepage">Twitter</a>
           </li>
@@ -101,7 +161,7 @@
         </ul>
         </span>
 
-        <div class="adr" typeof="vcard:VCard">
+        <div class="adr" class="bio" typeof="vcard:VCard">
           <span class="locality" property="vcard:locality">Boston</span>
           <span class="region" property="vcard:region">MA</span>
           <span class="postal-code" property="vcard:postal-code" >02118</span>
@@ -109,7 +169,7 @@
           <span property="vcard:workTel" >{{ site.bio-phone-number }}</span>
         </div>
 
-        <div class="">
+        <div class="attribution">
         Attribution: Jekyll template cloned from <a href="http://github.com/jqr">Elijah Miller</a>
         </div>
         <br>
@@ -124,6 +184,7 @@
         <h3 class="delicious-posts-header">with links</h3>
         <div id="delicious-posts">Oops nothing found.</div>
 
+        <div id="googleads">
         <script type="text/javascript"><!--
         google_ad_client = "ca-pub-9889697162331863";
         /* Test Right Sider */
@@ -133,15 +194,13 @@
         //-->
         </script>
         
+        
         <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-
+        </div>
+        
       </div>
       
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6/prototype.js"></script>
-      
-      <div id="content">
-        {{ content }}
-      </div>
       
       <div class="clear"></div>
       

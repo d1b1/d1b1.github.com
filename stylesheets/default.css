@@ -1,3 +1,133 @@
+@media only screen and (max-width: 480px)
+  {
+    /* Basic */
+    h1 { padding: 20px 20px 5px 0px; 
+         margin-left: 0px; 
+    }
+                
+    #site { width: 100%;
+            margin: auto;
+            padding: 0px; 
+    }
+
+    #HeaderMenu { display: none; }
+    
+    #content {
+      max-width: 400px !important;
+      overflow: hidden;
+      float: left;
+      position: relative; }
+
+    .bio-image { display: visible;
+                 width: 50px; 
+                 float: left; 
+                 padding: 10px;
+                 margin-right: 10px;
+                 margin-bottom: 10px;
+                 border: 1px solid #000 }
+                 
+    #sidebar {
+      width: 400px !important;
+      padding-top: 10px;
+      margin: 0px;
+      border-top: 5px solid #eee;
+      float: left;
+      position: relative;
+      clear: both; }
+
+    #forkme { display: none; }             
+    #search_area { display: none; }
+    #googleads { display: none; }
+    #delicious-posts, .delicious-posts-header { display: none; }
+  }
+
+@media only screen and (min-width: 481px) and (max-width: 850px)
+  {
+    /* Intermediate */
+    body { /* border-top:1px dashed red; */ }
+          
+    #content { width: 95%;
+               padding: 0 20px 20px 20px; }
+    
+    h1 { margin: 0;
+         padding: 20px; }
+
+    #HeaderMenu div { border:1px solid red; text-alignment: right; }
+    
+    #HeaderMenu a { display: block; 
+                    padding: 0px 5px;
+                    text-align: right;
+                    text-decoration: none;
+                    margin: 0px;
+                }
+
+    #site { width: 100%;
+            margin: auto; }
+
+    .bio-image { display: visible;
+                 width: 100px; 
+                 float: left; 
+                 padding: 10px;
+                 margin-right: 10px;
+                 margin-bottom: 500px;
+                 border: 1px solid #000 }
+    
+    .biography-copy p { width: 80%; }
+    
+    .fn { font-size: 24px !important; }
+    
+    .close { width: 100%; height: 20px; clear: both; }
+    
+    #sidebar {
+      background-color: #EFEFEF;
+      top: 0px;
+      border:1px solid red;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      padding: 20px;
+      margin: 0px;
+      border: 3px solid #eee;
+      display: none; 
+      height: 100%; }
+      
+    #delicious-posts, .delicious-posts-header { display: none; }
+    
+    #googleads { display: none; }
+    
+  }
+
+@media all and (min-width: 851px)
+  {
+    body { /* border-top:1px dashed green; */ }
+    
+    #site { width: 850px;
+            margin: auto;
+          }
+          
+    h1 { margin: 0;
+         padding: 20px; }
+     
+    #HeaderMenu { display: none; }
+
+    #content { width: 600px;
+               padding: 0 20px 20px 20px;
+               position: relative;
+               float: left;
+    }
+    .bio-image { display: none; 
+    }
+    
+    #sidebar {
+      width: 160px;
+      padding: 10px 20px 20px 20px;
+      border-left: 5px solid #eee;
+      float: right;
+      position: relative;
+    }
+
+  }
+
 .clear {
   clear: both;
 }
@@ -7,7 +137,7 @@ img {
 }
 
 body {
-  line-height: 130%;
+  kline-height: 130%;
   font-size: 100%;
   color: #222;
   background: #fff;
@@ -19,19 +149,10 @@ p { line-height: 22px; }
 a:hover, a:active, #sidebar a:active, #sidebar a:hover, #content a {
   color: #b40 !important;
 }
-#site {
-  width: 850px;
-  margin: auto;
-}
 
 #subscribe {
   float: right;
   margin: 20px;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px;
 }
 
 h1 a, h1 a:link, h1 a:visited {
@@ -43,12 +164,6 @@ h1 a, h1 a:link, h1 a:visited {
   margin: 15px;
 }
 
-#sidebar {
-  width: 160px;
-  padding: 10px 20px 20px 20px;
-  border-left: 5px solid #eee;
-  float: right;
-}
 #sidebar a, #sidebar a:link #sidebar a:visited {
   color: #222;
 }
@@ -72,7 +187,7 @@ h1 a, h1 a:link, h1 a:visited {
   display: none;
 }
 
-#content {
+#old-content {
   width: 600px;
   padding: 0 20px 20px 20px;
 }
@@ -128,6 +243,7 @@ h3 {
   margin: 19px 50px;
   position: relative;
 }
+
 #search {
   font-size: 17px;
   font-family: inherit;
@@ -140,6 +256,7 @@ h3 {
   width: 100%;
   margin: 0;
 }
+
 #search:focus {
   outline: none;
 }
@@ -157,18 +274,22 @@ h3 {
 #search_area img {
   display: none;
 }
+
 .searching #search_area img {
   position: absolute;
   left: 113px;
   top: 7px;
   display: block;
 }
+
 #search_results_area {
   display: none;
 }
+
 .searching #search_results_area {
   display: block;
 }
+
 .searching #home {
   display: none;
 }

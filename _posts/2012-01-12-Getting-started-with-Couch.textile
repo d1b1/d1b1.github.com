@@ -1,0 +1,21 @@
+---
+layout: post
+title: How to get started with CouchDB
+summary: List of tools, techniques, hosts and approahces for getting familiar with the Couch suite of solutions.
+tag: couch nosql
+---
+
+<h3>The Challenge</h3>
+How to get a working knowledge of the CouchApp feature set, development environment and hosting. Basically, now to take it from book and tutorials to a product ready or at least development ready application.
+
+<h3>ReUpholster</h3>
+This is nice solution, because it runs it works. I found this github project a nice place to get started, as it smoothed out some of the configuration challenges that come with the local vs remote db hosting questions. This project is built in java, and setups a Google AppEngine like SDK environment. As I made changes to the html/index.html, the app pushed the changes to the specified couchdb db. In my case, since I am on OSX Lion, and can not get the CouchDB server to restart, I setup a set of test dbs on irisCouch.com. If you watch the Log window as you tweak the included files, you will see it log the pushes to the remote server.
+
+I likes this approach a little better then the CouchApp (Ruby/Python) solution, mostly because I did not have to enable the autopush feature. Its built in and working by default. 
+
+http://reupholster.iriscouch.com/reupholster/_design/app/index.html
+
+<h3>CouchApp.org</h3>
+This solution is a bit more command line oriented then the ReUpholster application. Its built in Python and provides a number of cli features for creating, update and deploying our couch databases. I found the deployment to remote servers much faster, and more transparent. The only downside, is that it seems to use a hardcoded for the conversion between a local file/folder structure to the couchdb document model. While the first solution is easy to get start, I found the CouchApp python easier to tease apart, as I am interested in the approach taken to getting the local to a couch document model.
+
+http://couchapp.org/page/index

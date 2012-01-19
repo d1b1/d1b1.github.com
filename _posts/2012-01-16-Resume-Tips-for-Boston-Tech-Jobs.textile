@@ -1,0 +1,47 @@
+---
+layout: post
+title: Resume Tips for Tech Positions
+summary: Summary of dos and donts for tech resumes.
+tag: resumes
+---
+
+I have seen way too many resumes in the past few years to not have an opinion on the best way to craft a tech resumes. First, a caveat, I hire for technical positions, no customer service or support, so my views and opinions are only good for a subset of tech positions. Second, Boston is a unique labor pool, as we have a boat load of top notch computer programs that feed the labor pool, so what works here, might not translate. 
+
+Below are my dos and donts. Take with a grain of salt please. 
+
+<h2>Less is More</h2>
+Less is always more. If 
+
+<h2>Recuiter Input</h2>
+A hiring manager can smeell a recuiter's input to your resume from a mile away. And hiring managers have no love for tech recuiters. I am certain there are a few good ones, but in the years I have work with them, I have found they add little to hiring process. So when your hiring manager ask you to add a few terms to your resumes resist. When I have pushed back on recuiter, the second approach is to ask you 'play up' certain aspect of your background, avoid. 
+
+Hiring managers see a lot of resumes, and will no the editing when they see it. If you get to a phone screen, you might find a lot of focus on fluffy parts of your experience, which is never fun to go through.
+
+<h2>Be Terse</h2>
+The first time your have to review ten resumes, you will understand this request. Hiring managers do not hire for every skill in the world, so sending over the multi-tool of resumes will only get you filters out. So when you can shorten: do. For example, if you know SQL, drop the different flavors: TSQL, etc. 
+
+<h2>Five Years is Enough</h2>
+In an industry where two years can be a life time and things change so quickly, anything more then five years or two employers is a waste of paper. If you need to keep the employers, collapse them on to follow-on item that lists only the employer names. If a hiring managers really wants to know what you did for a specific company, they will email, or setup a phone screen, which is what you want. 
+
+<h2>Kill Excel, Word and PowerPoint</h2>
+Microsoft products are not skills, unless you are looking to be a secretary, you do not want these anywhere on your resume. Anyone can figure out MS Excel macros, so do not list it. Do not list systems that every developer needs in order to do their job. 
+
+The only caveat to this statement: feel free to note your favorite IDE. All hiring managers and interviews love to ask, so it sets a great converstation during a phone screen.
+
+<h2>Drop week skills</h2>
+This is a corollary to the first point: be terse. Do not include any item that you do not want to be ask hard questions. So if did a little work on a SOAP WSDL, but do not really understand the crappy IDE reqirements for getting them written correctly, drop these references. Or if need be, add API + REST. Anything RestFul is in and hip and hard to screw up in an interview. 
+
+<h2>Forget about Mensa</h2>
+The Mensa organization is a resume killer. So unless you writing cutting edge search engine algorithms in binary, blind, while drunk, you should not tell your hiring manager you are a genius. Most hiring managers are tired of reading resumes and have work to do, and will either drop the resume in the circular file, or phone screen you into the ground.
+
+<h2>Shotgunning</h2>
+If you send out 100 resumes and do not get 80 phone screens, you are doing everything wrong. First, computer programmers have the lowest unemployement records of any position in the US market. If you can not get traction on five resumes you need to get help. A good way to know when you are shotgunning, if an HR or hiring manager calls, and you do not remember the name of the company they are calling from. 
+
+<h2>Titles Dont help</h2>
+Unless you have managed more then five people avoid the following titles, CTO, Design Director, CMO, Founder etc. Starting your own consulting company when you are the only employee does not make you a CTO. I would advise people to drop the whole title from your history section, or if you want, make them generic. This makes your resume faster to read, and makes it easier for the hiring manager to see where or how you will fit into the position.
+
+<h2>Filter for your audience</h2>
+This goes along with the 'Forget Mensa' recommendation. If you are looking for position with a specific set of requirements, remove all other resume items that distract. So you sailed around the world, unless you a interviewing for a position in boat sales, remove this completely, and include it in your later resumes. Hiring managers love flair, and have to read verbiage.
+
+<h2>Follow-Up</h2>
+If a phone screen exposes a few weak points, keep notes and ask for clearification after the process is done. Hiring managers job is to tease out the BS in a candidate, and look for qualities they can use. So you flub some questions about SQL joins. Ask for more information and, if you get a followup screen, make a note of the error and discuess what you have learned. A candidate the knows now to learn is worth overlooking a few tech issues.
