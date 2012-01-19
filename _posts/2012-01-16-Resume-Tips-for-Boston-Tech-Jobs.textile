@@ -3,6 +3,7 @@ layout: post
 title: Resume Tips for Tech Positions
 summary: Summary of dos and donts for tech resumes.
 tag: resumes
+status: draft
 ---
 
 I have seen way too many resumes in the past few years to not have an opinion on the best way to craft a tech resumes. First, a caveat, I hire for technical positions, no customer service or support, so my views and opinions are only good for a subset of tech positions. Second, Boston is a unique labor pool, as we have a boat load of top notch computer programs that feed the labor pool, so what works here, might not translate. 

@@ -3,6 +3,7 @@ layout: post
 title: How to get started with CouchDB
 summary: List of tools, techniques, hosts and approahces for getting familiar with the Couch suite of solutions.
 tag: couch nosql
+status: draft
 ---
 
 <h3>The Challenge</h3>

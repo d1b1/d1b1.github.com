@@ -3,6 +3,7 @@ layout: post
 title: NoSQL, CI and Schema-Less Hosting Tools
 summary: List of datastore and developer services.
 tag: datastores nosql
+status: draft
 ---
 
 <h2>Cloudbees:https://grandcentral.cloudbees.com/</h2>
