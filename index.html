@@ -19,7 +19,7 @@ javascript:
         <a href="{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.summary }}</p>
         <p>{{ post.status }}
-        {% if post.status == "draft" then %}
+        {% if post.status != "draft" then %}
              Tooooo
         {% endif %}
         </p>
