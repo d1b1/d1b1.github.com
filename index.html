@@ -15,15 +15,12 @@ javascript:
   <h2>Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
+      {% if post.status != "draft" then %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.summary }}</p>
-        <p>{{ post.status }}
-        {% if post.status != "draft" then %}
-             Tooooo
-        {% endif %}
-        </p>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
   
