@@ -19,11 +19,9 @@ javascript:
         <a href="{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.summary }}</p>
         <p>{{ post.status }}
-        {%
-           if post.status == "draft" then
-             print "YYYYO"
-           end
-        %}
+        {% if post.status == "draft" then %}
+             Tooooo
+        {% endif %}
         </p>
       </li>
     {% endfor %}
