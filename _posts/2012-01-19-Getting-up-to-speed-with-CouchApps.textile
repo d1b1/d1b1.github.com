@@ -3,20 +3,20 @@ layout: post
 title: Solutions for Standalone CouchApp Development
 summary: Overview of the Couchapp Development tools for standalone web applications.
 tag: couchdb couchapp soca reupholster
-status: draft
+status: live
 ---
 
 <h3>The Challenge</h3>
 Get up to speed on standalone CouchDB apps. 
 
 <h3>The Solutions</h3>
-There appear to be three visible pathways for a developer to build standalone CouchDB applications; "Reupholster":http://reupholster.iriscouch.com/reupholster/_design/app/index.html, "Soca":https://github.com/quirkey/soca and "CouchApp":https://github.com/jchris/couchapp. All of these projects take their own approach to the same approach. The provide a transaction application for a local file tree into a json document module. Each setups up the .CouchApp, Design document and attachments in a slightly different manner, and as of the writing of this post, are not really interchangeable. Once you choose an approach, you might find it less the enjoyable to switch tools, so try them out, and find one that works, and stick with it. 
+There appear to be three visible pathways for a developer to build standalone CouchDB applications; "Reupholster":http://reupholster.iriscouch.com/reupholster/_design/app/index.html, "Soca":https://github.com/quirkey/soca and "CouchApp":https://github.com/jchris/couchapp. All of these projects take their own approach to the same approach. They provide a builder application for a local file tree into a json document module. Each setups up the .CouchApp, Design document and attachments in a slightly different manner, and as of the writing of this post, are not really interchangeable. Once you choose an approach, you might find it less the enjoyable to switch tools, so try them out, and find one that works, and stick with it. 
 
 CouchApp:https://github.com/jchris/couchapp - Python implementation, written by "Chris Anderson": http://jchrisa.net/
 
-Soca:https://github.com/quirkey/soca - Ruby implementation, written by "Aaron Quint":http://www.quirkey.com/blog.
+Soca:https://github.com/quirkey/soca - Ruby implementation, written by "Aaron Quint":http://www.quirkey.com/blog. This project has active development and commit on github, as of Jan 2012. Appears to be a 100% cli set of tools. The distinguishing characteristic is the use of a config.js to map filesystem elements to the design documents.
 
-Reupholster:http://reupholster.iriscouch.com/reupholster/_design/app/index.html - Java implementaiton, written by unknown.
+Reupholster:http://reupholster.iriscouch.com/reupholster/_design/app/index.html - Java implementation, written by unknown. The code is available on "code.google.com":http://code.google.com/p/reupholster. Last commit was in Dec. 2011. At first glance, the translation from local file tree to couch documents is less then clear. The nice feature is the autopush, which is handled the java process that maps the local app to the couch db. Additionally, the app provides easy deployments through the menu bar options. 
 
 <h3>Associated Tools and Resources</h3>
 The following are associated or embedded tools in the couch apps.
