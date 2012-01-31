@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Solutions for Standalone CouchApp Development
-summary: Overview of the Couchapp Development tools for standalone web applications.
-tag: couchdb couchapp soca reupholster
+summary: Review of the CouchDB Development tools for standalone web applications for filesystem to document db. Using Soca || Reupholster ||  CouchApp.
+tag: couchdb couchapp soca Reupholster
 status: live
 ---
 
