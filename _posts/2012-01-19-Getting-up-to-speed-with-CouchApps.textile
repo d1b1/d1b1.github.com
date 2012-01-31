@@ -12,11 +12,14 @@ Get up to speed on standalone CouchDB apps.
 <h3>The Solutions</h3>
 There appear to be three visible pathways for a developer to build standalone CouchDB applications; "Reupholster":http://reupholster.iriscouch.com/reupholster/_design/app/index.html, "Soca":https://github.com/quirkey/soca and "CouchApp":https://github.com/jchris/couchapp. All of these projects take their own approach to the same approach. They provide a builder application for a local file tree into a json document module. Each setups up the .CouchApp, Design document and attachments in a slightly different manner, and as of the writing of this post, are not really interchangeable. Once you choose an approach, you might find it less the enjoyable to switch tools, so try them out, and find one that works, and stick with it. 
 
-"CouchApp":https://github.com/jchris/couchapp - Python implementation, written by "Chris Anderson":http://jchrisa.net/
+"CouchApp":https://github.com/jchris/couchapp - Python implementation, written by "Chris Anderson":http://jchrisa.net, forked from "Benoit Chesneau":https://github.com/benoitc work. This approach provides a cli helper for the filesystem to document translation. The project is under active development, with github commits as of Nov 2011. The documentation is a little light and hard to follow. The pushdocs feature does offer some nice bulk update options, which can help with the refactoring of document models. <b>If the docs get better, this might end up the default tool for our teams couch work.</b>
 
 "Soca":https://github.com/quirkey/soca - Ruby implementation, written by "Aaron Quint":http://www.quirkey.com/blog. This project has active development and commit on github, as of Jan 2012. Appears to be a 100% cli set of tools. The distinguishing characteristic is the use of a config.js to map filesystem elements to the design documents.
 
 "Reupholster":http://reupholster.iriscouch.com/reupholster/_design/app/index.html - Java implementation, written by unknown. The code is available on "code.google.com":http://code.google.com/p/reupholster. Last commit was in Dec. 2011. At first glance, the translation from local file tree to couch documents is less then clear. The nice feature is the autopush, which is handled the java process that maps the local app to the couch db. Additionally, the app provides easy deployments through the menu bar options. 
+
+<h3>Recommendation</h3>
+At this time, we are happy with CouchApp project. It provides some of the most robust implementations of the couch API. Once the docs and tutorials catchup, we expect the adoption of this project to go up. 
 
 <h3>Associated Tools and Resources</h3>
 The following are associated or embedded tools in the couch apps.
@@ -24,3 +27,5 @@ The following are associated or embedded tools in the couch apps.
 "Sammy.JS":http://sammyjs.org/ - This is a small javascript web framework that provides restful, event driven classes. It is used in the soca project to provide the connectivity between the client side javascript and the CouchDB API.
 
 "Evently":https://github.com/jchris/evently - (Docs:http://couchapp.org/page/evently) This is a javascript project that provides DSL for event driven API applications. This is used in the the CouchApp project.
+
+"SQL Cookbook for CouchDB":http://guide.couchdb.org/draft/cookbook.html - Our team found this single post the most important in getting up to speed and coding our project queries into the db. The Query + Map + Reduce relationship is very well defines and outlined.
