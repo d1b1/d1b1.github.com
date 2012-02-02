@@ -21,13 +21,24 @@ layout: default
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.jskkkk"></script>
   <script type="text/javascript" src="/javascripts/jquery.delicious.js"></script>
      
+     
   <script type="text/javascript">
     $(function(){
 	    $('#delicious-posts').delicious('stephansmith93',{tag:'{{ page.tag }}',favicon:false,popopen:true});
     });
   </script>
   
-  
+  <script type="text/javascript" src="/javascripts/delicious.jquery.js"></script>
+  <script type="text/javascript"
+  $(document).ready(function() {
+	var settings = { username: 'stephansmith93', 
+	                 target: '#reading',
+	                 separator: ' '
+	               };
+	               
+	get_delicious_json( 'couchdb nosql', settings);
+  });
+  </script>
 
 </div>
 
