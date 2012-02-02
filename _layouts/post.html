@@ -29,8 +29,9 @@ layout: default
   </script>
   
   <script type="text/javascript" src="/javascripts/delicious.jquery.js"></script>
-  <script type="text/javascript"
+  <script type="text/javascript">
   $(document).ready(function() {
+    alert('asdf');
 	var settings = { username: 'stephansmith93', 
 	                 target: '#reading',
 	                 separator: ' '
@@ -39,6 +40,8 @@ layout: default
 	get_delicious_json( 'couchdb nosql', settings);
   });
   </script>
+  
+  <div id="reading" ></div>
 
 </div>
 
