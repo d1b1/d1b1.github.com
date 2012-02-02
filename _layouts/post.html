@@ -32,7 +32,7 @@ layout: default
 		  $.getJSON(url + value + "?callback=?", function(data) { 
 			  jQuery.each(data, function(key, val) {
 			    if (!(val in tagStories)) {
-			      jQuery('<a>', { href : val.u, title : val.d, text : "» " + val.d  }).appendTo(jQuery('<li>').appendTo(target));
+			      jQuery('» <a>', { href : val.u, title : val.d, text : val.d  }).appendTo(jQuery('<li>').appendTo(target));
 			      tagStories[val.u] = val;  
 			    }
 		     });
