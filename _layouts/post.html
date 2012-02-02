@@ -7,7 +7,6 @@ layout: default
   {{ content }}
   <br>
   <br>
-  Tags: {{ page.tags }} <a href="http://www.delicious.com/{{ site.delicious-username }}/{{ page.tags }}" target="_parent">Delicious</a>
 </div>
 
 <div id="related">
@@ -20,7 +19,8 @@ layout: default
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-  <div id="reading"><h3>Delicious Links</h3></div>
+  <div id="reading"><h3>Delicious Links</h3> 
+  <p>Tags: {{ page.tags }} </p></div>
   
   <script type="text/javascript">
 	function get_delicious_json( tags, settings) {
