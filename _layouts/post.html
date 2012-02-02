@@ -20,9 +20,10 @@ layout: default
   {% if page.tags %}
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <br><br>
-  <div id="reading"><h3>Delicious Links</h3> 
-  <p>Tags: {{ page.tags }} </p></div>
-  
+  <div id="reading" style="border:1px solid #000; background-color: #EFEFEF;"><h3>Delicious Links</h3> 
+  Tags: {{ page.tags }} 
+  </div>
+
   <script type="text/javascript">
 	function get_delicious_json( tags, settings) {
 	  var url = 'http://feeds.delicious.com/v2/json/' + settings.username + '/';
