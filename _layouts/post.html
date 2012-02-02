@@ -18,30 +18,37 @@ layout: default
     {% endfor %}
   </ul>
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.jskkkk"></script>
-  <script type="text/javascript" src="/javascripts/jquery.delicious.js"></script>
-     
-     
-  <script type="text/javascript">
-    $(function(){
-	    $('#delicious-posts').delicious('stephansmith93',{tag:'{{ page.tag }}',favicon:false,popopen:true});
-    });
-  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <div id="reading"><h3>Delicious Links</h3></div>
   
-  <script type="text/javascript" src="/javascripts/delicious.jquery.js"></script>
   <script type="text/javascript">
-  $(document).ready(function() {
-    alert('asdf');
+	function get_delicious_json( tags, settings) {
+	  var url = 'http://feeds.delicious.com/v2/json/' + settings.username + '/';
+	  var tagStories = new Object();
+	  var target = $('<ul>', {}).appendTo(settings.target);
+	  
+	  $.each(tags.split(settings.separator), function(index, value) { 
+		  $.getJSON(url + value + "?callback=?", function(data) { 
+			  jQuery.each(data, function(key, val) {
+			    if (!(val in tagStories)) {
+			      jQuery('<a>', { href : val.u, title : val.d, text : val.d  }).appendTo(jQuery('<li>').appendTo(target));
+			      tagStories[val.u] = val;  
+			    }
+		     });
+		  });
+	  });
+	}
+
 	var settings = { username: 'stephansmith93', 
 	                 target: '#reading',
-	                 separator: ' '
-	               };
+	                 separator: ' ' };
 	               
-	get_delicious_json( 'couchdb nosql', settings);
-  });
+	get_delicious_json( '{{page.tags}}', settings);
+
   </script>
   
-  <div id="reading" ></div>
+  
 
 </div>
 

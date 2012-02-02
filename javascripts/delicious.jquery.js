@@ -1,5 +1,6 @@
 function get_delicious_json( tags, settings) {
 
+  alert('in the function');
   var url = 'http://feeds.delicious.com/v2/json/' + settings.username + '/';
   var tagStories = new Object();
 
