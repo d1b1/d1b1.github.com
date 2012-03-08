@@ -1,0 +1,27 @@
+---
+layout: post
+title: CouchDB in a Can
+summary: The shortest overview of CouchDB features possible.
+tag: couchdb
+status: draft
+---
+
+<h3>The Moving Parts</h3>
+
+<b>Views</b>
+
+<b>Lists</b>
+
+<b>Shows</b>
+
+<b>Filters</b>
+
+<b>Updates</b>
+
+<b>VHosts</b>
+VHosts are couchdb version of Apache Virtual Hosts. These are defined at the database element. You can define as many as you need, and point the domains to specific design documents, attachments or queries. The standard approach is to direct an inbound domain (http://blog.example.com -> /blogdb/_design/blog/_rewrite). By sending the request a set of rewrite rules in the design document, you five the design document that ability to define application or document specific URLs; images, html, apis, queries etc.
+
+<b>Rewrites</b>
+Rewrites are url rules for mapping incoming URL requests to internal database elements; views, lists, queries or attachments. For example is you have CSS and images in one of your list function that will return HTML, you would use the rewrites to ensure that the long design document path is mapped to /css. For a more advanced use case, you can use rewrite rule to map a URL to query. 
+
+Remember that the rewrite rules are document specific, and assume the design document is the root.

@@ -1,0 +1,30 @@
+---
+layout: post
+title: Nice to Knows for Couchdb
+summary: Developer notes for common questions and issues for getting up to speed with CouchDB.
+tag: couchdb
+status: draft
+---
+
+<b>Where does CouchDB store the local db files?</b>
+
+On the Mac (Lion), the files are placed in the '/usr/local/var/lib/couchdb' folder by the brew recipe.
+
+<b>How do we backup the couchdb files? </b>
+
+Each database in a couch server is stored in individual files in the /lib/couchdb/ in a database_name.couch.
+
+<b>How to run couch with terminal output</b>
+
+Just start couch without any options. At the command line type > Couchdb
+
+<b>How to run couch in the background</b>
+
+Run the couch startup command using the -b (background command). > couchdb -b. If you need to check and stop the process, use the couchdb -s to get the process PID.
+
+<b>HomeBrew CouchDb Recipe</b>
+
+https://github.com/mxcl/homebrew/blob/master/Library/Formula/couchdb.rb
+
+
+

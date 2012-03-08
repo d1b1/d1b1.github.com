@@ -1,0 +1,61 @@
+---
+layout: post
+title: CouchDB Rewrites
+summary: Hard earned understanding of how to little documented _rewrites feature in couchdb to actually work.
+tag: couchdb rewrites
+status: draft
+---
+
+This feature took more time to get working then any other component in Couch. The combination of sparse documentation and limited working examples in existing projects made it a little hard to address. This post will change over time, as I add in details. I very much do not want to spend time to work out the details of this feature again in the future. So here it goes.
+
+The objective was to create a flickr like API, that hide the actual couch query urls from the end user. We wanted our developers to be able to call a very clean url to access our data and to learn the structure of the different elements. The API will return json for all requests.
+
+Example:
+
+http://couch.local/calendar/people - Get a list of all people in the calendar system. 
+
+http://couch.local/calendar/{person}/{year}/{month}/{day}
+
+http://couch.local/calendar/{person}/{year}/{month}/{day}/tags
+
+http://couch.local/calendar/{person|}/{year}/{month} - Get all the calendar entries for a given person for a given year and month.
+
+http://couch.local/calendar/{person}/week/{year}/{month} - Get all the calendar entries for a given for a given year and week.
+
+http://couch.local/calendar/{person}/changes - Get a list of all the changes added to a given persons calendar. This is for use in letting a user know when new items were added to their calendar, without the need for a full page rebuild. This would enable the developers to build features similar to the 'Pending' calendar requests found in Mac ICal.
+
+We were not comfortable sharing or supporting a large communities use of raw _view and _lis queries. We did not want them running any query they wanted, as the _view might not be configured for some of the options a user in the wild might present. The use of rewrite was our solution to forcing the user into a know set of usage cases.
+
+<h2>Approaches</h2>
+The first approach was to get the couchdb to map a given domain to a specific database design document and its rewrite rules. This took a little work, as there appears to be a bug in the futon editing of rewrite rules. At this time, I think the issue is special characters added during the futon update that prevent the rules from working when the Vhost file is called. 
+
+The second approach was to implement replacement values in the FROM, TO and Query. We used CouchApp to work locally and push the changes to the db. CouchApp has a strict validator for json documents. This means no single quotes. To be save, we stored all values, strings, booleans and numbers in the rewrite.json document with double quotes. 
+
+Don't use the 'To' - If you try to add query files to the 'to' value, couch will not be able to parse the required _list or _view, resulting in a fail. So all work has to happen in the "Query" for each rewrite. The "Query" value will accept all the values defined in the documentation. If you have built your view to use a complex key, then you will need to pass the replacement values from the 'From' to the query using an Array.
+
+{ 
+  "from" : "/calendar/:person",
+  "to" : "",
+  "query" : {
+    "key" : [":person"]
+  }
+}
+
+Get calendar items for a person, on a given day, with a specific tag.
+{ 
+  "from" : "/calendar/:person/:year/:month/:day/:tag",
+  "to" : "",
+  "query" : {
+    "key" : [":person", ":year", ":month", ":day", ":tag" ] // Specific tag
+    or 
+    "key" : [":person", ":year", ":month", ":day", {} ]  // Any tag
+    
+    or 
+    // All entries for a given person for a given month, 
+    "startkey" : [":person", ":year", ":month", ":day", ":tag" ],  
+    "endkey"   : [":person", ":year", ":month", {}, ":tag" ]  
+    
+  }
+}
+
+
