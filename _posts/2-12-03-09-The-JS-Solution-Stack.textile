@@ -1,0 +1,21 @@
+---
+layout: post
+title: The JS Solution Stack
+summary: We often think, read and work with the LAMP and WAMP stacks. Its time to think about a javascript focused stack.
+tag: javascript
+---
+
+LAMP - Linux + Apache + MySQL + PHP
+
+Browser
+Javascript
+Linux
+NoSQL
+CouchDB
+
+Ja + L + Co
+lcj
+
+Linux + CouchDB + Javascript = LCJs, Ljsc lscj
+
+Browser + Javascript + Linux + CouchDB
