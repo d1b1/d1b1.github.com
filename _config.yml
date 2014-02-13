@@ -1,17 +1,12 @@
 base-url:    /
-prose:
-  siteurl: "http://blog.happypath.wz"
-
 pygments:    false
 markdown:    maruku
 permalink:   date
-
 site-title:             Stephan Smith
 bio-fullname:           Stephan Smith
 bio-nickname:           d1b1
 bio-email-address:      stephan.smith.bc93@gmail.com
 bio-phone-number:       +1 617 953 7947
-
 google-web-property-id: UA-735021-17
 disqus-username:        d1b1
 twitter-username:       d1b1ish
@@ -20,5 +15,6 @@ drupal-username:        406333
 github-username:        d1b1
 feedburner-username:    d1b1
 delicious-username:     stephansmith93
-
 enabled-delicious:      true
+prose:
+  rooturl: 'http://blog.happypath.wz'
