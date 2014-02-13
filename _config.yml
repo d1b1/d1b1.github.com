@@ -1,5 +1,6 @@
 base-url:    /
-siteurl: "http://blog.happypath.wz"
+prose:
+  siteurl: "http://blog.happypath.wz"
 
 pygments:    false
 markdown:    maruku
