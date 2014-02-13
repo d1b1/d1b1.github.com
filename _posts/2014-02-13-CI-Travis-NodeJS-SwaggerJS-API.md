@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## CI Setup for Node.js + Express.js + SwaggerJS Rest API
