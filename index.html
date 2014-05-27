@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default
-javascript: 
+javascript:
   - /javascripts/json_search.0.9.0.js
   - /javascripts/home.js
 ---
@@ -13,7 +13,7 @@ javascript:
 </div>
 
 <div id="home">
-  <h2>Postddds</h2>
+  <h2>Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
       {% if post.status != "draft" then %}
@@ -24,7 +24,7 @@ javascript:
       {% endif %}
     {% endfor %}
   </ul>
-  
+
   <h2>Tweets</h2>
   <div id="tweets">
     Loading...
@@ -41,17 +41,17 @@ javascript:
         },
       {% endfor %}
     0];
-  
+
     posts.pop();
   </script>
 
   <script type="text/javascript" src="/javascripts/twitter-1.11.2.js"></script>
-  
+
   <script type="text/javascript">
-    getTwitters('tweets', { 
-      id: '{{ site.twitter-username }}', 
-      count: 5, 
-      enableLinks: true, 
+    getTwitters('tweets', {
+      id: '{{ site.twitter-username }}',
+      count: 5,
+      enableLinks: true,
       clearContents: true,
       template: '%text%'
     });
