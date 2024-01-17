@@ -1,400 +1,456 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="assets/js/color-modes.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
-    <title>Stephan Smith (fCTO w/CISO)</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+<head>
+  <script src="assets/js/color-modes.js"></script>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Stephan Smith (fCTO w/CISO)</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
 
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="pricing.css" rel="stylesheet">
 
-    <!-- Hotjar Tracking Code for https://happypath.soend.com/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3823763,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  <!-- Hotjar Tracking Code for https://happypath.soend.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3823763, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  </head>
-  <body>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
+  <meta property="og:title" content="Your Web Page Title">
+  <meta property="og:description" content="Description of your web page goes here">
+  <meta property="og:image" content="/assets/brand/banner.png">
+</head>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Check</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-  </symbol>
-</svg>
-<div class="container py-3">
-  <header>
-    <div class="d-flex d-none d-md-block flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-        <span class="fs-4">Fractional CTO + CISO</span>
-      </a>
-    </div>
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal text-body-emphasis">
-        I am a factional CTO who helps <b>CEOs</b> solve 
-        problems <b>quickly</b> and <b>practically</b>.
-      </h1>
-      <p class="fs-5 text-body-secondary">
-        As a serial founder, I know the value of rapid solutions, experimentation. I 
-        know the challenge that CEOs have in making good technology decisions. 
-      </p>
-      <a class="btn btn-lg d-block d-md-inline btn-success" target="calendly" href="https://calendly.com/stephan-smith" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
-          <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-        </svg>
-        &nbsp;
-        Schedule
-      </a>
-    </div>
+<body>
 
-    <hr>
-    <div class="row featurette">
-      <div class="col-md-8 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">
-          Stephan Smith
-        </h2>
-        <p>
-          CTO | CISO | Founder
-        </p>
-        <p>
-          Boston based reformed developer. I work in the EST +/- 2 timezones. Recovering 
-          from my last startup, and focusing learnings for other founders.
-          Techstars Boston 2018.
-        </p>
-        <p class="lead">
-          <a href="https://www.linkedin.com/in/stephansmithbc93/" style="color: #000;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg></a>
-          &nbsp;
-          <a href="https://github.com/d1b1" style="color: #000;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
           </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check" viewBox="0 0 16 16">
+      <title>Check</title>
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+  </svg>
+  <div class="container py-3">
+    <header>
+      <div class="d-flex d-none d-md-block flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+          <span class="fs-4">Fractional CTO + CISO</span>
         </a>
+      </div>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">
+          I am a factional CTO who helps <b>CEOs</b> solve
+          problems <b>quickly</b> and <b>practically</b>.
+        </h1>
+        <p class="fs-5 text-body-secondary">
+          As a serial founder, I know the value of rapid solutions and experimentation. I
+          know the challenge that CEOs have in making good technology decisions.
+        </p>
+        <a class="btn btn-lg d-block d-md-inline btn-success" target="calendly"
+          href="https://calendly.com/stephan-smith">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-calendar-check" viewBox="0 0 16 16">
+            <path
+              d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+          </svg>
+          &nbsp;
+          Schedule
+        </a>
+      </div>
+
+      <hr>
+      <div class="row featurette">
+        <div class="col-md-8 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">
+            Stephan Smith
+          </h2>
+          <p>
+            CTO | CISO | Founder
+          </p>
+          <p>
+            Boston based. I work in the EST +/- 2 timezones. Recovering
+            from my last startup, and focusing learnings for other founders.
+            My last company was part of <b>Techstars Boston</b> cohort in 2018.
+            We have benefited from Techstars vision of <b>'Give First'</b>, and
+            always look for ways to give back.
+          </p>
+          <p class="lead">
+            <a href="https://www.linkedin.com/in/stephansmithbc93/" style="color: #000;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+              </svg></a>
+            &nbsp;
+            <a href="https://github.com/d1b1" style="color: #000;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+              </svg>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-3 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="https://media.licdn.com/dms/image/D4E03AQHNaOfxXIwA1w/profile-displayphoto-shrink_400_400/0/1702492829712?e=1710374400&v=beta&t=i7icIxrrlWKgCB_Y2vL-95K4iId0l55IFk6FZAxGJt4">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h2 class="display-6 text-center mb-4">
+          Why use a fractional CTO?
+          </h1>
+          <p class="fs-5 text-body-secondary">
+            You utilize a fractional CTO (aka fCTO) when you can <b>not find</b>, <b>afford</b> or <b>need</b> a
+            full-time, salaried and equity motivated CTO. When you need
+            point solutions, an outside perspective, and options.
+          </p>
+          <p>
+            Every CEO can use an outside tech advisor.
+          </p>
+      </div>
+    </header>
+
+    <main>
+
+      <hr>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h2 class="display-6 text-center mb-4">
+          How I engage.
+        </h2>
+        <p class="fs-5 text-body-secondary">
+          I offer packages and solutions. Packages are monthly recurring
+          services designed to fit into a budget and match business need.
+          Solutions are special products that fit specific needs.
         </p>
       </div>
-      <div class="col-md-3 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://media.licdn.com/dms/image/D4E03AQHNaOfxXIwA1w/profile-displayphoto-shrink_400_400/0/1702492829712?e=1710374400&v=beta&t=i7icIxrrlWKgCB_Y2vL-95K4iId0l55IFk6FZAxGJt4">
+
+      <style>
+        .row.equal {
+          display: flex;
+          display: -webkit-flex;
+          flex-wrap: wrap;
+        }
+      </style>
+      <div class="row equal row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-success" style="height: 100%">
+            <div class="card-header py-3 text-bg-success border-success">
+              <h4 class="my-0 fw-normal">Advisory</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                <!--$2k<small class="text-body-secondary fw-light">/mo</small>-->
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>CEO needs an outside perspective.</li>
+                <li>Weekly calls.</li>
+                <li>Background Research.</li>
+                <li>Not visible to team.</li>
+                <li>&nbsp;</li>
+                <li><b>Recommended</b> starting point.</li>
+              </ul>
+
+            </div>
+            <div class="card-footer" kstyle="border-color: #FFF; background-color: #FFF !important;">
+              <a type="button" class="w-100 btn btn-success" target="_blank"
+                href="https://calendly.com/stephan-smith/introduction">
+                Schedule Time
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm" style="height: 100%">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Point Solutions</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Specific problems.</li>
+                <li>Finite timelines.</li>
+                <li>Set prices.</li>
+                <li>&nbsp;</li>
+                <li>Below are a list of common packages for common startup team <b>challenges</b>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm" style="height: 100%">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Full Engagement</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>When you need an <b>interim CTO</b> to take a day-to-day role.</li>
+                <li>Provide strategy.</li>
+                <li>Run a dev team and process.</li>
+                <li>Tune a tech stack.</li>
+                <li>Price dependent upon time and level of commitment.</li>
+                <li>&nbsp;</li>
+                <li>Often is a combination of all the packages and <b>hands-on</b> operations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <hr>
-    
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <a name="packages"></a>
+
       <h2 class="display-6 text-center mb-4">
-        Why use a fractional CTO?
-      </h1>
-      <p class="fs-5 text-body-secondary">
-        You utilize a fractional CTO (fCTO) when you can <b>not find</b>, <b>afford</b> or <b>need</b> a 
-        full-time, salaried and equity motivated CTO. When you need 
-        point solutions, an outside perspective, and options.
-      </p>
-      <p>
-        Every CEO can use an outside tech advisor.
-      </p>
-    </div>
-  </header>
-
-  <main>
-
-    <hr> 
-
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h2 class="display-6 text-center mb-4">
-        How I engage.
+        Point Solutions
       </h2>
-      <p class="fs-5 text-body-secondary">
-        I offer packages and solutions. Packages are monthly recurring
-        services designed to fit into a budget and match business need.
-        Solutions are special products that fit specific needs.
-      </p>
-    </div>
 
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Advisory</h4>
-          </div>
-          <div class="card-body" style="height: 300px;">
-            <h1 class="card-title pricing-card-title">$2k<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>CEO needs an outside perspective.</li>
-              <li>Weekly calls</li>
-              <li>Research</li>
-              <li>Not visible to team.</li>
-              <li><b>Recommended</b> starting point.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Point Solutions</h4>
-          </div>
-          <div class="card-body" style="height: 300px;">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Specific problems</li>
-              <li>Finite timelines</li>
-              <li>Set prices.</li>
-              <li>Below are a list of common packages to address know startup challenges.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Full Engagement</h4>
-          </div>
-          <div class="card-body" style="height: 300px;">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>When you need an interim CTO to take a day to day role.</li>
-              <li>Provide strategy.</li>
-              <li>Run a dev team and process</li>
-              <li>Tune a tech stack</li>
-              <li>Price dependent upon time and level of commitment</li>
-              <li>All the packages!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a name="packages"></a>
-
-    <h2 class="display-6 text-center mb-4">
-      Point Solutions
-    </h2>
-
-    <div class="row mb-3">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Tech-Stack Review Package</h4>
-          </div>
-          <div class="card-body">
-            <p>
-              When the <b>CEO</b> needs an outside <b>perspective</b> on whats ready been 
-              built and is looking for deeper insights into the impact of tech 
-              decisions on their vision.
-            </p>
-            <hr>
-            <div class="row">
-              <div class="col-md-3 col-12">
-                 <h1 class="card-title pricing-card-title">
-                  $5k
-                </h1>
-              </div>
-              <div class="col-md-6 col-12">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><b>Timeframe:</b> 2-3 weeks</li>
-                  <li><b>Engagement:</b> 5-10 calls or zoom sessions.</li>
-                  <li><b>Summary:</b>
-                    Bottom up review of existing code, tools, patterns and stack components.
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3 col-12">
-                <a type="button" class="w-100 btn btn-outline-primary" target="_blank" href="https://calendly.com/stephan-smith">
-                  Schedule a Review
-                </a>
+      <div class="row mb-3">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Tech-Stack Review Package</h4>
+            </div>
+            <div class="card-body">
+              <p>
+                "When the <b>CEO</b> needs an outside <b>perspective</b> on what is ready being
+                built and is looking for deeper insights into the impact of tech
+                decisions on revenue."
+              </p>
+              <hr>
+              <div class="row">
+                <div class="col-md-3 col-12">
+                  <h1 class="card-title pricing-card-title">
+                    ~$5k
+                  </h1>
+                </div>
+                <div class="col-md-6 col-12">
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><b>Time frame:</b> 2-3 weeks</li>
+                    <li><b>Engagement:</b> 5-10 calls or zoom sessions.</li>
+                    <li><b>Summary:</b>
+                      Bottom up review of existing code, tools, patterns and stack components.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                  <a type="button" class="w-100 btn btn-outline-primary" target="_blank"
+                    href="https://calendly.com/stephan-smith/tech-stack-review">
+                    Schedule a Review
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    
-    </div>
 
-    <div class="row mb-3">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h3 class="my-0 fw-normal">Agile Tuning Package</h3>
-          </div>
-          <div class="card-body">
-            <p>
-              This package is used by teams who need a <b>CTO</b> level 
-              assessment and tuning of their agile, CI/CD processes and 
-              <b>engineering rigor</b>. When tech teams increase headcount, but the throughput
-              remains the same.
-            </p>
-            <hr>
-            <div class="row">
-              <div class="col-md-3 col-12">
-                 <h1 class="card-title pricing-card-title">
-                  ~$7.5k
-                </h1>
-              </div>
-              <div class="col-md-6 col-12">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><b>Timeframe:</b> ~4 weeks</li>
-                  <li><b>Engagement:</b> 5-10 calls or zoom sessions.</li>
-                  <li>
-                      <b>Summary:</b> 
-                      Set of agile process changes, scored by 
+      <div class="row mb-3">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h3 class="my-0 fw-normal">Agile Tuning Package</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                "When a team need a <b>CTO</b> level
+                assessment and tuning of their agile, CI/CD processes and
+                <b>engineering rigor</b>. When tech teams <b>increase headcount</b>,
+                but the teams throughput remains the same."
+              </p>
+              <hr>
+              <div class="row">
+                <div class="col-md-3 col-12">
+                  <h1 class="card-title pricing-card-title">
+                    ~$7.5k
+                  </h1>
+                </div>
+                <div class="col-md-6 col-12">
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><b>Time frame:</b> ~4 weeks</li>
+                    <li><b>Engagement:</b> 5-10 calls or zoom sessions.</li>
+                    <li>
+                      <b>Summary:</b>
+                      Set of agile process changes, scored by
                       ROI, risk, and timeline impacts.
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-3">
-                <a type="button" class="w-100 btn btn-outline-primary" target="_blank" hredf="https://calendly.com/stephan-smith">
-                  Schedule a Tuning
-                </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                  <a type="button" class="w-100 btn btn-outline-primary" target="_blank"
+                    hredf="https://calendly.com/stephan-smith">
+                    Schedule a Tuning
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="row mb-3">
@@ -404,32 +460,33 @@
               <h2 class="my-0 fw-normal">SOC Audit Package</h2>
             </div>
             <div class="card-body">
-                <p>
-                  This package is often needed by <b>Leadership teams</b> who 
-                  need to speed up their SOC work to unblock their enterprise 
-                  sales, train their team and demonstrate leadership around 
-                  data security concerns.
-                </p>
+              <p>
+                "When a <b>Leadership teams</b>
+                needs to speed up their SOC work to <b>enable</b> their enterprise
+                sales, train their team and demonstrate leadership around
+                data security concerns."
+              </p>
               <hr>
               <div class="row">
                 <div class="col-md-3 col-12">
-                   <h1 class="card-title pricing-card-title">
-                    $6.5k<small class="text-body-secondary fw-light">/mo</small>
+                  <h1 class="card-title pricing-card-title">
+                    ~$6.5k<small class="text-body-secondary fw-light">/mo</small>
                   </h1>
                 </div>
                 <div class="col-md-6 col-12">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li><b>Timeframe:</b> 2-3 months</li>
+                    <li><b>Time frame:</b> 2-3 months</li>
                     <li><b>Engagement:</b> 5-10 calls or zoom sessions.</li>
                     <li>
-                        <b>Summary:</b> 
-                        Set of agile process changes, scored by 
-                        ROI, risk, and timeline impacts.
+                      <b>Summary:</b>
+                      Set of agile process changes, scored by
+                      ROI, risk, and timeline impacts.
                     </li>
                   </ul>
                 </div>
                 <div class="col-12 col-md-3">
-                  <a type="button" class="w-100 btn btn-outline-primary" target="_blank" href="https://calendly.com/stephan-smith">
+                  <a type="button" class="w-100 btn btn-outline-primary" target="_blank"
+                    href="https://calendly.com/stephan-smith/need-a-fraction-ciso">
                     Schedule SOC Prep
                   </a>
                 </div>
@@ -438,180 +495,204 @@
           </div>
         </div>
 
-    </div>
-
-    <a name="solutions"></a>
-
-    <h2 class="display-6 text-center mb-4">My Perspective</h2>
-
-    <p class="fs-5 text-body-secondary">
-      Startups are all unique. But the pathways, pitfalls and 
-      blocks are not. Bending the universe to form a solution
-      requires constant reinvention. To understand how I approach
-      the startup condition, here are some of the assumptions and 
-      solutions I find, and apply.
-    </p>
-
-
-    <div class="table-responsive">
-      <table class="table text-centerk">
-        <thead>
-          <tr>
-            <th class="d-none d-md-table-cell" style="width: 15%;">&nbsp;</th>
-            <th style="width: 40%;">&nbsp;</th>
-            <th style="width: 5%;">&nbsp;</th>
-            <th style="width: 40%;">&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="d-none d-md-table-cell text-start">&nbsp</th>
-            <th>Observed</th>
-            <th>&nbsp;</th>
-            <th>Solution</th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr >
-            <th scope="row" class="d-none d-md-table-cell text-start">Context</th>
-            <td>
-              When a founding team is heads down and building, context is hard 
-              to get, and learnings can get lost in the rush to market.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              Context needs to included. A fractional CTO can help 
-              bridge the gap. Build in source of new patterns.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="d-none d-md-table-cell text-start">Perspective</th>
-            <td>
-              Founding teams build on what they know when they 
-              get started. When driving for revenue, its hard to 
-              justify a huge skills or framework refactor.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              Changing tech stack and processes requires 
-              a different technique, patterns and approaches.
-            </td>
-          </tr>
-          <tr >
-            <th scope="row" class="d-none d-md-table-cell text-start">Mental</th>
-            <td>
-              What got a startup to a specific point, 
-              does not always mean it will work for whats 
-              next.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              Listing and managing tech assumptions 
-              can help break 'this worked' mental patterns.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="d-none d-md-table-cell text-start">Myths</th>
-            <td>
-              Startup founders and tech leaders often have myths and tropes that 
-              drive tech decisions.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              The less tech used the better! No code is cheap, fast and 
-              too valuable to pass up or ignore. Startups raise money to hire tech.
-              Tech costs often do not correlate to revenue growth.
-            </td>
-          </tr>
-          <tr >
-            <th scope="row" class="d-none d-md-table-cell text-start">Experimentation</th>
-            <td>
-              Founders are often have myths that 
-              drive tech decisions.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              Promoting an <b>experiment and measure</b> mindset
-              can help break the assumptions deadlock that leads
-              startups to miss productivity gains.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="d-none d-md-table-cell text-start">Tuning</th>
-            <td>
-              Teams grow, but founders can find productivity
-              remaining stagnant. Forcing a <b>low-code</b> approach
-              can help find faster solution. 
-            </td>
-            <td>&rarr;</td>
-            <td>
-              Teams and processes need tuning. They need to 
-              assessed against metrics that align with milestones.
-            </td>
-          </tr>
-          <tr >
-            <th scope="row" class="d-none d-md-table-cell text-start">Code</th>
-            <td class="text-left">
-              Code is the default for B2B startups. We raise 
-              VC funds to hire coders. We give equity to find 
-              tech resources. CEOs think they need dedicated 
-              tech resources to build a business.
-            </td>
-            <td>&rarr;</td>
-            <td>
-              <b>Code === Capital Expenditure</b>. A focus on tech first solutions
-              can cloud learnings, slow down an idea, and kill 
-              an idea. No Code, Glue and Duct tape solutions 
-              are the way to break the tech bind.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2 class="display-6 p-3 text-center mb-4">
-        TLDR
-      </h2>
-      <p class="fs-5 text-body-secondary">
-        If you have read this far, then what you should intuit is that I apply 
-        a startup lense to my work. I use the  <b>"low effort to high-impact"</b> filter to all 
-        decisions, assessments and recommendations. This approach provides founders with the 
-        tools to balance their <b>limited resources</b> to get <b>grow revenue</b>. 
-        I look for tech solutions that provide practical and <b>stage relevant solutions</b>.
-      </p>
-      <p class="fs-5 text-body-secondary">
-        As a tech founder, I know the <b>pain</b> of having to make decisions based on limited information, time 
-        and resources.
-      </p>
-      <p class="fs-5 text-body-secondary">
-        And when needed I roll up my developer sleeves and dig in: configure cloud providers, debug 
-        CI/CD processes, upgrade libraries, integrate an auth provider and <b>write code</b>.
-      </p>
-
-
-      <hr>
-
-      <i>
-        References from past and current clients are available, after an initial 
-        screening call. Client data and relationships are all covered 
-        by NDAs. No leaks.
-      </i>
-
-      <br>
-      <br>
-
-    </div>
-
-  </main>
-
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <small class="d-block mb-3 text-body-secondary">&copy; 2023</small>
+        <small>
+          <i>
+            * Package prices are dependent upon size of your team.
+          </i>
+        </small>
       </div>
-    </div>
-  </footer>
-</div>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    </body>
+      <a name="solutions"></a>
+
+      <h2 class="display-6 text-center mb-4">My Perspective</h2>
+
+      <p class="fs-5 text-body-secondary">
+        Startups are all unique, but the pathways, pitfalls and
+        blockers are not. Constant reinvention is a requirement
+        to turn a vision into a reality. To understand how I approach
+        the startup condition, here are some of the patterns and
+        anti-patterns I have encountered and how I address them.
+      </p>
+
+      <div class="table-responsive">
+        <table class="table text-centerk">
+          <thead>
+            <tr>
+              <th class="d-none d-md-table-cell" style="width: 15%;">&nbsp;</th>
+              <th style="width: 40%;">&nbsp;</th>
+              <th style="width: 5%;">&nbsp;</th>
+              <th style="width: 40%;">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">&nbsp</th>
+              <th>Observed</th>
+              <th>&nbsp;</th>
+              <th>Solution</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Context</th>
+              <td>
+                When a founding team is heads down and building, context is hard
+                to get, and learnings can get lost in the rush to market.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                Context needs to included. A fractional CTO can help
+                bridge the gap. Build in source of new patterns.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Perspective</th>
+              <td>
+                Founding teams build on what they know when they
+                get started. When driving for revenue, its hard to
+                justify a huge skills or framework refactor.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                Changing tech stack and processes requires
+                a different technique, patterns and approaches.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Mental</th>
+              <td>
+                "What got you here, will not get you there"
+                This is a common warning to founders. Your assumptions
+                about your customers and their needs can be a huge
+                blocker to getting to <b>revenue positive</b>.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                A framework for scoring solutions can help
+                break the founder assumption problem and
+                breaking the 'this worked so far' mental
+                pattern.
+                <br>
+                <br>
+                And tech debt is not bad, its just 
+                <a X-href="tech-debt-is-misunderstood" class="link-secondary" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="If tech debt is worrying you, rethink it. Read about how I help with this">misunderstood!</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Myths</th>
+              <td>
+                Startup founders and tech leaders often have myths and tropes that
+                drive tech decisions.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                The less tech used the better! 
+                <a X-href="adding-no-code-to-your-stack" class="link-secondary" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Developers often poop-poop no-code solutions, for valid reasons, but ignore the business values.">No-code patterns</a> 
+                is cheap, fast and too valuable to pass up or ignore. Startups raise money to hire tech.
+                Tech costs often do not correlate to revenue growth. Tech decisions
+                can enable teams break assumptions about their customers needs.
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Experimentation</th>
+              <td>
+                Founders know that experiments are important, but
+                find that making them happen can challenge an agile
+                team.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                Promoting an <b>experiment and measure</b> mindset
+                can help break the assumptions deadlock that leads
+                startups to miss productivity gains.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">Tuning</th>
+              <td>
+                Teams grow, but founders can find productivity
+                remaining <b>stagnant</b>. How can things no speed
+                up with more people working on a problem?
+              </td>
+              <td>&rarr;</td>
+              <td>
+                Teams and processes need tuning. They need to
+                assessed against metrics that align with milestones.
+                Frameworks can help score solutions. Frameworks
+                can promote tech decision making patterns that align
+                with revenue growth.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="d-none d-md-table-cell text-start">
+                Code
+              </th>
+              <td class="text-left">
+                Code is the default for B2B startups. We raise
+                VC funds to hire coders. We give equity to find
+                tech resources. CEOs think they need dedicated
+                tech resources to build a business.
+              </td>
+              <td>&rarr;</td>
+              <td>
+                <b data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="A lot of tech decisions look different when you classify code as a 'capital expenditure', not an investment. Rent before you buy.">Tech is a Capital Expenditure!</b> Treat it that way.
+                A focus on tech first solutions can impede learnings, and
+                burn valuable funding. No Code, Glue Code and Duct-tape solutions
+                are the way to break the tech bind.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="display-6 p-3 text-center mb-4">
+          TLDR
+        </h2>
+        <p class="fs-5 text-body-secondary">
+          If you have read this far, then what you should intuit is that I apply
+          a startup lens to my work. I use the <b>"low effort to high-impact"</b> filter to all
+          decisions, assessments and recommendations. This approach provides founders with the
+          tools to balance their <b>limited resources</b> to get <b>revenue positive</b>.
+          I look for tech solutions that provide practical and <b>stage-relevant solutions</b>.
+        </p>
+        <p class="fs-5 text-body-secondary">
+          As a tech founder, I know the <b>pain</b> of having to make decisions based on limited information, time
+          and resources.
+        </p>
+        <p class="fs-5 text-body-secondary">
+          And when needed I roll up my sleeves and dig in: configure cloud providers, debug
+          CI/CD processes, upgrade libraries, integrate an auth provider and just simply:
+          <a data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="I love an excuse to code! Ask me about my AI networking project to make LinkedIn do its job."><b>write code</b></a>.
+        </p>
+
+        <hr>
+
+        <i>
+          References from past and current clients are available, after an initial
+          screening call. Client data and relationships are all covered by NDAs. No leaks.
+        </i>
+        <br>
+        <br>
+      </div>
+
+    </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3 text-body-secondary">&copy; 2023</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+
+</body>
 </html>
