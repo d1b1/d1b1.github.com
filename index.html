@@ -37,7 +37,10 @@
   <meta property="og:description" content="When your CEO needs help making tech decisions that impact revenue.">
   <meta property="og:image" content="assets/brand/banner4.png">
   <script>
-    if (window.location.hostname !== 'd1b1.github.io') window.location.href = 'https://d1b1.github.io';
+    console.log(window.location)
+    if (window.location.hostname !== 'localhost') {
+      if (window.location.hostname !== 'd1b1.github.io') window.location.href = 'https://d1b1.github.io';
+    }
   </script>
 </head>
 
