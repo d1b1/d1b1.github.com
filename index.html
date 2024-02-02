@@ -37,9 +37,10 @@
   <meta property="og:description" content="When your CEO needs help making tech decisions that impact revenue.">
   <meta property="og:image" content="assets/brand/banner4.png">
   <script>
-    console.log(window.location)
+    const to = 'https://d1b1.github.io';
     if (window.location.hostname !== 'localhost') {
-      if (window.location.hostname !== 'd1b1.github.io') window.location.href = 'https://d1b1.github.io';
+      if (window.location.hostname !== 'd1b1.github.io') window.location.href = to;
+      if (window.location.pathname.includes('fractionCTO')) window.location.href = to;
     }
   </script>
 </head>
