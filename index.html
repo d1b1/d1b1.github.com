@@ -37,7 +37,12 @@
   <meta property="og:description" content="When your CEO needs help making tech decisions that impact revenue.">
   <meta property="og:image" content="assets/brand/banner5.png">
 
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8b23c794-97b3-4c46-8564-17512d23c7aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8b23c794-97b3-4c46-8564-17512d23c7aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly link widget end -->
 
 </head>
 
@@ -148,7 +153,7 @@
         </p>
         <br>
         <a class="btn btn-lg d-block d-md-inline btn-success" target="calendly"
-          href="https://calendly.com/stephan-smith?utm_source=site&utm_medium=cta&utm_campaign=calendly">
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-calendar-check" viewBox="0 0 16 16">
             <path
@@ -861,7 +866,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <a class="btn btn-lg btn-success" target="calendly"
-              href="https://calendly.com/stephan-smith?utm_source=site&utm_medium=cta&utm_campaign=calendly">
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-calendar-check" viewBox="0 0 16 16">
                 <path
