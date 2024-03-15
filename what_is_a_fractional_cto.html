@@ -49,11 +49,15 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PZBLYK6BX"></script>
 <script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-2PZBLYK6BX');
+  } else {
+    console.log('GA is off.');
+  }
 </script>
 
 <body>
@@ -331,10 +335,10 @@
 
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <small class="d-block mb-3 text-body-secondary">&copy; 2024 StephanSmith.Solutions</small>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <small class="d-block mb-3 text-body-secondary">
                         55 Court Street, 2nd Floor<br>
                         Boston, MA 02108<br>
@@ -343,6 +347,13 @@
                             (Directions to Venture Lane)
                         </a>
                     </small>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="/">Home</a>
+                    <br>
+                    <a href="/what_is_a_fractional_cto">What is a fCTO?</a>
+                    <br>
+                    <a href="/projects">Code Porfolio</a>
                 </div>
             </div>
         </footer>

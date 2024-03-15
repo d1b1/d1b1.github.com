@@ -49,11 +49,15 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PZBLYK6BX"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-2PZBLYK6BX');
+    gtag('config', 'G-2PZBLYK6BX');
+  } else {
+    console.log('GA is off.');
+  }
 </script>
 
 <body>
@@ -153,7 +157,7 @@
         </p>
         <br>
         <a class="btn btn-lg d-block d-md-inline btn-success" target="calendly"
-        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-calendar-check" viewBox="0 0 16 16">
             <path
@@ -523,7 +527,7 @@
                     to <b>enable</b> an investment pitch, technology decision or simply prove
                     an idea will work."
                   </p>
-                </div> 
+                </div>
                 <div class="col-md-3 col-12">
                   <span class="badge text-bg-success">No-Code</span>
                   <span class="badge text-bg-success">Low-Code Patterns</span>
@@ -866,7 +870,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <a class="btn btn-lg btn-success" target="calendly"
-            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephan-smith/introduction'});return false;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-calendar-check" viewBox="0 0 16 16">
                 <path
