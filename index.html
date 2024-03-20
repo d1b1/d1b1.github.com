@@ -39,9 +39,14 @@
 
   <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8b23c794-97b3-4c46-8564-17512d23c7aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <!-- Calendly link widget begin -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  
   <!-- Calendly link widget end -->
 
 </head>
@@ -245,6 +250,273 @@
           services designed to fit into a budget and match business need.
           Solutions are special products or services that fit specific needs.
         </p>
+      </div>
+
+      <hr>
+
+      <div class="pricing-headerk pb-3 kpb-md-4 mx-auto" style="width: 90% !important;">
+
+        <h2 class="display-6 text-center mb-4">
+          What tools do I use?
+        </h2>
+
+        <p class="fs-5 pb-3 text-body-secondary text-center">
+          Every application is unique, and fitting the tech <br>
+          stack to the project and the business need takes experience.
+          <span>
+        </p>
+
+        <style>
+          .fullList { 
+            display: none; 
+          }
+          .fullList td { 
+            background-color: #DFDFDF;
+          }
+          .button-label { display: none }
+          .features  {
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            -moz-column-count: 2;    /* Firefox */
+            column-count: 2;         /* standard syntax */
+          }
+          .badge { border: 1px solid green; padding: 4px;}
+        </style>
+  
+        <!-- <script>
+          $(document).on('click', '.toggleAll', function() {
+            jQuery('.fullList').fadeIn();
+            jQuery('.buttonEl').hide();
+          });
+        </script> -->
+
+        <table class="table" style="width: 100%;">
+          <tr>
+            <td width="20%">
+              <b>The Back End</b>
+            </td>
+            <td width="45%">
+              <ul class="features">
+                <li>
+                  Fastify &ExpressJS with Node.js
+                </li>
+                <li>
+                  NestJS with Node.js
+                </li>
+                <li>
+                  Flask with Python
+                </li>
+                <li>
+                  Gin with GoLang <span class="badge text-success">&hearts;</span>
+                </li>
+              </ul>
+            </td>
+            <td width="35%">
+              Backend systems provide the business logic, identity
+              management and control processes.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>The Front End</b>
+            </td>
+            <td>
+              <ul class="features">
+                <li>
+                  React <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  Vue.js (2/3)
+                </li>
+                <li>
+                  AngularJS
+                </li>
+                <li>
+                  Retool for No-code Admin UIs
+                </li>
+              </ul>
+            </td>
+            <td>
+              When a UI is needed solve a problem, I start 
+              with no-code and phase in the minimum front end 
+              framework.
+            </td>
+          </tr>
+          <tr class="fullList">
+            <td>
+              <b>Persistence</b>
+            </td>
+            <td>
+              <ul class="features">
+                <li>
+                  MongoDB <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  Firebase RTD
+                </li>
+                <li>
+                  Firestore
+                </li>
+                <li>
+                  Suprabase
+                </li>
+                <li>
+                  Postgres <span class="badge text-success">&hearts;</span>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                When storage is needed, I default to SQLLite, then 
+                scale into schema vs No-SQL depending upon the need.
+              </p>
+              <!--  
+              <p>
+                <a href="/articles/databases_for_rapid_solutions">Databases for rapid solutions</a>
+              </p>
+              -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>The Code Delivery</b>
+            </td>
+            <td>
+              <ul class="features">
+                <li>
+                  Codeship.io
+                </li>
+                <li>
+                  Github Actions <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  Travis CI
+                </li>
+                <li>AWS Beanstock</li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                The landscape for deployment is rich and mature. 
+              </p>
+              <!--  
+              <p>
+                <a href="/articles/turn_key_deployment_options">Turn-key Deployment options</a>
+              </p>
+              -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>The Cloud</b>
+            </td>
+            <td>
+              <ul class="features">
+                <li>
+                  Fly.io <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  Heroku
+                </li>
+                <li>
+                  Firebase Hosting
+                </li>
+                <li>
+                  AWS Cloudfront
+                </li>
+                <li>
+                  Vercel
+                </li>
+                <li>
+                  Render.com (UIs)
+                </li>
+                <li>
+                  Github Pages
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                Hosting on EC and burning budget and credits 
+                is the last step. Start with hosting options that 
+                avoid devOps requirements.
+              </p>
+              <!--  
+              <p>
+                <a href="/articles/low_friction_hosting_patterns">Low Friction Hosting Patterns</a>
+              </p>
+              -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Operations</b>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  Slack Integrations <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  FreshDesk
+                </li>
+                <li>
+                  New Relic
+                </li>
+                <li>
+                  Loggly
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                Operations is the foundation of any scalable solution. Empowering 
+                a team with access and tooling that met them where they are is 
+                key to proving a technology stack.
+              </p>
+              <!--  
+              <p>
+                <a href="/articles/slack_power_patterns">Slack Solutions</a>
+              </p>
+              -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Rapid Tool Recipies</b>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://platformatic.dev" target="_blank">Platformatic.dev</a> for rapid APIs <span class="badge text-success">&hearts;</span>
+                </li>
+                <li>
+                  <a href="https://www.prisma.io/" target="_blank">Prisma</a> for scalable schemas.
+                </li>
+                <li>
+                  <a href="https://www.algolia.com/" target="_blank">Algolia</a> for facetted search.
+                </li>
+                <li>
+                  <a href="https://www.retool.com/" target="_blank">Retool</a> for codeless admin UIs.
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                The right technology stack items can drive 
+                innovation and scalable patterns.
+              </p>
+              <!--  
+              <p>
+                <a href="/articles/databases_for_rapid_solutions">Databases for rapid solutions</a>
+              </p>
+              -->
+            </td>
+          </tr>
+        </table>
+        <i><span class="badge text-success">&hearts;</span> = Current Go To.</i>
+
+        <br>
+
       </div>
 
       <!--
@@ -751,25 +1023,30 @@
           Some References
         </h2>
 
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <a href="https://www.linkedin.com/in/jineshjpatel/" target="linkedIn1"><img alt="Jinesh Patel"
-                src="assets/clients/jinesh-patel.png" class="float-start testimonial-avatar"></a>
-            <div>
-              <b>Jinesh Patel</b><br> CEO & Founder of <a href="http://uptimehealth.com" class="link-secondary"
-                target="UH"> Uptime Health</a>
+      
+          <!--  
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <a href="https://www.linkedin.com/in/jineshjpatel/" target="linkedIn1"><img alt="Jinesh Patel"
+                  src="assets/clients/jinesh-patel.png" class="float-start testimonial-avatar"></a>
+              <div>
+                <b>Jinesh Patel</b><br> CEO & Founder of <a href="http://uptimehealth.com" class="link-secondary"
+                  target="UH"> Uptime Health</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <p>
+                “Stephan is a great source of tech knowledge. As a founder himself,
+                he know how to strategize around revenue while ensuring that the
+                technology you deploy is appropriate for your stage. I have come to
+                rely on Stephan as a sounding board for ideas and appreciate his
+                thoughtful insights and conversations."
+              </p>
             </div>
           </div>
-          <div class="col-12 col-md-8">
-            <p>
-              “Stephan is a great source of tech knowledge. As a founder himself,
-              he know how to strategize around revenue while ensuring that the
-              technology you deploy is appropriate for your stage. I have come to
-              rely on Stephan as a sounding board for ideas and appreciate his
-              thoughtful insights and conversations."
-            </p>
-          </div>
           <hr>
+          -->
+
           <div class="row">
             <div class="col-12 col-md-4">
               <a href="https://www.linkedin.com/in/jineshjpatel/" target="linkedIn2"><img alt="Yvan Castilloux"
@@ -788,7 +1065,9 @@
               </p>
             </div>
           </div>
+
           <hr>
+
           <div class="row">
             <div class="col-12 col-md-4">
               <a href="https://www.linkedin.com/in/michelle-chao/" target="linkedIn3"><img alt="Michelle Chao"
@@ -807,7 +1086,9 @@
               </p>
             </div>
           </div>
+
           <hr>
+
           <div class="row">
             <div class="col-12 col-md-4">
               <a href="https://www.linkedin.com/in/jessemarple/" target="linkedIn4"><img alt="Jesse Marple"
