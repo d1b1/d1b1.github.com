@@ -117,4 +117,4 @@ layout: default
     </p>
 </div>
 
-[Back](/recipies)
+[Back](/recipes)

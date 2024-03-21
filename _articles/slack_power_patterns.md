@@ -154,4 +154,4 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
     </p>
 </div>
 
-[Back](/recipies)
+[Back](/recipes)

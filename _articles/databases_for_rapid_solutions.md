@@ -95,4 +95,4 @@ need to solve scaling issues, and do not want to recode things.
     </p>
 </div>
 
-[Back](/recipies)
+[Back](/recipes)

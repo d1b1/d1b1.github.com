@@ -81,4 +81,4 @@ long before business or scale is an issue.
  hr { border: 1px solid #DFDFDF; }
 </style>
 
-[Back](/recipies)
+[Back](/recipes)

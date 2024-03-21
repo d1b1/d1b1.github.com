@@ -279,4 +279,4 @@ aligned to the customers needs.
     </p>
 </div>
 
-[Back](/recipies)
+[Back](/recipes)
