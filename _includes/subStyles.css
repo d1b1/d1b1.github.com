@@ -1,0 +1,20 @@
+
+<style>
+    p { font-size: 17px; }
+
+    .tech-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+    }
+
+    .ceo-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+    }
+</style>
