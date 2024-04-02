@@ -17,7 +17,6 @@
   <link href="/assets/css/min.css" rel="stylesheet">
   <link href="/assets/css/pricing.css" rel="stylesheet">
   <link rel="manifest" href="/assets/manifest.json">
-
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -36,9 +35,9 @@
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
 
-  <meta property="og:title" content="devCTO Stephan Smith">
-  <meta property="og:description" content="When your CEO needs help making tech decisions that impact revenue.">
-  <meta property="og:image" content="/assets/brand/banner5.png">
+  <meta property="og:title" content="{{ page.linkCardTitle | default: "devCTO Stephan Smith" }}">
+  <meta property="og:description" content="{{ page.linkCardDesc | default: "When your CEO needs help making tech decisions that impact revenue." }}">
+  <meta property="og:image" content="{{ page.linkCard | default: "/assets/brand/banner5.png" }}">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

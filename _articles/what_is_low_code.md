@@ -13,7 +13,6 @@ It's not new. Ionic built a mobile app builder in 2010 that enables user
 with a little knowledge of what they need, without the learning curves that 
 come with full native mobile application development.
 
-
 <style>
     .special { color: red; font-size: 18px; border: 1px solid red; }
 </style>
