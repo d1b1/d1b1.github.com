@@ -1,7 +1,8 @@
 ---
 title: Slack Power Patterns
 layout: default
-subtitle: Most people look past the value of slack in building solutions. Don't.
+subtitle: Most people look past the value of Slack in building solutions. Don't.
+published: false
 ---
 
 {% include subStyles.css %}
@@ -11,9 +12,9 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
         The CEO TL;DR
     </h5>
     <p>
-        Slack is free. When you hire a CFO, they will love it. And it 
-        is very easy to onboard new staff. Its better than email, and 
-        less agreesive then SMS.
+        Slack is free. When you hire a CFO, they will love it. And it
+        is very easy to onboard new staff. It's better than email, and
+        less aggressive then SMS.
     </p>
 </div>
 
@@ -23,7 +24,7 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
 
 <p>
     Most people would not describe Slack as a no-code tool. But if you reframe
-    what it does, how it can be used and its longevity in your techstack it becomes 
+    what it does, how it can be used and its longevity in your tech-stack it becomes
     a power tool.
 </p>
 
@@ -36,9 +37,9 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
 </h5>
 
 <p>
-    No startup wants to build device or OS specific solutions, 
-    if they can help it. This might seem strange to call out, 
-    but it is; slack works out of the box. 
+    No startup wants to build device or OS-specific solutions,
+    if they can help it. This might seem strange to call out,
+    but it is; Slack works out of the box. 
 </p>
 
 <hr>
@@ -71,10 +72,10 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
     4. Slack Forms
 </h5>
 <p>
-    Slack support custom forms. This means its starts to drop into the no-code/low-code
+    Slack supports custom forms. This means it starts to drop into the no-code/low-code
     category of solutions. To see the value, take a look at their library of templates and
     tools for <a href="https://app.slack.com/block-kit-builder"> Builder Tool</a> processes.
-    This tool will let you build sample forms, and send them to slack to try out.
+    This tool will let you build sample forms, and send them to Slack to try out.
 </p>
 
 <div class="row">
@@ -99,9 +100,9 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
 </h5>
 
 <p>
-    This is a power tool that some slack users, usually when they are not familiar 
-    with the concept of command line tools, overlook. Slack comes with a ton of command 
-    to do starndard slack-like activities: send a message etc. But it also support 
+    This is a power tool that some slack users, usually when they are not familiar
+    with the concept of command line tools, overlook. Slack comes with a ton of command
+    to do standard Slack-like activities: send a message etc. But it also supports
     allowing you to build your own set of command line options.
 </p>
 
@@ -127,13 +128,13 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
 
 <p>
     If you think in terms of replacement value, then Slack can be a stable, 
-    scalable and cost effective tool. No need to build a React.js front end, 
-    no need to write Auth/Login code. Not need to host or support the codebase.
+    scalable and cost-effective tool. No need to build a React.js front end, 
+    no need to write Auth/Login code. No need to host or support the codebase.
 </p>
 
 <p>
-    You might need to setup a simple API, and host is somewhere, Firebase Functions, AWS
-    Lambda. The cost of a few hours of serverless coding, can offset the larger costs 
+    You might need to set up a simple API and host our application using: Firebase Functions, AWS
+    Lambda. The cost of a few hours of serverless coding can offset the larger costs
     of building and supporting a UI codebase for years to come.
 </p>
 
@@ -149,9 +150,9 @@ subtitle: Most people look past the value of slack in building solutions. Don't.
         Tech Note
     </h5>
     <p>
-        Slack is free safe to use, support 2FA and easy to collect audit evidence 
-        for. Enable and force 2FA for your users gives you security from step on.
+        Slack is free safe to use, supports 2FA and enables audit evidence.
+        I recommend you 'Enable & Enforce 2FA' for your users gives you security from step on.
     </p>
 </div>
 
-[Back](/recipes)
+{% include articleFooter.html %}

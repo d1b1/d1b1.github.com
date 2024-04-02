@@ -1,0 +1,21 @@
+
+
+<div class="row mt-5">
+  <div class="col-6">
+
+    {% if page.previous %}
+      &larr; <a href="{{ page.previous.url | relative_url }}">Previous: {{ page.previous.title }}</a>
+    {% else %}
+      &larr; <a href="/recipes">Back</a>
+    {% endif %}
+
+  </div>
+  <div class="col-6 text-end">
+
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }}</a> &rarr;
+    {% endif %}
+
+  </div>
+</div>
+

@@ -1,27 +1,29 @@
 ---
-title: What is Low-Code?
-subtitle: No-code has been around a while, and its maturing fast. But it has problems. SAS vendor lock-in concerns, scalability and supportability.
+title: What is Low-Code? vs No-code?
+subtitle: No-code has been around for years, and it's maturing fast. It has only gotten truly effective in the last year years. It has problems. SAS vendor lock-in concerns, scalability and supportability.
 layout: default
+published: false
 ---
-
+ 
 {% include subStyles.css %}
 
-<p>
-    No-Code is a term that decribes a suite of Sas products that allow for 
-    the building of workflows, user internaces and tools, with then for code. 
-    Its not new. Ionic built a mobile app builder in 2010 that enable user 
-    with a little knowledge of what they need, without the learning curves that 
-    come with full native mobile application development.
-</p>
+No-Code is a term that describes a suite of Sas products that allow for 
+the building of workflows, user interfaces and tools, with than for code. 
+It's not new. Ionic built a mobile app builder in 2010 that enables user 
+with a little knowledge of what they need, without the learning curves that 
+come with full native mobile application development.
 
-<p>
-    There is plenty of bad things said about no-code. Some is true, but some 
-    is not. This is a break down of no-code, list of vendors. But more importantly
-    it outline how an approach to 'low-code' can gain the benefits of both 
-    approaches.
-</p>
 
-<div class="ceo-note">
+<style>
+    .special { color: red; font-size: 18px; border: 1px solid red; }
+</style>
+
+There are plenty of bad things said about no-code. Sometimes these concerns can be true, but some are not. This is a breakdown of no-code, list of vendors. But more importantly,
+it outlines how an approach to 'low-code' can gain the benefits of both
+approaches.
+
+
+<div class="ceo-note mt-2 mb-5">
     <h5>
         Is No-Code IP?
     </h5>
@@ -35,9 +37,9 @@ layout: default
 
 ##### SMB vs Enterprise Vendors
 
-As with any marketplace where money is being made lowerin the cost of code 
-ownership, there is a huge range of solutions, aimed at different segemetns. Some
-focus on SMBs, and other focus on larger enterprise clients and government agencies.
+As with any marketplace where money is being made lower the cost of code 
+ownership, there is a huge range of solutions, aimed at different segments. Some
+focus on SMBs, and others focus on larger enterprise clients and government agencies.
 
 <img src="/assets/images/bubble.png" width="170" class="img-responsive img-thumbnail float-start">
 &nbsp;
@@ -48,54 +50,46 @@ focus on SMBs, and other focus on larger enterprise clients and government agenc
 
 ##### Enterprise Solutions
 
-<p>
-    Domo, Outsystems are two examples of solutions targeting the enterprise market. 
-    When a vendor leads with SOC and security concerns, its a clear sign they are speaking 
-    to the CIO and CISO at large companies, who can block a vendor from their organizations.
-    There are fewer of these vendors then your might expect.
-</p>
+Domo, OutSystems are two examples of solutions targeting the enterprise market. 
+When a vendor leads with SOC and security concerns, it's a clear sign they are speaking 
+to the CIO and CISO at large companies, who can block a vendor from their organizations.
+There are fewer of these vendors than your might expect.
 
-<p>
-    The ecosystems for no-code for SMBs is huge. This is not full list, but there 
-    are some standouts: Bubble.com, Retool.com, ddd.com
-</p>
+The ecosystems for no-code for SMBs is huge. This is not a full list, but there 
+are some standouts: Bubble.com, Retool.com, ddd.com
 
-<p>
-    A good criteria to use when assessing a given no-code Sas product is how they 
-    manage code changes. Being able to clone and manage changes in a git repo a huge
-    feature set. Its not easy, and can pose issues for these vendors, as access to 
-    no-code apps as large JSON configurations, breaks the vendor lock. 
-</p>
+A good criteria to use when assessing a given no-code Sas product is how they
+manage code changes. Being able to clone and manage changes in a git repository a huge
+feature set. It's not easy and can pose issues for these vendors, as access to 
+no-code apps as large JSON configurations, breaks the vendor lock. 
 
 --- 
 
 ##### Can I move my no-code app?
-No. For now, there is no real way to move a no-code app between vendors. This vendor 
+No. For now, there is no real way to move a no-code app between vendors. This vendor
 lock is one of the first objections you will hear when proposing this to your stack.
 
-There are come options that can allow for some degree of portablity, but there is 
+There are some options that can allow for some degree of portability, but there is
 no wholesale portability option right now.
 
 --- 
 
 ##### Is there one vendor to go with?
-No. For a lot of reasons going with a single vendor to handle everthing is a bad 
-idea. Its the no-code equivalent of building a [monolithic application](https://en.wikipedia.org/wiki/Monolithic_application). Below are links to 
-reference is you need some background on the concept. The TLDR for non-coders, is stay
-way from monolithic solutions.
+No. For a lot of reasons going with a single vendor to handle everything is a bad 
+idea. It's the no-code equivalent of building a [monolithic application](https://en.wikipedia.org/wiki/Monolithic_application). Below are links to
+reference is you need some background on the concept. The TLDR for no-code application is to honor the warnings
+to avoid monolithic solutions.
 
-<hr>
+---
 
 ##### What are low-code patterns?
-Low-code is a more of an approach and a set of techniques then a single vendor
-or solution. The primary goal of low-code is to gain the benefits of  no-code,
-while keeping the power of code. A gentle balance gives a company a suite of
-solutions that are free from vendor locking, scalable either toward or way from
-a specific vendor, and have a lower cost of code ownership.
+'Low-code' is more of an approach and a set of techniques than a single vendor or solution. The primary goal of low-code
+is to gain the benefits of 'no-code', while keeping the power of code. A gentle balance gives a company a suite of
+solutions that are free from vendor locking, scalable either toward or way from a specific vendor, and have a lower cost
+of code ownership.
 
-Below are four examples. A good approach to low-code is the approach that 
-companies have taken with Agile. There is a standard, but every company is 
-different and its adapted to met specific needs.
+Below are four examples. A good approach to low-code is the approach that companies have taken with Agile. There are
+standards, but every company is different and it's adapted the Agile methodologies to met their specific needs.
 
 __Here is a selection of vendors that can be knit to powerful solutions:__
 
@@ -107,18 +101,17 @@ __Here is a selection of vendors that can be knit to powerful solutions:__
     </div>
     <div class="col-8">
         <b>
-            Value Prop: World class Schema driven API.
+            Value Prop: Worldclass Schema driven API.
         </b>
         <p>
-            Platformatic is the brain child of Matteo and his team. The builders 
-            of the fastify ecosystem of ultra fast Node.js API tools. The secret 
-            sauce of this tool is that it builds a rest API in seconds using the 
-            schema in SQL database. As business logic changes, endpoints come out 
+            Platformatic is the brainchild of Matteo and his team. The builders
+            of the fastify ecosystem of ultra-fast Node.js API tools. The secret
+            sauce of this tool is that it builds a rest API in seconds using the
+            schema in SQL database. As business logic changes, endpoints come out
             of the library and into plugins. 
         </p>
         <p>
-            Also it support on-prem. An open source that can be taken on 
-            prem is huge. 
+            Also, it supports on-prem deployments. An open-source that can be taken on-prem is huge.
         </p>
     </div>
 </div>
@@ -133,15 +126,13 @@ __Here is a selection of vendors that can be knit to powerful solutions:__
     </div>
     <div class="col-8">
         <b>
-            Value Prop: development free admin tools.
+            Value Prop: Code-free admin tools.
         </b>
         <p>
-            Retool.com is a no-code for admin tools. Admin tools are an 
-            infinite code time sink. In the six years I build my startup, we 
-            committed to our backend UI tooling almost daily. Retool 
-            makes this easy. It moves the admin tooling out of the dev 
-            teams responsbiltiy and empowers a product owner to drive 
-            process improvements.
+            Retool.com is a no-code for admin tools. Admin tools are an infinite code time sink. In
+            the six years I built my startup, we committed to our backend UI tooling almost daily. Retool
+            makes this easy. It moves the admin tooling out of the dev teams domain and empowers a
+            product owner to drive process improvements.
         </p>
     </div>
 </div>
@@ -179,10 +170,9 @@ __Here is a selection of vendors that can be knit to powerful solutions:__
             Value Prop: API Rules Engines
         </b>
         <p>
-            <a href="https://sperta.com/" target="_blank">Sperta</a>. My newest find. A json 
+            <a href="https://sperta.com/" target="_blank">Sperta</a>. My newest find. A `json`
             rules engine deployed as a SAS, via a REST API. This allows
-            one team to own the rules engine and workflow, and the 
-            API team to utilize.
+            one team to own the rules engine and workflow, and the API team to utilize.
         </p>
         <p>
             Keeps your business logic out of code and accessible.
@@ -228,7 +218,7 @@ __Here is a selection of vendors that can be knit to powerful solutions:__
         <p>
             <a href="https://fly.io/" target="_blank">Pliable.io</a> is a 
             data science tool that replaced some of the transformation tasks
-            of inhouse data science teams.
+            of in-house data science teams.
         </p>
     </div>
 </div>
@@ -275,8 +265,8 @@ aligned to the customers needs.
     <p>
         While low-code impact my SOC? Yes it will. There is no single answer.
         It all depends upon your mix and how you implement. Each of these
-        support enforced 2FA.
+        supports 'Enforced 2FA'.
     </p>
 </div>
 
-[Back](/recipes)
+{% include articleFooter.html %}

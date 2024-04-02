@@ -1,6 +1,6 @@
 
 <style>
-    p { font-size: 17px; }
+    p { font-size: 19px; margin-bottom: 1.5em; }
 
     .tech-note {
         margin-bottom: 10px;
@@ -17,4 +17,13 @@
         background-color: #DFDFDF; 
         padding: 20px;
     }
+
+    .backlink::before { 
+        content: "\2190 ";
+    }
+
+    .nextlink::before { 
+        after: "\2190 ";
+    }
+
 </style>
