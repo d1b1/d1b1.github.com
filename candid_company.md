@@ -1,6 +1,6 @@
 ---
-title: Candid Company Look-book
-layout: default
+title: Candid Company Faces
+layout: wide
 subtitle: Face + Name + Company makes networking more intentional, April 2024 
 published: true
 ---

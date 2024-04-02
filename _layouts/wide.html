@@ -1,0 +1,30 @@
+
+{% include head.html %}
+{% include ga.html %}
+
+<div class="container-fluid py-3">
+  <header>
+
+    <div class="d-flex d-none d-md-block flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+        <span class="badge bg-secondary" style="background-color:#000 !important; padding: 5px;">devCTO</span>
+        &nbsp;
+        <span class="fs-4">developer+CTO</span>
+      </a>
+    </div>
+    
+    <div class="pricing-header p-3 pb-md-4 mt-5 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">
+        {{ page.title }}
+      </h1>
+      <p class="fs-5 mt-4 text-body-secondary">
+        {{ page.subtitle }}
+      </p>
+    </div>
+
+    <hr>
+    
+  {{ content }}
+  {% include footer.html %}
+
+{% include end.html %}
