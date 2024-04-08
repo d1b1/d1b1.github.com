@@ -56,7 +56,7 @@ these help!
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://investors.StephanSmith.solutions" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
+                  <a href="https://candid-company.StephanSmith.solutions" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
                   Review Community &gt;
                   </a>
                 </div>
