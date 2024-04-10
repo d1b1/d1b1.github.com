@@ -9,6 +9,23 @@ Finding mentors, peers, investors and funds is an eternal challenge
 for all startups. Here is a growing list of tools and resources. Hope
 these help!
 
+<style>
+    .card-min {
+        min-height: 180px;
+    }
+    .card-img {
+        height: 220px; overflow: hidden;
+        border-bottom: 1px solid #DFDFDF;
+    }
+    .shadow-sm {
+      transition: box-shadow 0.3s ease;
+    }
+
+    .shadow-sm:hover {
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+</style>
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
@@ -47,7 +64,8 @@ these help!
                 <div class="card-min">
                 <h5 class="card-title">Venture Lane</h5>
                 <p class="card-text">
-                    Searchable look-book of Venture Lane Candid Company attendees.
+                    Searchable look-book of Candid Company attendees;
+                    operators, advisors, founders and investors.
                 </p>
                 <p>
                     <span class="badge text-bg-success">by tag</span>
@@ -161,14 +179,3 @@ these help!
         </div>
 
     </div>
-
-
-<style>
-    .card-min {
-        min-height: 180px;
-    }
-    .card-img {
-        height: 220px; overflow: hidden;
-        border-bottom: 1px solid #DFDFDF;
-    }
-</style>
