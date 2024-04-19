@@ -3,9 +3,11 @@ title: Low Friction Hosting Processes
 subtitle: Don't over-thinking your hosting. No need to jump to EC2 or CloudFront.
 layout: default
 published: true
+date: 2024-01-07 00:00:00
 ---
 
 {% include subStyles.css %}
+
 
 ### Where do we put the applications?
 

@@ -3,6 +3,7 @@ title:  How to understand Identity Management?
 subtitle: Usernames and Passwords are easy, but come with a roadmap cost later on as a project matures.
 layout: default
 published: true
+date: 2024-01-15 00:00:00
 ---
 
 {% include subStyles.css %}

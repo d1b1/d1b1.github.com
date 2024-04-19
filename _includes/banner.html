@@ -23,4 +23,10 @@
         </p>
       </div>
 
+      {% if page.date %}
+        <div style="font-size: 10px; color: gray; margin-bottom: 10px;">
+          Published: {{ page.date | date: "%B %d, %Y" }}
+        </div>
+      {% endif %}
+
       <hr>
