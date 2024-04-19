@@ -2,6 +2,7 @@
 title:  Email Signature
 layout: compress
 published: true
+sitemap: false
 ---
 
 <br>

@@ -2,10 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/articles/auth_as_a_service/</loc>
-<lastmod>2024-04-19T13:06:29-04:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/bobo.html</loc>
+<lastmod>2024-04-19T13:23:26-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/candid_company.html</loc>
@@ -15,9 +12,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/recipes.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/signiture.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/startup_tools.html</loc>
