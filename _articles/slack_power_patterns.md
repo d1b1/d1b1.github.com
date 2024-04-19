@@ -3,6 +3,7 @@ title: Slack as your v0.1 Product?
 layout: default
 subtitle: Most people look past the value of Slack in building solutions. Don't.
 published: true
+date: 2024-02-07 00:00:00
 ---
 
 {% include subStyles.css %}
