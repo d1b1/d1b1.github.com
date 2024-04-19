@@ -11,7 +11,7 @@
   <meta name="description"
     content="Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive.">
 
-  <title>How to understand Identity Management?</title>
+  <title>Slack as your v0.1 Product?</title>
 
   <!-- <link href="/assets/css/css@3" rel="stylesheet"> -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -156,16 +156,16 @@
       
       <div class="pricing-header p-3 pb-md-4 mt-5 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">
-          How to understand Identity Management?
+          Slack as your v0.1 Product?
         </h1>
         <p class="fs-5 mt-4 text-body-secondary">
-          Usernames and Passwords are easy, but come with a roadmap cost later on as a project matures.
+          Most people look past the value of Slack in building solutions. Don't.
         </p>
       </div>
 
       
         <div style="font-size: 10px; color: gray; margin-bottom: 10px;">
-          Published: January 14, 2024
+          Published: April 19, 2024
         </div>
       
 
@@ -200,162 +200,126 @@
 
 </style>
 
-<p>One of the easiest features to add to your applications and technology stack is
-identity management. Identity is the information your application uses to manage
-login, access and permissions. Getting your application up and running will require
-you to choose to either store usernames and passwords in your database or delegate
-this feature to an outside service.</p>
+<p><img src="/assets/images/slack.png" align="left" style="border-radius: 10px; width: 200px; margin-right: 20px;" />
+Most people would not describe Slack as a No-code tool or a GTM platform! But if you reframe
+what it does, how it can be used and its place in your technology stack it becomes a power tool.
+It can be your GTM product, at least for v. 0.01.</p>
 
-<p>The simplest approach is to just have your developer go with the standard approach
-and add fields to the database to store the <code class="language-plaintext highlighter-rouge">username</code> and <code class="language-plaintext highlighter-rouge">password</code> values for each
-user. While this might seem like a simple solution, this decision can have long-term impacts.</p>
+<p>Last year I connected with Bay Area startup that deployed its first three versions as an Excel spreadsheet. Plain old vanilla
+Excel, with macros and a ton of customized features. The conversation with their CTO helped me cement my thinking about how startups can
+use off-the-shelf tools and patterns to get early traction.</p>
 
-<p>For the past ten years, the identity management industry has matured. Now this option
-is simple to add to your application. Each of the major providers offers developer-friendly
-documentation and SDKs (Software Development Kits).</p>
+<p>Slack was a natural target for this reframe. Here are five aspects of this ubiquitous tool that can be used differently.</p>
 
-<p>A good way to think about this feature in your application is to look at other
-solutions that offer services you do not need to build and scale your
-business quickly. i.e. Paas as Ioc, CI/CD and cloud providers.</p>
+<h4 id="1-all-browsers-all-devices-and-all-oss">1. All Browsers, all Devices and All OSs</h4>
 
-<p>Adding identity as a service to our applications offers huge wins
-as soon as you start to add your first group of users.</p>
+<p>No startup wants to build device or OS-specific solutions if they can help it. This might seem strange to call out,
+but it is; Slack works out of the box, on all devices and operating systems.</p>
+
+<hr />
+
+<h4 id="2-frictionless-customer-onboarding">2. Frictionless Customer Onboarding</h4>
+
+<p>Many employees start work on day one with Slack already installed on their mobile devices, on their laptops. No custom
+installs, or readme. This means that you are delivering a service into a tool your customers, your employees and your
+co-founders already know and love.</p>
+
+<hr />
+
+<h4 id="3-slack-webhooks">3. Slack Webhooks</h4>
+
+<p>Sending messages from your other technology stack components to Slack is a great way to knit together your systems. Webhooks
+and Apps are fundamental to the Slack value prop. Lever away. No SMS costs. Since Slack supports push notifications to all their
+devices, you don’t have to do any work to send updates or messages.</p>
+
+<hr />
+
+<h4 id="4-slack-forms">4. Slack Forms</h4>
+
+<p>Slack supports custom forms and workflows. This means it starts to drop into the no-code/low-code category of solutions. To see the value,
+take a look at their library of templates and tools for <a href="https://app.slack.com/block-kit-builder"> Builder Tool</a> processes.
+This tool will let you build sample forms, and send them to Slack to try out. Once the user completes the form, slack sends the results
+out to an endpoint.</p>
+
+<div class="row">
+    <div class="col-md-6">
+      <p>
+        Simple JSON tools.
+      </p>
+      <img src="/assets/images/slack-json.png" class="img-fluid img-thumbnail" />
+    </div>
+    <div class="col-md-6">
+      <p>
+        Rendered in your slack channels.
+      </p>
+      <img src="/assets/images/slack-form.png" class="img-fluid img-thumbnail" />
+    </div>
+</div>
+
+<hr />
+
+<h4 id="5-command-line">5. Command Line?</h4>
+
+<p>This is a power tool that some slack users, usually when they are not familiar with the concept of command line tools, overlook.
+Slack comes with command line options to do standard activities: ‘send a message’ etc. But it also supports allowing you to
+build your own set of command line options.</p>
+
+<div class="row">
+    <div class="col-md-6">
+      <p>
+        In any slack channel, type '/'. You will see a list of commands
+        you can use. These are standard. The money feature is that you
+        can extend this with some basic configurations and serverless function
+        to handle specific tasks specific to your business.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="/assets/images/slack-cli.png" class="img-fluid img-thumbnail" />
+    </div>
+</div>
+
+<p><br /></p>
+
+<h4 id="roi-for-slack-solution">ROI for Slack Solution</h4>
+
+<p>Finally, lets think in terms of ROI. The code you do not write, can be your most valuable product. Building a web application and all the
+work needed to make it production, ready takes time, effort and money. Slack is stable, installed and secure. It might not provide the startup founders’
+need for branding and logo visibility, but is very cost-effective. Free is always cost-effective!</p>
+
+<p>The replacement cost of Slack, if it’s reframed as a No-code/GTM platform that delivers value directly to your customer, can be substantial. The actual
+savings depends upon your specific business and the number of developers you did not have to hire. Keep in mind that startups raise money to hire teams.</p>
+
+<p>Slack in the place of React App; Slack as your Identity Provider; Slack as your cloud hosting provider (GCP or AWS). You will still have to write some API endpoints,
+maybe a few Lambda or serverless functions, but that work will cost a fraction of what a full-stack solution will cost.</p>
+
+<p>Now, if you tell your lead developer you want your first version to be a slack integration, expect to be punched, or at the very least gently ridiculed.
+This approach will not get a whole-hearted YAAAAAA from your tech team. It will feel like cheating. In a way, this approach is cheating. Your first GTM is
+a hermit crab living in the shell of Slack. It will not have your logo on it, but if it gets your team the learnings and starts the revenue flowing, it’s fine.</p>
+
+<p>Again, this approach does not work for every startup, but it can be a healthy thought process to break the “…let’s write [expensive] code…” pattern of thinking.</p>
 
 <div class="ceo-note">
     <h5>
-        Are passwords bad?
+        Security Point
     </h5>
     <p>
-        They are not bad, but they open up security issues that your
-        application and team do not need to take on. Not having passwords in your
-        control, stored on your database, means that your team does not need
-        to be encryption and identity experts.
-    </p>
-    <p>
-        Using a third-party identity provider can allow you to safely assert to
-        your customers and investors that your company uses the most current cyber
-        security patterns and best practices. Your business insurance can be lower
-        if you can provide you have 2FA patterns fully enabled.
+        Slack is free safe to use, supports 2FA and enables audit evidence.
+        I recommend you configure 'Enable &amp; Enforce 2FA' for your users. This
+        ensures that your users are secure, and the integration you set up is equally
+        protected.
     </p>
 </div>
-
-<h5 id="which-solution-to-use">Which solution to use?</h5>
-
-<p>So this is a big question. If you check out the marketing materials on the big providers,
-you will get the sales pitch. The sales pitch is just that: Fluff + Promise + Cost.</p>
-
-<p>A better way to think about this decision is to decide if you need a B2C or B2C identity
-solution. A B2C identity provider is going to give you pricing assuming you have a larger
-number of customers. A B2B identity will have pricing options assuming you have fewer
-customers who might need more complex permission models. The leading vendors say they offer
-both options, but in reality you want pricing that matches your specific user case.</p>
-
-<p>B2C providers will talk about monthly active user accounts, while B2B will talk about
-enterprise IDP and SSO options (in general).</p>
-
-<p>Both of these vendor types will usually offer some identity options standard; Google, Apple,
-Facebook etc. When you set up custom identity options for a large partner, then the costs
-will change.</p>
-
-<h4 id="active-monthly-users">Active Monthly Users?</h4>
-<p>Why is this important? If your users log into your applications daily, then you care
-about the total number of active users your vendors allow, and how they charge you as
-your demand increases.</p>
-
-<p>Hopefully, engaged and active users mean you have matching revenue. So as demand and costs
-go up, your identity costs will go up. I recommend you think about and model these costs
-on a per-user basis, and make sure it maps to your business model.</p>
-
-<p>For example, my last startup required a combination. We offer B2B type identity options for
-diagnostic labs and their staff you need to manage different aspects of their GTM
-products on our platform.</p>
-
-<p>We also had B2C-style individual diagnostic testing, so needed to allow a high volume
-of individuals to access their medical test results. These users might share their data
-with their company, but they own the data, so the pricing model was simpler.</p>
-
-<p>We had a mix of both models and ended up having to select the B2C options. There are
-options to have a blend of different providers, but its not simple.</p>
-
-<h4 id="can-we-build-our-own">Can we build our own?</h4>
-<p>Yes, you can. There are plenty of identity framework solutions to choose from. But this means
-you are now in the identity management business. Your tech team will need to own the technology
-and the subsequent sprint tickets to build and maintain.</p>
-
-<p>The long-tail cost of building an in-house identity solution will show up in your SOC2 audits. It
-will show us in your insurance costs, and it will show up in your training, hiring and roadmap
-velocity.</p>
-
-<h4 id="can-i-change-my-mind">Can I change my mind?</h4>
-<p>Yes. Moving between identity providers is very possible. Not easy, but not terrible. There
-are event solutions that make the transition seamless and can happen in the background, without
-your customers noticing.</p>
-
-<p>I have noticed that a decent percent of the startups and companies I have worked with have
-done at least one, migration as they grow out their first use cases. The sales materials in
-all the vendors will trumpet their solutions as perfect. The reality is that business needs
-change.</p>
-
-<h4 id="more">More</h4>
-<p>If you want more details there are two concepts to research, RBAC (<a href="https://en.wikipedia.org/wiki/Role-based_access_control">Role-Base Access Control</a> and ABAC <a href="https://en.wikipedia.org/wiki/Attribute-based_access_control">Attribute-based Access Control</a>.
-This can sound like a be a bit of a computer science concern, but understanding this concern will be expected to
-organize your permissions can have a long-term impact.</p>
-
-<p><img src="/assets/images/wristband.png" width="150px" class="img-thumbnail me-4 mb-1" align="left" /></p>
-
-<p>A new entry into the identity space, <a href="https://Wristband.dev">Wristband.dev</a> has built on the security
-benefits of giving their clients the option to start with the attribute-based access control
-approach. The TL;DR is that ABAC is a bit harder up-front but much more valuable for a company
-over time. Wristband makes it turnkey-easy.</p>
-
-<p>Long term your SOC team will value ABAC more. And it will lower your security risk and lower the
-cost of your audits.</p>
-
-<h4 id="new-trends">New Trends</h4>
-
-<p><strong>1. Improved User Management Solutions</strong></p>
-
-<p>There are two trends in identity providers that you might want to think about. The first generation of
-identity providers (Auth0, Cognito etc) offers decent SDKs but has some hidden roadmap costs. Customers often
-had to do deeper integrations to get more advanced user management features.</p>
-
-<p>For example, if you have failed 2FA setup for a customer, you can log into the Auth0 Admin console to
-reset or remove a given set up. Long term teams add these integration points to their roadmap’s, because
-giving the entire customer support team access to the identity provider admin console is not a supportable
-approach.</p>
-
-<p>AWS Cognito is famous for its lack of user management features. The AWS console lacks the UI tools
-that Auth0 provides. As the number of customers using your application grows, your customer support teams will start
-to demand better ways to address user authentication issues. If you are going with Cognito, triple your integration
-time estimates.</p>
-
-<p><strong>2. Custom Permission Setup in the UI</strong></p>
-
-<p>The new generation of providers; FrontEgg and  Wristband, provide more advanced SDK features that address
-these user management features. Their APIs are more robust. And they offer more robust permission models that
-can be dropped into applications. Their frontend UI SDKS have drop-in UI elements that allow B2B customers
-to define their roles and groups. This feature allows these customers to customize your B2B application while
-deploying their organization’s cyber security requirements. This means you are not imposing a one-size-fits-all
-security model on all your customers.</p>
-
-<p>These new providers have learned from the customer issues and added features that dramatically enhance
-Zero Trust patterns. (This is a topic for a different post.)</p>
-
-<h4 id="next-steps">Next Steps</h4>
-<p>Reach out if you have questions. Identity is an often overlooked and delayed feature.</p>
 
 <div class="row mt-5">
   <div class="col-6">
 
     
-      &larr; <a href="/articles/low_friction_hosting_patterns/">Previous: Low Friction Hosting Processes</a>
+      &larr; <a href="/articles/auth_as_a_service/">Previous: How to understand Identity Management?</a>
     
 
   </div>
   <div class="col-6 text-end">
 
-    
-      <a href="/articles/slack_power_patterns/">Next: Slack as your v0.1 Product?</a> &rarr;
     
 
   </div>
