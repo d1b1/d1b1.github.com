@@ -46,7 +46,7 @@ these help!
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a type="button" target="_blank" href="https://techstars-search-v2.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
+                  <a type="button" target="_blank" href="https://techstars.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
                     Search Companies &gt;
                   </a>
                 </div>
