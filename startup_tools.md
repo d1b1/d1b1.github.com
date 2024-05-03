@@ -208,4 +208,35 @@ these help!
           </div>
         </div>
 
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-img">
+                <img src="/assets/page/soc-ai-assistant2.png" width="100%"/>
+            </div>
+            <div class="card-body" style="background-color: #EFEFEF;">
+              <div class="card-min">
+                <h5 class="card-title">
+                  SOC2 AI Prep Agent
+                </h5>
+                <p class="card-text">
+                    Getting SOC2 audit ready with an Ai
+                    Agent that gives you low-effort and 
+                    high-impact tasks.
+                </p>
+                <p>
+                  <span class="badge text-bg-success">Beta</span>
+                  <span class="badge text-bg-success">Invite Only</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button target="_blank" type="button" onclick="alert('This is a beta feature and only available by invite only.')" class="btn btn-sm btn-outline-secondary">
+                    Early Access &gt;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
