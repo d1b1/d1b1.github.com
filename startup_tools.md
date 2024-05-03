@@ -9,6 +9,8 @@ Finding mentors, peers, investors and funds is an eternal challenge
 for all startups. Here is a growing list of tools and resources. Hope
 these help!
 
+<!-- {% include subStyles.css %} -->
+
 <style>
     .card-min {
         min-height: 180px;
@@ -200,7 +202,7 @@ these help!
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button target="_blank" type="button" onclick="alert('This is a beta feature and only available by invite only.')" class="btn btn-sm btn-outline-secondary">
+                  <button target="_blank" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm btn-outline-secondary">
                     Early Access &gt;
                   </button>
                 </div>
@@ -232,7 +234,7 @@ these help!
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button target="_blank" type="button" onclick="alert('This is a beta feature and only available by invite only.')" class="btn btn-sm btn-outline-secondary">
+                  <button target="_blank" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm btn-outline-secondary">
                     Early Access &gt;
                   </button>
                 </div>
@@ -242,3 +244,41 @@ these help!
         </div>
 
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+           Beta Programs
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This feature is a part of a growing body of micro apps that fall into the
+          networking tech space. Networking is hard. It takes time and energy to find the
+          signals in professional networks. 
+        </p>
+        <p>
+          How to get into the beta testing program? Connect with me
+          on <b><a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank">LinkedIn</a></b>, and subscribe to <b>my newsletter</b> and finally, you have an understanding on how <b>intentional networking</b> benefits your business.
+        </p>
+        <p>
+          Be ready to share & collaborate.
+        </p>
+        <div class="ceo-note">
+          <i>FYI - Intentional networking is the opposite of luck-driven networking. You are luck-driven if you
+          show up at an event, grab a beer and only meet people if you are lucky enough to sit next to them.
+          This approach to network engagement is impossible to scale.</i>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Ok
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
