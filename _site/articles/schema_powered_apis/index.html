@@ -11,7 +11,7 @@
   <meta name="description"
     content="Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive.">
 
-  <title>Slack as your v0.1 Product?</title>
+  <title>Schema Powered APIs</title>
 
   <!-- <link href="/assets/css/css@3" rel="stylesheet"> -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -156,16 +156,16 @@
       
       <div class="pricing-header p-3 pb-md-4 mt-5 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">
-          Slack as your v0.1 Product?
+          Schema Powered APIs
         </h1>
         <p class="fs-5 mt-4 text-body-secondary">
-          Most people look past the value of Slack in building solutions. Don't.
+          Using database schemas to scaffold API endpoints provides scalable endpoints and boilerplate-free codebases.
         </p>
       </div>
 
       
         <div style="font-size: 10px; color: gray; margin-bottom: 10px;">
-          Published: February 06, 2024
+          Published: May 03, 2024
         </div>
       
 
@@ -200,128 +200,91 @@
 
 </style>
 
-<p><img src="/assets/images/slack.png" align="left" style="border-radius: 10px; width: 200px; margin-right: 20px;" />
-Most people would not describe Slack as a No-code tool or a GTM platform! But if you reframe
-what it does, how it can be used and its place in your technology stack it becomes a power tool.
-It can be your GTM product, at least for v. 0.01.</p>
+<h4 id="90-of-apis-are-boilerplate-code">90% of APIs are boilerplate code</h4>
 
-<p>Last year I connected with Bay Area startup that deployed its first three versions as an Excel spreadsheet. Plain old vanilla
-Excel, with macros and a ton of customized features. The conversation with their CTO helped me cement my thinking about how startups can
-use off-the-shelf tools and patterns to get early traction.</p>
+<p>This simple observation is a game changer. At <a href="https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ">Nodeconf.eu</a> in Ireland in 2022, the founders of <a href="https://platformatic.dev/">Platformatic.dev</a>
+outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time,
+needs to be tested, supported and reviewed.</p>
 
-<p>Slack was a natural target for this reframe. Here are five aspects of this ubiquitous tool that can be used differently.</p>
+<h4 id="why-is-boilerplate-in-a-solution-bad">Why is boilerplate in a solution bad?</h4>
 
-<h4 id="1-all-browsers-all-devices-and-all-oss">1. All Browsers, all Devices and All OSs</h4>
+<p>First, code has a cost of ownership. Once a dev team builds a solution, the code takes on a life of its
+own. It has to be backed up, encrypted and documented. The dev teams have processes to manage change
+requests. Tests have to be written and on each code change, these tests need to be updated.</p>
 
-<p>No startup wants to build device or OS-specific solutions if they can help it. This might seem strange to call out,
-but it is; Slack works out of the box, on all devices and operating systems.</p>
+<p>Second, the time spent writing code to account for all the CRUD endpoints; consumes sprints and slows down the roadmap.</p>
 
-<hr />
+<p>Third, each API endpoints need input validation. Simply put, does each endpoint enforce the user to provide good? APIs are not immune
+from the GIGO (Garbage-In equals Garbage-Out) problem. The validation of data into each endpoint requires code, testing and
+review. It can be surprising how much time and work can go into getting solid endpoint validation production
+ready.</p>
 
-<h4 id="2-frictionless-customer-onboarding">2. Frictionless Customer Onboarding</h4>
+<h4 id="a-solution-to-boilerplate-code">A solution to boilerplate code</h4>
 
-<p>Many employees start work on day one with Slack already installed on their mobile devices, on their laptops. No custom
-installs, or readme. This means that you are delivering a service into a tool your customers, your employees and your
-co-founders already know and love.</p>
+<p>Rethink the nature of what you build. Let the database schema define the validation. Since most endpoints do not contain
+business logic, they can be handled by library-generated endpoints. The patterns used in Platformatic.dev OS project moves
+the responsibility to the base library. The library reads the database schema table by table, and the field schema to define
+the endpoint validation requirements.</p>
 
-<hr />
+<p>When custom business logic is needed for a given endpoint, there are two options. You can move the endpoint out of the control
+of the library, and into a plugin that contains the logic. This simple approach reduces the side of an API and dramatically
+improves the stability. As changes are made to the database schema, the library keeps the endpoints in sync. It’s not magic,
+but it is performant.</p>
 
-<h4 id="3-slack-webhooks">3. Slack Webhooks</h4>
-
-<p>Sending messages from your other technology stack components to Slack is a great way to knit together your systems. Webhooks
-and Apps are fundamental to the Slack value prop. Lever away. No SMS costs. Since Slack supports push notifications to all their
-devices, you don’t have to do any work to send updates or messages.</p>
-
-<hr />
-
-<h4 id="4-slack-forms">4. Slack Forms</h4>
-
-<p>Slack supports custom forms and workflows. This means it starts to drop into the no-code/low-code category of solutions. To see the value,
-take a look at their library of templates and tools for <a href="https://app.slack.com/block-kit-builder"> Builder Tool</a> processes.
-This tool will let you build sample forms, and send them to Slack to try out. Once the user completes the form, slack sends the results
-out to an endpoint.</p>
+<p>The platformatic modules are built on the patterns found in <a href="https://fastify.dev/ecosystem/">fastify</a>. This means that
+platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
+via tested and scalable solutions.</p>
 
 <div class="row">
-    <div class="col-md-6">
-      <p>
-        Simple JSON tools.
-      </p>
-      <img src="/assets/images/slack-json.png" class="img-fluid img-thumbnail" />
+    <div class="col-6">
+        Simple SQL
+        <img src="/assets/page/api-endpoint-sql.png" class="img-fluid img-responsive img-thumbnail" />
     </div>
-    <div class="col-md-6">
-      <p>
-        Rendered in your slack channels.
-      </p>
-      <img src="/assets/images/slack-form.png" class="img-fluid img-thumbnail" />
+    <div class="col-6">
+        Production Ready Endpoint
+       <img src="/assets/page/api-endpoint-example.png" class="img-fluid img-responsive img-thumbnail" />
     </div>
 </div>
 
-<hr />
+<h4 id="tldr">TLDR</h4>
 
-<h4 id="5-command-line">5. Command Line?</h4>
+<p>This pattern lowers the cost of setting up and building out a database, API and the resulting development cycles.
+Teaching a non-technical founder to set up tables in SQL is trivial. Shortening the ideation cycle enables products
+ to move into production faster.</p>
 
-<p>This is a power tool that some slack users, usually when they are not familiar with the concept of command line tools, overlook.
-Slack comes with command line options to do standard activities: ‘send a message’ etc. But it also supports allowing you to
-build your own set of command line options.</p>
+<p>As a project matures and moves into production, the developer efforts remain focused on the actual business logic
+needed in select endpoints, not the bulk boilerplate code found in most applications. While developers might balk
+at delegating code to the library, having less boilerplate results in smaller code repositories.</p>
 
-<div class="row">
-    <div class="col-md-6">
-      <p>
-        In any slack channel, type '/'. You will see a list of commands
-        you can use. These are standard. The money feature is that you
-        can extend this with some basic configurations and serverless function
-        to handle specific tasks specific to your business.
-      </p>
-    </div>
-    <div class="col-md-6">
-      <img src="/assets/images/slack-cli.png" class="img-fluid img-thumbnail" />
-    </div>
-</div>
+<p>The long tail value of this pattern means that teams can onboard new developers into their code faster, as
+there is simply less for a new developer to review before they can make contributions and commits.</p>
 
-<p><br /></p>
+<p><img src="/assets/page/api-endpoint-docs.png" class="img-fluid img-responsive img-thumbnail" />
+<i class="fs-6">Swagger UI for ‘Create Workspace’ Endpoint</i></p>
 
-<h4 id="roi-for-slack-solution">ROI for Slack Solution</h4>
+<h4 id="api-spec--ui">API Spec &amp; UI</h4>
 
-<p>Finally, lets think in terms of ROI. The code you do not write, can be your most valuable product. Building a web application and all the
-work needed to make it production, ready takes time, effort and money. Slack is stable, installed and secure. It might not provide the startup founders’
-need for branding and logo visibility, but is very cost-effective. Free is always cost-effective!</p>
-
-<p>The replacement cost of Slack, if it’s reframed as a No-code/GTM platform that delivers value directly to your customer, can be substantial. The actual
-savings depends upon your specific business and the number of developers you did not have to hire. Keep in mind that startups raise money to hire teams.</p>
-
-<p>Slack in the place of React App; Slack as your Identity Provider; Slack as your cloud hosting provider (GCP or AWS). You will still have to write some API endpoints,
-maybe a few Lambda or serverless functions, but that work will cost a fraction of what a full-stack solution will cost.</p>
-
-<p>Now, if you tell your lead developer you want your first version to be a slack integration, expect to be punched, or at the very least gently ridiculed.
-This approach will not get a whole-hearted YAAAAAA from your tech team. It will feel like cheating. In a way, this approach is cheating. Your first GTM is
-a hermit crab living in the shell of Slack. It will not have your logo on it, but if it gets your team the learnings and starts the revenue flowing, it’s fine.</p>
-
-<p>Again, this approach does not work for every startup, but it can be a healthy thought process to break the “…let’s write [expensive] code…” pattern of thinking.</p>
+<p>An additional bonus, the platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
+allows non-technical team members to visualize the API, entities and processes. Moving business logic out of
+code and into the larger team domain space improves the quality of the solutions a team brings to market.</p>
 
 <div class="ceo-note">
-    <h5>
-        Security Point
-    </h5>
-    <p>
-        Slack is free safe to use, supports 2FA and enables audit evidence.
-        I recommend you configure 'Enable &amp; Enforce 2FA' for your users. This
-        ensures that your users are secure, and the integration you set up is equally
-        protected.
-    </p>
+    <b>CEO Hint</b> - You should care about this approach. It's scaling behavior. It aligns business needs
+    with code and the outcomes that drive traction.
 </div>
 
 <div class="row mt-5">
   <div class="col-6">
 
     
-      &larr; <a href="/articles/schema_powered_apis/">Previous: Schema Powered APIs</a>
+      &larr; <a href="/articles/auth_as_a_service/">Previous: How to understand Identity Management?</a>
     
 
   </div>
   <div class="col-6 text-end">
 
     
-      <a href="/articles/what_is_low_code/">Next: What is Low-Code? vs No-code?</a> &rarr;
+      <a href="/articles/slack_power_patterns/">Next: Slack as your v0.1 Product?</a> &rarr;
     
 
   </div>
