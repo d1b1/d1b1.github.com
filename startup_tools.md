@@ -224,8 +224,9 @@ these help!
                     high-impact tasks.
                 </p>
                 <p>
+                  <span class="badge text-bg-success">OpenAi</span>
+                  <span class="badge text-bg-success">Assistant</span>
                   <span class="badge text-bg-success">Beta</span>
-                  <span class="badge text-bg-success">Invite Only</span>
                 </p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
