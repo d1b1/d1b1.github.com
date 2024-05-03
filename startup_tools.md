@@ -156,7 +156,7 @@ these help!
                   Less-Code Tools
                 </h5>
                 <p class="card-text">
-                    An ever growing database of less-code products, services,
+                    An ever-growing database of less-code products, services,
                     libraries and patterns.
                 </p>
                 <p>
@@ -173,6 +173,36 @@ these help!
                   </a>
                 </div>
                 <small class="text-body-secondary">200+ options</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-img">
+                <img src="/assets/page/searchable-vector.png" width="100%"/>
+            </div>
+            <div class="card-body" style="background-color: #EFEFEF;">
+              <div class="card-min">
+                <h5 class="card-title">
+                  Ai Enabled Networking
+                </h5>
+                <p class="card-text">
+                    Build a virtual org chart to better understand
+                    who you are talking in a company. It's your personal network vector map.
+                </p>
+                <p>
+                  <span class="badge text-bg-success">Beta</span>
+                  <span class="badge text-bg-success">Invite Only</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button target="_blank" type="button" onclick="alert('This is a beta feature and only available by invite only.')" class="btn btn-sm btn-outline-secondary">
+                    Early Access &gt;
+                  </button>
+                </div>
               </div>
             </div>
           </div>
