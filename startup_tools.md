@@ -193,8 +193,9 @@ these help!
                     who you are talking in a company. It's your personal network vector map.
                 </p>
                 <p>
-                  <span class="badge text-bg-success">Beta</span>
+                  <span class="badge text-bg-danger">Beta</span>
                   <span class="badge text-bg-success">Invite Only</span>
+                  <span class="badge text-bg-success">Neo4j Vectors</span>
                 </p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
@@ -226,7 +227,7 @@ these help!
                 <p>
                   <span class="badge text-bg-success">OpenAi</span>
                   <span class="badge text-bg-success">Assistant</span>
-                  <span class="badge text-bg-success">Beta</span>
+                  <span class="badge text-bg-danger">Beta</span>
                 </p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
