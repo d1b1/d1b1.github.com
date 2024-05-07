@@ -6,7 +6,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
 
 {% include subStyles.css %}
 
-{% for article in site.articles %}
+{% for article in site.articles | sort: 'date' %}
   <div class="row">
     <div class="col-6">
       <h4>
