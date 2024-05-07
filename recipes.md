@@ -15,7 +15,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
     </div>
     <div class="col-6">
       {{ article.subtitle }}
-      <a href="{{ article.url }}">read more...</a>
+      <a href="{{ article.url }}">read more.....</a>
     </div>
   </div>
   <hr>
