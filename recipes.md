@@ -10,7 +10,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
   <div class="row">
     <div class="col-6">
       <h4>
-        {{ article.title }}
+        {{ article.title }} {{ article.order }}
       </h4>
     </div>
     <div class="col-6">
