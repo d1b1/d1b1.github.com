@@ -172,6 +172,7 @@
       <hr>
   
 <style>
+
     p { font-size: 19px; margin-bottom: 1.5em; }
 
     .tech-note {
@@ -198,13 +199,23 @@
         after: "\2190 ";
     }
 
+    blockquote {
+        border-left: 3px solid #000;
+        background-color: #DFDFDF;
+        padding: 20px;
+        min-height: 20px;
+    }
+
+    blockquote p {
+     margin: 0px;
+    }
+
 </style>
 
 <h4 id="90-of-apis-are-boilerplate-code">90% of APIs are boilerplate code</h4>
 
 <p>This simple observation is a game changer. At <a href="https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ">Nodeconf.eu</a> in Ireland in 2022, the founders of <a href="https://platformatic.dev/">Platformatic.dev</a>
-outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time,
-needs to be tested, supported and reviewed.</p>
+outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time, needs to be tested, supported and reviewed.</p>
 
 <h4 id="why-is-boilerplate-in-a-solution-bad">Why is boilerplate in a solution bad?</h4>
 
@@ -231,8 +242,8 @@ of the library, and into a plugin that contains the logic. This simple approach 
 improves the stability. As changes are made to the database schema, the library keeps the endpoints in sync. It’s not magic,
 but it is performant.</p>
 
-<p>The platformatic modules are built on the patterns found in <a href="https://fastify.dev/ecosystem/">fastify</a>. This means that
-platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
+<p>The Platformatic modules are built on the patterns found in <a href="https://fastify.dev/ecosystem/">fastify</a>. This means that
+Platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
 via tested and scalable solutions.</p>
 
 <div class="row">
@@ -264,7 +275,7 @@ there is simply less for a new developer to review before they can make contribu
 
 <h4 id="api-spec--ui">API Spec &amp; UI</h4>
 
-<p>An additional bonus, the platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
+<p>An additional bonus, the Platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
 allows non-technical team members to visualize the API, entities and processes. Moving business logic out of
 code and into the larger team domain space improves the quality of the solutions a team brings to market.</p>
 

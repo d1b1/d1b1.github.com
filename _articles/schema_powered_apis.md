@@ -11,8 +11,7 @@ date: 2024-02-20 00:00:00
 #### 90% of APIs are boilerplate code
 
 This simple observation is a game changer. At [Nodeconf.eu](https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ) in Ireland in 2022, the founders of [Platformatic.dev](https://platformatic.dev/)
-outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time,
-needs to be tested, supported and reviewed.
+outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time, needs to be tested, supported and reviewed.
 
 #### Why is boilerplate in a solution bad?
 
@@ -39,8 +38,8 @@ of the library, and into a plugin that contains the logic. This simple approach 
 improves the stability. As changes are made to the database schema, the library keeps the endpoints in sync. It's not magic,
 but it is performant.
 
-The platformatic modules are built on the patterns found in [fastify](https://fastify.dev/ecosystem/). This means that
-platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
+The Platformatic modules are built on the patterns found in [fastify](https://fastify.dev/ecosystem/). This means that
+Platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
 via tested and scalable solutions.
 
 <div class="row">
@@ -72,7 +71,7 @@ there is simply less for a new developer to review before they can make contribu
 
 #### API Spec & UI
 
-An additional bonus, the platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
+An additional bonus, the Platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
 allows non-technical team members to visualize the API, entities and processes. Moving business logic out of
 code and into the larger team domain space improves the quality of the solutions a team brings to market.
 
