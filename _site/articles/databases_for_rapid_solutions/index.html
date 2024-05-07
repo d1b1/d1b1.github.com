@@ -11,7 +11,7 @@
   <meta name="description"
     content="Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive.">
 
-  <title>Schema Powered APIs</title>
+  <title>Databases For Rapid Solutions</title>
 
   <!-- <link href="/assets/css/css@3" rel="stylesheet"> -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -156,10 +156,10 @@
       
       <div class="pricing-header p-3 pb-md-4 mt-5 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">
-          Schema Powered APIs
+          Databases For Rapid Solutions
         </h1>
         <p class="fs-5 mt-4 text-body-secondary">
-          Using database schemas to scaffold API endpoints provides scalable endpoints and boilerplate-free codebases.
+          Which database to start with is a key decision, as it impacts the technology you can select, the pattern of storage and the frameworks that work the best.
         </p>
       </div>
 
@@ -212,90 +212,98 @@
 
 </style>
 
-<h4 id="90-of-apis-are-boilerplate-code">90% of APIs are boilerplate code</h4>
+<h3 id="sql-vs-no-sql">SQL vs No-SQL</h3>
+<p>The long &amp; short of this concept is that you either have a very declarative data store that locks down fields and relationships or not.
+In the end, the all work, and they store your data. In No-SQL you can data fields, names and structures on the fly, and handle the differences in code. In SQL
+you have to do more work to change the way data is stored, but your code is
+clear and more concise.</p>
 
-<p>This simple observation is a game changer. At <a href="https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ">Nodeconf.eu</a> in Ireland in 2022, the founders of <a href="https://platformatic.dev/">Platformatic.dev</a>
-outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time, needs to be tested, supported and reviewed.</p>
-
-<h4 id="why-is-boilerplate-in-a-solution-bad">Why is boilerplate in a solution bad?</h4>
-
-<p>First, code has a cost of ownership. Once a dev team builds a solution, the code takes on a life of its
-own. It has to be backed up, encrypted and documented. The dev teams have processes to manage change
-requests. Tests have to be written and on each code change, these tests need to be updated.</p>
-
-<p>Second, the time spent writing code to account for all the CRUD endpoints; consumes sprints and slows down the roadmap.</p>
-
-<p>Third, each API endpoints need input validation. Simply put, does each endpoint enforce the user to provide good? APIs are not immune
-from the GIGO (Garbage-In equals Garbage-Out) problem. The validation of data into each endpoint requires code, testing and
-review. It can be surprising how much time and work can go into getting solid endpoint validation production
-ready.</p>
-
-<h4 id="a-solution-to-boilerplate-code">A solution to boilerplate code</h4>
-
-<p>Rethink the nature of what you build. Let the database schema define the validation. Since most endpoints do not contain
-business logic, they can be handled by library-generated endpoints. The patterns used in Platformatic.dev OS project moves
-the responsibility to the base library. The library reads the database schema table by table, and the field schema to define
-the endpoint validation requirements.</p>
-
-<p>When custom business logic is needed for a given endpoint, there are two options. You can move the endpoint out of the control
-of the library, and into a plugin that contains the logic. This simple approach reduces the side of an API and dramatically
-improves the stability. As changes are made to the database schema, the library keeps the endpoints in sync. It’s not magic,
-but it is performant.</p>
-
-<p>The Platformatic modules are built on the patterns found in <a href="https://fastify.dev/ecosystem/">fastify</a>. This means that
-Platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
-via tested and scalable solutions.</p>
+<p>Here is a short reference list:</p>
 
 <div class="row">
     <div class="col-6">
-        Simple SQL
-        <img src="/assets/page/api-endpoint-sql.png" class="img-fluid img-responsive img-thumbnail" />
+        <b>
+            SQL
+        </b>
+        <ul>
+            <li>MySQL</li>
+            <li>Postgres</li>
+            <li>SQLLite</li>
+            <li>AWS RDS</li>
+            <li>Oracle</li>
+            <li>Many more...</li>
+        </ul>
     </div>
     <div class="col-6">
-        Production Ready Endpoint
-       <img src="/assets/page/api-endpoint-example.png" class="img-fluid img-responsive img-thumbnail" />
+       <b>
+            NoSQL
+        </b>
+        <ul>
+            <li>MongoDB</li>
+            <li>DynamoDB</li>
+            <li>Firebase RTD</li>
+            <li>Firestore</li>
+            <li>Many more...</li>
+        </ul>
     </div>
 </div>
+<hr />
 
-<h4 id="tldr">TLDR</h4>
+<h3 id="how-we-choose">How we choose</h3>
+<p>It might be surprising. Most startups think less about the impact of their application’s database than they should. Often this is the domain of the
+first developer on site, the first tech hire or just the opinion of the most technical person around the founder. This is not startup laziness. It’s because
+founders do not assign much value to the database selection.</p>
 
-<p>This pattern lowers the cost of setting up and building out a database, API and the resulting development cycles.
-Teaching a non-technical founder to set up tables in SQL is trivial. Shortening the ideation cycle enables products
- to move into production faster.</p>
+<p>The dirty secret about developers is that we rarely think about the impact of SQL vs No-SQL storage options. Sometimes we know both solutions
+and deployed production applications in each. But often we know what’s new, what’s worked, or the storage option we like the most. Our technology
+decision-making rubrics are not mature. At least not until we get to the VP Eng or CTO level.</p>
 
-<p>As a project matures and moves into production, the developer efforts remain focused on the actual business logic
-needed in select endpoints, not the bulk boilerplate code found in most applications. While developers might balk
-at delegating code to the library, having less boilerplate results in smaller code repositories.</p>
+<p>It should not be surprising, but developers have favorite solutions. Their preferences are fine, but not when assessing patterns that will speed up ROI or long-term support costs.</p>
 
-<p>The long tail value of this pattern means that teams can onboard new developers into their code faster, as
-there is simply less for a new developer to review before they can make contributions and commits.</p>
+<hr />
+<h3 id="rule-of-thumb">Rule of Thumb</h3>
+<p>Without getting in a ‘this’ database is better than that database argument, here are a few things to keep in mind.</p>
 
-<p><img src="/assets/page/api-endpoint-docs.png" class="img-fluid img-responsive img-thumbnail" />
-<i class="fs-6">Swagger UI for ‘Create Workspace’ Endpoint</i></p>
+<p><strong>a. Need Flexibility Most</strong>
+If you do not know or can not know how your data will be stored, then go with no-SQL. It will give you more flexibility when you
+don’t have specifics. Your front-end coder can solve issues.</p>
 
-<h4 id="api-spec--ui">API Spec &amp; UI</h4>
+<p><strong>b. Need Flexibility Less</strong>
+If you do know how your data will be stored, and do not expect that <strong>new information</strong>
+will dramatically alter your thinking, then go with SQL.</p>
 
-<p>An additional bonus, the Platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
-allows non-technical team members to visualize the API, entities and processes. Moving business logic out of
-code and into the larger team domain space improves the quality of the solutions a team brings to market.</p>
+<p><strong>c. Known Security Concerns</strong>
+If you know are going into a regulated space, then the category ‘full managed datastore’ is worth
+exploring. In that case, focus on GCP and AWS fully managed options. or Snowflake.</p>
 
-<div class="ceo-note">
-    <b>CEO Hint</b> - You should care about this approach. It's scaling behavior. It aligns business needs
-    with code and the outcomes that drive traction.
+<hr />
+
+<h4 id="when-needs-change">When Needs Change</h4>
+<p>SQL comes with schemas and structure, but there are patterns that can be used to move between solutions. <a href="https://www.prisma.io/">Prisma.io</a> is a perfect example. It makes schema, for either SQL/NoSQL approach a viable option. Additionally, solutions like Prisma, can help you scale load and costs in a cost-effective method long before you develop the technology team that will make better decisions.</p>
+
+<p><br /></p>
+
+<div class="tech-note">
+    <h5>
+      Tech Note
+    </h5>
+    <p>
+        SQL or No-SQL. It has no impact on your SOC needs. Move on.
+    </p>
 </div>
 
 <div class="row mt-5">
   <div class="col-6">
 
     
-      &larr; <a href="/articles/databases_for_rapid_solutions/">Previous: Databases For Rapid Solutions</a>
+      &larr; <a href="/articles/slack_power_patterns/">Previous: Slack as your v0.1 Product?</a>
     
 
   </div>
   <div class="col-6 text-end">
 
     
-      <a href="/articles/turn_key_deployment_options/">Next: Turn-key Deployment Options</a> &rarr;
+      <a href="/articles/schema_powered_apis/">Next: Schema Powered APIs</a> &rarr;
     
 
   </div>
