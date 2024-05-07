@@ -26,7 +26,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
      The CEO Perspective
     </h5>
     <p>
-        These articles are written to give CEOs and Founders with 
+        These articles are written to give CEOs and Founders with
         a non-technical perspective on decisions that are often left
         to developers to address. Look for these panels to understand
         the impact.
