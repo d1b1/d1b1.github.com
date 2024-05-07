@@ -16,7 +16,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
     </div>
     <div class="col-6">
       {{ article.subtitle }}
-      <a href="{{ article.url }}">read more.....</a>
+      <a href="{{ article.url }}">read more...</a>
     </div>
   </div>
   <hr>
@@ -30,7 +30,7 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
         These articles are written to give CEOs and Founders with
         a non-technical perspective on decisions that are often left
         to developers to address. Look for these panels to understand
-        the impact.
+        the impact..
     </p>
 </div>
 

@@ -9,7 +9,7 @@
         border-radius: 10px; 
         background-color: #DFDFDF; 
         padding: 20px;
-        color: #000;
+        color: #000 !important;
     }
 
     .ceo-note {
