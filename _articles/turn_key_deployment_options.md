@@ -2,7 +2,8 @@
 title: Turn-key Deployment Options
 subtitle: Deployment is a late-stage development process that should be included from inceptions of a project.
 layout: default
-published: false
+published: true
+date: 2024-03-15 00:00:00
 ---
 
 {% include subStyles.css %}
@@ -17,22 +18,14 @@ was often left out. But that has changed, there are now vendors who offer this s
         The CEO TL;DR
     </h5>
     <p>
-        As a CEO, you only care about this part of your stack because it provides
-        you with tools to get features live <b>quickly</b> and <b>safely</b>. Having a developer log into a production AWS EC2 instance to push code to make it 'live',
-        is a bad sign. This feature is cheap and pays off quickly.
+        As a CEO, you only care about this part of your stack because it provides you with tools to get features live <b>quickly</b> and <b>safely</b>.
+        Having a developer log into a production AWS EC2 instance to push code to make it 'live', is a bad sign. This feature is cheap and pays off quickly.
     </p>
 </div>
 
-<br>
+#### Some Options to get started
 
-<h4>
-    Some Options to get started.
-</h4>
-
-<p>
-    Here are three good examples of (almost) turnkey simple 
-    deployment tools (aka CI/CD).
-</p>
+Here are three good examples of (almost) turnkey simple deployment tools (aka CI/CD).
 
 <div class="row">
     <div class="col-4">
@@ -42,14 +35,14 @@ was often left out. But that has changed, there are now vendors who offer this s
     </div>
     <div class="col-8">
         <p>
-            <b>Github Actions</b> - This feature was launched in 22019017, and enables for code build, testing and
-            deployment with a few simple file changes to your Github repos. Getting setup with 
-            their actions take less than 30 minutes, and it has huge benefits. 
+            <b>Github Actions</b> - This feature was launched in 2018 and enables code build, testing and
+            deployment with a few simple file changes to your Github repos. Getting setup with
+            their actions take less than 30 minutes, and it has huge benefits.
         </p>
         <p>
-            First, it's free with an account. Second, it conditions your team to start 
+            First, it's <b>free</b> with an account. Second, it conditions your team to start
             using secrets to manage API keys etc. And finally, can be a good screening question
-            for your new hires. (If they do not know about Github actions, then maybe they are too green to hire.
+            for your new hires. (If they do not know about GitHub actions, then maybe they are too green to hire.
         </p>
     </div>
 </div>

@@ -11,7 +11,7 @@
   <meta name="description"
     content="Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive.">
 
-  <title>Schema Powered APIs</title>
+  <title>Turn-key Deployment Options</title>
 
   <!-- <link href="/assets/css/css@3" rel="stylesheet"> -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -156,16 +156,16 @@
       
       <div class="pricing-header p-3 pb-md-4 mt-5 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">
-          Schema Powered APIs
+          Turn-key Deployment Options
         </h1>
         <p class="fs-5 mt-4 text-body-secondary">
-          Using database schemas to scaffold API endpoints provides scalable endpoints and boilerplate-free codebases.
+          Deployment is a late-stage development process that should be included from inceptions of a project.
         </p>
       </div>
 
       
         <div style="font-size: 10px; color: gray; margin-bottom: 10px;">
-          Published: February 19, 2024
+          Published: March 14, 2024
         </div>
       
 
@@ -200,91 +200,111 @@
 
 </style>
 
-<h4 id="90-of-apis-are-boilerplate-code">90% of APIs are boilerplate code</h4>
+<p>Code deployment is just a code word for how you get your code from your local machine, or your developers’ laptop to your site. This requirement is often something that gets added to a project after the team grows past its initial founders/coders.</p>
 
-<p>This simple observation is a game changer. At <a href="https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ">Nodeconf.eu</a> in Ireland in 2022, the founders of <a href="https://platformatic.dev/">Platformatic.dev</a>
-outlined this issue in very clear and stark terms. Boilerplate code is a problem, because it consumes time,
-needs to be tested, supported and reviewed.</p>
+<p>In the old days when we only had <a href="https://en.wikipedia.org/wiki/Jenkins_(software)">Jenkins</a> to work with, and the knowledge and experience to get this set up was high, it
+was often left out. But that has changed, there are now vendors who offer this service.</p>
 
-<h4 id="why-is-boilerplate-in-a-solution-bad">Why is boilerplate in a solution bad?</h4>
+<div class="ceo-note">
+    <h5>
+        The CEO TL;DR
+    </h5>
+    <p>
+        As a CEO, you only care about this part of your stack because it provides you with tools to get features live <b>quickly</b> and <b>safely</b>.
+        Having a developer log into a production AWS EC2 instance to push code to make it 'live', is a bad sign. This feature is cheap and pays off quickly.
+    </p>
+</div>
 
-<p>First, code has a cost of ownership. Once a dev team builds a solution, the code takes on a life of its
-own. It has to be backed up, encrypted and documented. The dev teams have processes to manage change
-requests. Tests have to be written and on each code change, these tests need to be updated.</p>
+<h4 id="some-options-to-get-started">Some Options to get started</h4>
 
-<p>Second, the time spent writing code to account for all the CRUD endpoints; consumes sprints and slows down the roadmap.</p>
-
-<p>Third, each API endpoints need input validation. Simply put, does each endpoint enforce the user to provide good? APIs are not immune
-from the GIGO (Garbage-In equals Garbage-Out) problem. The validation of data into each endpoint requires code, testing and
-review. It can be surprising how much time and work can go into getting solid endpoint validation production
-ready.</p>
-
-<h4 id="a-solution-to-boilerplate-code">A solution to boilerplate code</h4>
-
-<p>Rethink the nature of what you build. Let the database schema define the validation. Since most endpoints do not contain
-business logic, they can be handled by library-generated endpoints. The patterns used in Platformatic.dev OS project moves
-the responsibility to the base library. The library reads the database schema table by table, and the field schema to define
-the endpoint validation requirements.</p>
-
-<p>When custom business logic is needed for a given endpoint, there are two options. You can move the endpoint out of the control
-of the library, and into a plugin that contains the logic. This simple approach reduces the side of an API and dramatically
-improves the stability. As changes are made to the database schema, the library keeps the endpoints in sync. It’s not magic,
-but it is performant.</p>
-
-<p>The platformatic modules are built on the patterns found in <a href="https://fastify.dev/ecosystem/">fastify</a>. This means that
-platformatic has access to a range of middle plugins that add common features; Auth0, OAuth, logging etc. Again. Low code
-via tested and scalable solutions.</p>
+<p>Here are three good examples of (almost) turnkey simple deployment tools (aka CI/CD).</p>
 
 <div class="row">
-    <div class="col-6">
-        Simple SQL
-        <img src="/assets/page/api-endpoint-sql.png" class="img-fluid img-responsive img-thumbnail" />
+    <div class="col-4">
+        <a href="https://github.com/features/actions" target="_blank">
+            <img src="/assets/images/github-actions.png" width="300" />
+        </a>
     </div>
-    <div class="col-6">
-        Production Ready Endpoint
-       <img src="/assets/page/api-endpoint-example.png" class="img-fluid img-responsive img-thumbnail" />
+    <div class="col-8">
+        <p>
+            <b>Github Actions</b> - This feature was launched in 2018 and enables code build, testing and
+            deployment with a few simple file changes to your Github repos. Getting setup with
+            their actions take less than 30 minutes, and it has huge benefits.
+        </p>
+        <p>
+            First, it's <b>free</b> with an account. Second, it conditions your team to start
+            using secrets to manage API keys etc. And finally, can be a good screening question
+            for your new hires. (If they do not know about GitHub actions, then maybe they are too green to hire.
+        </p>
     </div>
 </div>
 
-<h4 id="tldr">TLDR</h4>
+<hr />
 
-<p>This pattern lowers the cost of setting up and building out a database, API and the resulting development cycles.
-Teaching a non-technical founder to set up tables in SQL is trivial. Shortening the ideation cycle enables products
- to move into production faster.</p>
+<div class="row">
+    <div class="col-4">
+        <a href="https://www.cloudbees.com/products/codeship" target="_blank">
+            <img src="/assets/images/codeship.png" style="float: left;" width="200" />
+        </a>
+    </div>
+    <div class="col-8">
+        <p>
+            Oh, <b>Codeship.io</b> (now owned by CloudBees). It has been a staple for dev teams for years. This company
+            come through Techstars in 2011, has been offering perks for 10 years. They are very very startup-friendly.
+            Ping their support team and they help. And more importantly, they support deployments from Github to either
+            a docker contains or directly to their build environment.
+        </p>
+    </div>
+</div>
 
-<p>As a project matures and moves into production, the developer efforts remain focused on the actual business logic
-needed in select endpoints, not the bulk boilerplate code found in most applications. While developers might balk
-at delegating code to the library, having less boilerplate results in smaller code repositories.</p>
+<hr />
 
-<p>The long tail value of this pattern means that teams can onboard new developers into their code faster, as
-there is simply less for a new developer to review before they can make contributions and commits.</p>
+<div class="row">
+    <div class="col-4">
+        <a href="https://www.travis-ci.com/" target="_blank">
+            <img src="/assets/images/travis-ci.png" width="200" />
+        </a>
+    </div>
+    <div class="col-8">
+        <p>
+            Last I heard, this was a Berlin-based startup! Killer product, very easy to configure, and 
+            free for open-source, and affordable for private repos. It uses a local `yaml` file to configure 
+            your deployment workflows.
+        </p>
+    </div>
+</div>
 
-<p><img src="/assets/page/api-endpoint-docs.png" class="img-fluid img-responsive img-thumbnail" />
-<i class="fs-6">Swagger UI for ‘Create Workspace’ Endpoint</i></p>
+<p><br />
+<br />
+<br />
+<i>
+    This is not a complete list. No need to do the googling for you. :)
+</i>
+<br />
+<br /></p>
 
-<h4 id="api-spec--ui">API Spec &amp; UI</h4>
-
-<p>An additional bonus, the platformatic library exposes a swagger UI and GraphQL UI. The swagger API UI
-allows non-technical team members to visualize the API, entities and processes. Moving business logic out of
-code and into the larger team domain space improves the quality of the solutions a team brings to market.</p>
-
-<div class="ceo-note">
-    <b>CEO Hint</b> - You should care about this approach. It's scaling behavior. It aligns business needs
-    with code and the outcomes that drive traction.
+<div class="tech-note">
+    <h5>
+    Tech Note
+    </h5>
+    <p>
+        Having your deployment workflows stored in code is a huge win at SOC2 audit time. If you can show
+        that your processes for deploying code are declarative, and tracked with version control (i.e. in Github) you are actually showing people that your company has already been complying with cyber security requirements. Basically, it's an easy win.
+    </p>
 </div>
 
 <div class="row mt-5">
   <div class="col-6">
 
     
-      &larr; <a href="/articles/slack_power_patterns/">Previous: Slack as your v0.1 Product?</a>
+      &larr; <a href="/articles/schema_powered_apis/">Previous: Schema Powered APIs</a>
     
 
   </div>
   <div class="col-6 text-end">
 
     
-      <a href="/articles/turn_key_deployment_options/">Next: Turn-key Deployment Options</a> &rarr;
+      <a href="/articles/what_is_low_code/">Next: What is Low-Code? vs No-code?</a> &rarr;
     
 
   </div>

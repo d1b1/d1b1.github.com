@@ -3,6 +3,7 @@ title: Schema Powered APIs
 subtitle: Using database schemas to scaffold API endpoints provides scalable endpoints and boilerplate-free codebases.
 layout: default
 published: true
+date: 2024-02-20 00:00:00
 ---
  
 {% include subStyles.css %}
