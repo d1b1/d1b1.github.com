@@ -4,6 +4,7 @@ subtitle: Using database schemas to scaffold API endpoints provides scalable end
 layout: default
 published: true
 date: 2024-02-20 00:00:00
+order: 7
 ---
  
 {% include subStyles.css %}

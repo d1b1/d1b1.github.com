@@ -18,6 +18,7 @@ collections:
   articles:
     output: true
     permalink: /articles/:path/
+    sort_by: order
     
 # Markdown settings
 markdown: kramdown

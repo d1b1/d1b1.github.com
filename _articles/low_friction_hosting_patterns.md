@@ -4,6 +4,7 @@ subtitle: Don't over-thinking your hosting. No need to jump to EC2 or CloudFront
 layout: default
 published: true
 date: 2024-01-07 00:00:00
+order: 4
 ---
 
 {% include subStyles.css %}
