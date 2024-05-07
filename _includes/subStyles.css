@@ -12,12 +12,22 @@
         color: #000 !important;
     }
 
+    .tech-note p {
+        color: #000;
+        margin-bottom: 0px;
+    }
+
+    .tech-note h5 {
+        color: #000;
+    }
+
     .ceo-note {
         margin-bottom: 10px;
         border:1px solid #DFDFDF; 
         border-radius: 10px; 
         background-color: #DFDFDF; 
         padding: 20px;
+        color: #000 !important;
     }
 
     .backlink::before { 
