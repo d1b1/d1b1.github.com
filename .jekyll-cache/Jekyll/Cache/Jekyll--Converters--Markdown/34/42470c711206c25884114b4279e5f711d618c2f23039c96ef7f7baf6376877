@@ -1,15 +1,59 @@
----
-title: Startup Tools
-layout: default
-subtitle: Finding resources, investors and partners is a challenge. 
-published: true
----
-
-Finding mentors, peers, investors and funds is an eternal challenge
+I"À/<p>Finding mentors, peers, investors and funds is an eternal challenge
 for all startups. Here is a growing list of tools and resources. Hope
-these help!
+these help!</p>
 
-<!-- {% include subStyles.css %} -->
+<!-- 
+<style>
+
+    p { font-size: 19px; margin-bottom: 1.5em; }
+
+    .tech-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .tech-note p {
+        color: #000;
+        margin-bottom: 0px;
+    }
+
+    .tech-note h5 {
+        color: #000;
+    }
+
+    .ceo-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .backlink::before { 
+        content: "\2190 ";
+    }
+
+    .nextlink::before { 
+        after: "\2190 ";
+    }
+
+    blockquote {
+        border-left: 3px solid #000;
+        background-color: #DFDFDF;
+        padding: 20px;
+        min-height: 20px;
+    }
+
+    blockquote p {
+     margin: 0px;
+    }
+
+</style> -->
 
 <style>
     .card-min {
@@ -32,7 +76,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-              <img src="/assets/page/techstars-companies.png" width="100%"/>
+              <img src="/assets/page/techstars-companies.png" width="100%" />
             </div>
             <div class="card-body">
                 <div class="card-min">
@@ -60,7 +104,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/candid-company-search.png" width="100%"/>
+                <img src="/assets/page/candid-company-search.png" width="100%" />
             </div>
             <div class="card-body">
                 <div class="card-min">
@@ -89,7 +133,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-              <img src="/assets/page/investors-search.png" width="100%"/>
+              <img src="/assets/page/investors-search.png" width="100%" />
             </div>
             <div class="card-body">
                 <div class="card-min">
@@ -121,7 +165,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/fund-search.png" width="100%"/>
+                <img src="/assets/page/fund-search.png" width="100%" />
             </div>
             <div class="card-body">
               <div class="card-min">
@@ -150,7 +194,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/less-code.png" width="100%"/>
+                <img src="/assets/page/less-code.png" width="100%" />
             </div>
             <div class="card-body">
               <div class="card-min">
@@ -182,7 +226,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/searchable-vector.png" width="100%"/>
+                <img src="/assets/page/searchable-vector.png" width="100%" />
             </div>
             <div class="card-body" style="background-color: #EFEFEF;">
               <div class="card-min">
@@ -213,7 +257,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/soc-ai-assistant2.png" width="100%"/>
+                <img src="/assets/page/soc-ai-assistant2.png" width="100%" />
             </div>
             <div class="card-body" style="background-color: #EFEFEF;">
               <div class="card-min">
@@ -265,7 +309,7 @@ these help!
           on <b><a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank">LinkedIn</a></b>, and subscribe to <b>my newsletter</b> and finally, you have an understanding on how <b>intentional networking</b> benefits your business.
         </p>
         <p>
-          Be ready to share & collaborate.
+          Be ready to share &amp; collaborate.
         </p>
         <div class="ceo-note">
           <i>FYI - Intentional networking is the opposite of luck-driven networking. You are luck-driven if you
@@ -281,3 +325,4 @@ these help!
     </div>
   </div>
 </div>
+:ET
