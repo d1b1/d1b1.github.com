@@ -1,0 +1,200 @@
+I"l
+<style>
+
+    p { font-size: 19px; margin-bottom: 1.5em; }
+
+    .tech-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .tech-note p {
+        color: #000;
+        margin-bottom: 0px;
+    }
+
+    .tech-note h5 {
+        color: #000;
+    }
+
+    .ceo-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .backlink::before { 
+        content: "\2190 ";
+    }
+
+    .nextlink::before { 
+        after: "\2190 ";
+    }
+
+    blockquote {
+        border-left: 3px solid #000;
+        background-color: #DFDFDF;
+        padding: 20px;
+        min-height: 20px;
+    }
+
+    blockquote p {
+     margin: 0px;
+    }
+
+</style>
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        What is Low-Code? vs No-code?
+      </h4>
+    </div>
+    <div class="col-6">
+      No-code has been around for years, and it's maturing fast. It has only gotten truly effective in the last year years. It has problems. SAS vendor lock-in concerns, scalability and supportability.
+      <a href="/articles/what_is_low_code/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        We need to refactor again!
+      </h4>
+    </div>
+    <div class="col-6">
+      This is the battle cry of many developers when faced with technology changes, recurring bugs, or scaling issues.
+      <a href="/articles/we_need_to_refactor_again/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Slack as your v0.1 Product?
+      </h4>
+    </div>
+    <div class="col-6">
+      Most people look past the value of Slack in building solutions. Don't.
+      <a href="/articles/slack_power_patterns/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Low Friction Hosting Processes
+      </h4>
+    </div>
+    <div class="col-6">
+      Don't over-thinking your hosting. No need to jump to EC2 or CloudFront.
+      <a href="/articles/low_friction_hosting_patterns/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Databases For Rapid Solutions
+      </h4>
+    </div>
+    <div class="col-6">
+      Which database to start with is a key decision, as it impacts the technology you can select, the pattern of storage and the frameworks that work the best.
+      <a href="/articles/databases_for_rapid_solutions/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        How to understand Identity Management?
+      </h4>
+    </div>
+    <div class="col-6">
+      Usernames and Passwords are easy, but come with a roadmap cost later on as a project matures.
+      <a href="/articles/auth_as_a_service/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        lkjljlkj
+      </h4>
+    </div>
+    <div class="col-6">
+      Usernames and Passwords are easy, but come with a roadmap cost later on as a project matures.
+      <a href="/articles/bobo/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Schema Powered APIs
+      </h4>
+    </div>
+    <div class="col-6">
+      Using database schemas to scaffold API endpoints provides scalable endpoints and boilerplate-free codebases.
+      <a href="/articles/schema_powered_apis/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Turn-key Deployment Options
+      </h4>
+    </div>
+    <div class="col-6">
+      Deployment is a late-stage development process that should be included from inceptions of a project.
+      <a href="/articles/turn_key_deployment_options/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="row">
+    <div class="col-6">
+      <h4>
+        Low Code Cookbook!
+      </h4>
+    </div>
+    <div class="col-6">
+      Every solution builder needs alternatives to expand their understanding of possibilities.
+      <a href="/articles/low_code/">read more...</a>
+    </div>
+  </div>
+<hr />
+
+<div class="mt-5 mb-5 tech-note">
+    <h5>
+     The CEO Perspective
+    </h5>
+    <p>
+        These articles are written to give CEOs and Founders with
+        a non-technical perspective on decisions that are often left
+        to developers to address. Look for these panels to understand
+        the impact.
+    </p>
+</div>
+
+<style>
+ hr { border: 1px solid #DFDFDF; }
+</style>
+
+:ET

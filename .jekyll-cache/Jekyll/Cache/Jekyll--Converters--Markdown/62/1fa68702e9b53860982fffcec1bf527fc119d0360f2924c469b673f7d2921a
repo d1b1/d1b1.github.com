@@ -1,0 +1,151 @@
+I"�
+<style>
+
+    p { font-size: 19px; margin-bottom: 1.5em; }
+
+    .tech-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .tech-note p {
+        color: #000;
+        margin-bottom: 0px;
+    }
+
+    .tech-note h5 {
+        color: #000;
+    }
+
+    .ceo-note {
+        margin-bottom: 10px;
+        border:1px solid #DFDFDF; 
+        border-radius: 10px; 
+        background-color: #DFDFDF; 
+        padding: 20px;
+        color: #000 !important;
+    }
+
+    .backlink::before { 
+        content: "\2190 ";
+    }
+
+    .nextlink::before { 
+        after: "\2190 ";
+    }
+
+    blockquote {
+        border-left: 3px solid #000;
+        background-color: #DFDFDF;
+        padding: 20px;
+        min-height: 20px;
+    }
+
+    blockquote p {
+     margin: 0px;
+    }
+
+</style>
+
+<h3 id="sql-vs-no-sql">SQL vs No-SQL</h3>
+<p>The long &amp; short of this concept is that you either have a very declarative data store that locks down fields and relationships or not.
+In the end, the all work, and they store your data. In No-SQL you can data fields, names and structures on the fly, and handle the differences in code. In SQL
+you have to do more work to change the way data is stored, but your code is
+clear and more concise.</p>
+
+<p>Here is a short reference list:</p>
+
+<div class="row">
+    <div class="col-6">
+        <b>
+            SQL
+        </b>
+        <ul>
+            <li>MySQL</li>
+            <li>Postgres</li>
+            <li>SQLLite</li>
+            <li>AWS RDS</li>
+            <li>Oracle</li>
+            <li>Many more...</li>
+        </ul>
+    </div>
+    <div class="col-6">
+       <b>
+            NoSQL
+        </b>
+        <ul>
+            <li>MongoDB</li>
+            <li>DynamoDB</li>
+            <li>Firebase RTD</li>
+            <li>Firestore</li>
+            <li>Many more...</li>
+        </ul>
+    </div>
+</div>
+<hr />
+
+<h3 id="how-we-choose">How we choose</h3>
+<p>It might be surprising. Most startups think less about the impact of their application’s database than they should. Often this is the domain of the
+first developer on site, the first tech hire or just the opinion of the most technical person around the founder. This is not startup laziness. It’s because
+founders do not assign much value to the database selection.</p>
+
+<p>The dirty secret about developers is that we rarely think about the impact of SQL vs No-SQL storage options. Sometimes we know both solutions
+and deployed production applications in each. But often we know what’s new, what’s worked, or the storage option we like the most. Our technology
+decision-making rubrics are not mature. At least not until we get to the VP Eng or CTO level.</p>
+
+<p>It should not be surprising, but developers have favorite solutions. Their preferences are fine, but not when assessing patterns that will speed up ROI or long-term support costs.</p>
+
+<hr />
+<h3 id="rule-of-thumb">Rule of Thumb</h3>
+<p>Without getting in a ‘this’ database is better than that database argument, here are a few things to keep in mind.</p>
+
+<p><strong>a. Need Flexibility Most</strong>
+If you do not know or can not know how your data will be stored, then go with no-SQL. It will give you more flexibility when you
+don’t have specifics. Your front-end coder can solve issues.</p>
+
+<p><strong>b. Need Flexibility Less</strong>
+If you do know how your data will be stored, and do not expect that <strong>new information</strong>
+will dramatically alter your thinking, then go with SQL.</p>
+
+<p><strong>c. Known Security Concerns</strong>
+If you know are going into a regulated space, then the category ‘full managed datastore’ is worth
+exploring. In that case, focus on GCP and AWS fully managed options. or Snowflake.</p>
+
+<hr />
+
+<h4 id="when-needs-change">When Needs Change</h4>
+<p>SQL comes with schemas and structure, but there are patterns that can be used to move between solutions. <a href="https://www.prisma.io/">Prisma.io</a> is a perfect example. It makes schema, for either SQL/NoSQL approach a viable option. Additionally, solutions like Prisma, can help you scale load and costs in a cost-effective method long before you develop the technology team that will make better decisions.</p>
+
+<p><br /></p>
+
+<div class="tech-note">
+    <h5>
+      Tech Note
+    </h5>
+    <p>
+        SQL or No-SQL. It has no impact on your SOC needs. Move on.
+    </p>
+</div>
+
+<div class="row mt-5">
+  <div class="col-6">
+
+    
+      &larr; <a href="/articles/low_friction_hosting_patterns/">Previous: Low Friction Hosting Processes</a>
+    
+
+  </div>
+  <div class="col-6 text-end">
+
+    
+      <a href="/articles/auth_as_a_service/">Next: How to understand Identity Management?</a> &rarr;
+    
+
+  </div>
+</div>
+
+:ET
