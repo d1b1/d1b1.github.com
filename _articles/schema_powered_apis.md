@@ -5,6 +5,7 @@ layout: default
 published: true
 date: 2024-02-20 00:00:00
 order: 7
+linkCard: /assets/page/schema-powered-api.png
 ---
  
 {% include subStyles.css %}
