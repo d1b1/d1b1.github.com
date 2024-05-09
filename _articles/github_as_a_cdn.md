@@ -5,6 +5,7 @@ layout: default
 published: true
 date: 2024-05-09 00:00:00
 order: 100
+linkCard: /assets/page/github-cdn-banner-3.png
 ---
 
 {% include subStyles.css %}
@@ -12,16 +13,16 @@ order: 100
 <img src="/assets/page/github-cdn-banner-3.png" class="img-fluid">
 
 I have recently been rethinking a number of technology stack components to see if they could
-serve a different purpose. [GitHub](https://github.com) has been my favorite for a while now. Github.com is the go-to
-service to host GIT repositories, used by software teams around the world to securely host
+serve a different purpose. [GitHub](https://github.com) has been my favorite for a while now. Github.com
+is the go-to service to host GIT repositories, used by software teams around the world to securely host
 their code bases.
 
 > This site is hosted on GitHub, using their 'Github Pages'. It supports SSL (free) and custom domains.
 Using Jekyll for templating.
 
-Recently I needed a place to dump some images from an Airtable project into a web storage solution
-that I could use on outside projects. Airtable is happy to host images, but their image paths have
-expiration timers. Basically, if you are on Airtable, all is good, the image URLs work. If you want
+Recently I needed a place to dump some images from an AirTable project into a web storage solution
+that I could use on outside projects. AirTable is happy to host images, but their image paths have
+expiration timers. Basically, if you are on AirTable, all is good, the image URLs work. If you want
 to use the images off of their service, the URLs only function for 24 hours, then you get a 404 message.
 
 No love. :(
