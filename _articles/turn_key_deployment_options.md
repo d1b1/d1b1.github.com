@@ -5,9 +5,12 @@ layout: default
 published: true
 date: 2024-03-15 00:00:00
 order: 8
+linkCard: /assets/page/rapid-deployment.png
 ---
 
 {% include subStyles.css %}
+
+<img src="/assets/page/rapid-deployment.png" class="img-fluid">
 
 Code deployment is just a code word for how you get your code from your local machine, or your developers' laptop to your site. This requirement is often something that gets added to a project after the team grows past its initial founders/coders.
 
