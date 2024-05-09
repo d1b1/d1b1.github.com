@@ -10,6 +10,8 @@ linkCard: /assets/page/schema-powered-api.png
  
 {% include subStyles.css %}
 
+<img src="/assets/page/schema-powered-api.png" class="img-fluid img-thumbnail shadow-lg">
+
 #### 90% of APIs are boilerplate code
 
 This simple observation is a game changer. At [Nodeconf.eu](https://www.youtube.com/playlist?list=PL0CdgOSSGlBaULAdbribJiENfXxPW0aLQ) in Ireland in 2022, the founders of [Platformatic.dev](https://platformatic.dev/)
