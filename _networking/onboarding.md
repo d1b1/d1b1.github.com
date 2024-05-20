@@ -3,6 +3,9 @@ title: Beta Program Onboarding
 layout: default
 subtitle: Invite only beta program for next-generation networking tech.
 published: true
+linkCardTitle: 'Networking Tech Experiments'
+linkCard: /networking/assets//banner.png
+linkCardDesc: 'A Beta Program for networking tech.'
 sitemap: false
 ---
 
@@ -14,8 +17,8 @@ people use to give and take value from their professional networks.
 
 <br>
 #### Step 1: Sign-up on LeadDelta.com
-The first step is to sign-up for a free account on LeadDelta. This startup
-offers a Saas service to unlock the value of your LinkedIn Account. It's __free__
+The first step is to sign up for a free account on LeadDelta. This startup
+offers a SaaS service to unlock the value of your LinkedIn Account. It's __free__
 for the first 7 days. I use this service to provide a fast way to harvest
 data from your LinkedIn Account.
 
