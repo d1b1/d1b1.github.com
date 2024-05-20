@@ -242,6 +242,38 @@ these help!
           </div>
         </div>
 
+        <!-- <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-img">
+                <img src="/assets/page/soc-ai-assistant2.png" width="100%"/>
+            </div>
+            <div class="card-body">
+              <div class="card-min">
+                <h5 class="card-title">
+                  AI Powered Tools
+                </h5>
+                <p class="card-text">
+                    Growing list of AI/LLM backed tools 
+                    and services from the 2022 OpenAi 
+                    ChatGPT launch.
+                </p>
+                <p>
+                  <span class="badge text-bg-success">OpenAi</span>
+                  <span class="badge text-bg-success">LLM</span>
+                  <span class="badge text-bg-danger">Service</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://ai-tools.StephanSmith.solutions" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
+                    List &gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
     </div>
 
 <!-- Modal -->
