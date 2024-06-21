@@ -20,6 +20,11 @@ collections:
     permalink: /articles/:path/
     sort_by: order
     
+  programs:
+    output: true
+    permalink: /programs/:path/
+    sort_by: order
+
   packages:
     output: true
     permalink: /packages/:path/
