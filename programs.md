@@ -12,7 +12,9 @@ sitemap: false
 {% for article in programs %}
   <div class="row">
     <div class="col-2">
-      <img src="{{ article.logo}}" class="img-fluid img-thumbnail">
+      <a href="{{ article.url }}">
+        <img src="{{ article.logo}}" class="img-fluid img-thumbnail">
+      </a>
     </div>
     <div class="col-4">
       <h4>

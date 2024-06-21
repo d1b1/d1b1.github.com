@@ -1,5 +1,5 @@
 ---
-title:  Git Repo Insights
+title:  AI/Git Repo Insights
 subtitle: New AI tech that aims to help/empower/advance engineering leaders see deeper into their teams, via data locked in their commits.
 layout: default
 published: true
@@ -16,11 +16,12 @@ logo: '/programs/assets/sprintreview-logo.png'
 <img src="/programs/assets/sprintreview-banner.png" class="img-fluid img-thumbnail">
 
 #### Current Stage
-This is a very early stage, pre-funding startup. It has some seasoned founders, who know the value
+[SprintReview.ai](https://SprintReview.ai) is a very early-stage, pre-funding startup. It has some seasoned founders, who know the value
 of getting the right feedback as they set their first stage features. We need 3-5 design partners
 who will be willing to take part.
 
-#### Background
+---
+#### My Background
 I love this startup's <b>mission</b>.
 
 In 2025 I left a dev lead role at a startup in Boston. On the way out of the door, I outlined a
@@ -47,6 +48,7 @@ members, when to send someone to a conference, and when to give a day off. When 
 to focus a one-on-one meeting.
 
 This startup is doing the same!
+
 ---
 #### Expectations
 3-4 Meetings
