@@ -24,7 +24,7 @@ who will be willing to take part.
 #### My Background
 I love this startup's <b>mission</b>.
 
-In 2025 I left a dev lead role at a startup in Boston. On the way out of the door, I outlined a
+In 2015, I left a dev lead role at a startup in Boston. On the way out of the door, I outlined a
 data-centric approach to tech engineering management. Focus on the data [of your teams]. All the
 insights you need are in the data. It was a gut feeling and shared informally.
 
