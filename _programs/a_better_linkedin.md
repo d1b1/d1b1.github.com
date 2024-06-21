@@ -5,7 +5,7 @@ layout: default
 published: true
 date: 2024-05-26 00:00:00
 order: 3
-sitemap: true
+sitemap: false
 status: 'pending'
 stage: 'early'
 ---

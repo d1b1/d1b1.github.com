@@ -3,6 +3,7 @@ title: Design Programs
 layout: default
 subtitle: New, early-stage tech startups need traction. To get there they need a special type of design partner, someone who has pressing needs, and needs a solution ASAP.
 order: 0
+sitemap: false
 ---
 
 {% include subStyles.css %}
