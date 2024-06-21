@@ -1,0 +1,15 @@
+
+
+<div class="row mt-5">
+  <div class="col-6">
+    &larr; <a href="/programs">List all Programs</a>
+  </div>
+  <div class="col-6 text-end">
+
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }}</a> &rarr;
+    {% endif %}
+
+  </div>
+</div>
+

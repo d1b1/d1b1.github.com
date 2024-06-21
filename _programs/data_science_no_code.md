@@ -13,6 +13,13 @@ logo: '/programs/assets/pliable-logo.png'
 
 {% include subStyles.css %}
 
-asdfasdf
+<div class="mt-5 mb-5 tech-note">
+    <h5>
+       Coming Soon...
+    </h5>
+    <p>
+        This call for design partners will open in the coming weeks.
+    </p>
+</div>
 
-{% include articleFooter.html %}
+{% include programFooter.html %}
