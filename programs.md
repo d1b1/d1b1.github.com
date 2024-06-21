@@ -11,7 +11,10 @@ sitemap: false
 {% assign programs = site.programs %}
 {% for article in programs %}
   <div class="row">
-    <div class="col-6">
+    <div class="col-2">
+      <img src="{{ article.logo}}" class="img-fluid img-thumbnail">
+    </div>
+    <div class="col-4">
       <h4>
         {{ article.title }}
       </h4>

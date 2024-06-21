@@ -3,14 +3,17 @@ title:  Git Repo Insights
 subtitle: New AI tech that aims to help/empower/advance engineering leaders see deeper into their teams, via data locked in their commits.
 layout: default
 published: true
-date: 2024-05-26 00:00:00
+date: 2024-06-17 00:00:00
 order: 1
 sitemap: false
 status: 'active'
 stage: 'early'
+logo: '/programs/assets/sprintreview-logo.png'
 ---
 
 {% include subStyles.css %}
+
+<img src="/programs/assets/sprintreview-banner.png" class="img-fluid img-thumbnail">
 
 #### Current Stage
 This is a very early stage, pre-funding startup. It has some seasoned founders, who know the value

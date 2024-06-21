@@ -8,6 +8,8 @@ order: 3
 sitemap: false
 status: 'pending'
 stage: 'early'
+logo: '/programs/assets/unfurl-logo.png'
+
 ---
 
 {% include subStyles.css %}

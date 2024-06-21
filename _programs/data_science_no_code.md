@@ -8,6 +8,7 @@ order: 2
 sitemap: false
 status: 'active'
 stage: 'early'
+logo: '/programs/assets/pliable-logo.png'
 ---
 
 {% include subStyles.css %}
