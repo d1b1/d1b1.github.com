@@ -38,7 +38,9 @@ sitemap: false
     <p>
         Startups are always fighting the feature/adoption curve. Said another
         way, what are the features that generate the most early traction? One
-        or two good 'must-have' features can be enough.
+        or two good 'must-have' features can be enough. These startups are
+        looking for insights, usually from CTOs or engineering leaders on how
+        to stage their features
     </p>
 </div>
 
