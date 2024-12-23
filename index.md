@@ -27,7 +27,7 @@ title: Home
       <!-- {% include homepage/pricing.html %} -->
       <!-- {% include homepage/packages_legacy.html %} -->
 
-      {◊% include homepage/packages.html %}
+      {% include homepage/packages.html %}
       {% include homepage/package_stack_review.html %}
       
       {% include homepage/tools.html %}
