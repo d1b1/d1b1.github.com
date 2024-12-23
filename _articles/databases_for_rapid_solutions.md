@@ -4,6 +4,7 @@ layout: default
 subtitle: Which database to start with is a key decision, as it impacts the technology you can select, the pattern of storage and the frameworks that work the best.
 published: true
 date: 2024-02-20 00:00:00
+topic: general
 order: 5
 ---
 

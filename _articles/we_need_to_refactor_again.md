@@ -3,6 +3,7 @@ title: We need to refactor again!
 subtitle: This is the battle cry of many developers when faced with technology changes, recurring bugs, or scaling issues. 
 layout: default
 published: true
+topic: general
 order: 2
 ---
  

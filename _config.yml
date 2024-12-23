@@ -35,6 +35,12 @@ collections:
     permalink: /networking/:path/
     sort_by: order
 
+  backlog:
+    output: true
+    permalink: /backlog/:path/
+    sort_by: order
+    
+
 # Markdown settings
 markdown: kramdown
 
