@@ -5,6 +5,7 @@ title: Home
 
 {% include head.html %}
 {% include ga.html %}
+{% include subStyles.css %}
 
 <body>
 
@@ -35,6 +36,9 @@ title: Home
       {% include homepage/references.html %} 
       {% include homepage/tldr.html %}
       {% include homepage/schedule_cta.html %}
+
+      <!-- Blog CTA -->
+      <!-- {% include blog/cta.html %} -->
     </main>
 
   {% include footer.html %}
