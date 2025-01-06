@@ -188,7 +188,7 @@ subtitle: Every dev hates the word 'gluecode'. It feels dirty, if you like build
         3 options
       </td>
       <td align="center" >
-        <a class="btn btn-sm btn-primary" target="cookbook" href="https://low-code-cookbook.stephansmith.solutions">
+        <a class="btn btn-sm btn-primary" target="cookbook" href="https://lowCodeCookbook.com">
             Cookbook
         </a>
       </td>
