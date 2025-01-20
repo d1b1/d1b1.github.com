@@ -1,6 +1,6 @@
 ---
-title:  What I Read?
-subtitle: Startup founders often share what they read. Here is what I read.
+title:  My Startup Reading List
+subtitle: Startup founders often share what they read. I share what works. These books keep might aligned and ready. I read and revisit them often.
 layout: default
 published: true
 date: 2025-01-19 00:00:00
@@ -11,14 +11,12 @@ sitemap: true
 
 {% include subStyles.css %}
 
-I have noticed that many startup founders often share that they are
-too busy to read. When I hear this statement, I understand it be a hedge.
+I have noticed that many startup founders often say they are
+too busy to read. When I hear this statement, I know the feeling, but understand it be a hedge.
 They are busy, and reading for fun is a beach activity. It can feel like
 a luxury.
 
-But.
-
-When founders talk to each other about what they read, I hear something
+But, when founders talk to each other about what they read, I hear something
 very different. Founders read for effect and impact. They read to learn.
 A different mindset can change a go to market strategy. It can radically change
 how a founding teams approach their belief in what is possible.
@@ -29,8 +27,8 @@ So here is my reading list.
 
 #### 1. "Never Split the Difference" <small style="font-weight: 200;">- Chris Voss</small>
 
-<a href="https://amzn.to/42lnR41" target="_blank" style="float: left; margin-right: 10px;">
-<img src="/articles/assets/never-split-the-difference.png" class="img-fluid img-thumbnail" style="float: left; margin-right: 10px;" width="300">
+<a href="https://amzn.to/42lnR41" target="_blank" style="float: left;" class="d-block d-sm-inline mr-3 me-3">
+<img src="/articles/assets/never-split-the-difference.png" class="mr-5 img-fluid img-thumbnail" style="float: left; max-width: 250px;">
 </a>
 I found this book in the months right after we graduated from the 2018 TechStars
 Boston program. A number of the founders from the program moved from the WeWork in
@@ -46,8 +44,8 @@ I read random capture from this book every time I enter a negotiation. I find th
 even a short read can make a difference. It gets me back a listening mode that yields
 better results.
 
-<a href="https://amzn.to/42lnR41" class="btn btn-success" target="_blank">
-   Get it on Amazon!
+<a href="https://amzn.to/42lnR41" class="btn btn-success d-block d-sm-inline" target="_blank">
+   <i class="fas fa-shopping-cart"></i> Get it on Amazon!
 </a>
 
 <div class="ceo-note">
@@ -60,8 +58,8 @@ better results.
 
 #### 2. "Venture Deals" <small style="font-weight: 200;">- Brad Feld & Jason Mendelson</small>
 
-<a href="https://amzn.to/40lkZS9" target="_blank">
-<img src="/articles/assets/never-split-the-difference.png" class="img-fluid img-thumbnail" style="float: right; margin-right: 10px;" width="300">
+<a href="https://amzn.to/40lkZS9" target="_blank" style="float: right;" class="d-block d-sm-inline ml-3 me-md-3">
+<img src="/articles/assets/venture-deals.png" class="img-fluid img-thumbnail" style="float: right; max-width: 250px;">
 </a>
 Simple book, easy read, but a dense topic. Brad and Mendelson break down terms sheets, and tease
 apart each component, from two sides: From the VC/Investor side, and the startup founder. I
@@ -75,8 +73,8 @@ A startup founder needs to understand investment theory. I read parts of this bo
 I talk to an investors. It gets me into their mindset. It took me years to understand that
 the investment thinking was not founder thinking.
 
-<a href="https://amzn.to/40lkZS9" class="btn btn-success" target="_blank">
-   Get it on Amazon!
+<a href="https://amzn.to/40lkZS9" class="btn btn-success d-block d-sm-inline" target="_blank">
+   <i class="fas fa-shopping-cart"></i> Get it on Amazon!
 </a>
 
 <div class="ceo-note">
@@ -87,22 +85,30 @@ the investment thinking was not founder thinking.
 
 #### 3. "Meditations" <small style="font-weight: 200;">- Marcus Aurelius</small>
 
+<a href="https://amzn.to/4h1Eu9g" target="_blank" style="float: left;" class="d-block d-sm-inline me-3">
+<img src="/articles/assets/meditations.png" class="img-fluid img-thumbnail" style="float: left; max-width: 250px;">
+</a>
 Again, simple book, long term utility. Founders have to believe in the impossible. When
 everyone else says something is impossible, they have to believe it is possible. As with the
-Voss book I carry this book. I got the paper back so I could make notes in it. I add dates
-and topics to the margins, and it helps me remember that there is a burden in doing things
-that are not easy.
+Voss book I carry this book in laptop bad. I got the paper back, so I could make notes in it.
+Its a working reference. I add dates and topics to the margins, and it helps me remember that
+there is a burden in doing things that are not easy.
 
-Seeing those notes from past struggles reminds me to stay out of the details and focus
-on the process.
+Something about the fact that a man 2k years ago was thining words that are still relevant
+is helpful. And seeing my margin notes from past struggles reminds me to keep things in perspective.
 
-<a href="https://amzn.to/4h1Eu9g" class="btn btn-success" target="_blank">
-   Get it on Amazon!
+<a href="https://amzn.to/4h1Eu9g" class="btn btn-success d-block d-sm-inline" target="_blank">
+   <i class="fas fa-shopping-cart"></i> Get it on Amazon!
 </a>
 
 <div class="ceo-note">
+    <h4>
+       What make the list?
+    </h4>
     Nothing goes onto my long term reading list if it does not provide
-    persistent utility. I keep my founders reading list short and focused.
+    persistent utility. If I am not re-reading it on a regular basis, it does 
+    not make the cut. For the Voss book, I read it every three month on schedule.
+    That seems to be cadence I need to keep the concepts fresh.
 </div>
 
 {% include articleFooter.html %}
