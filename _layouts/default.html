@@ -1,9 +1,16 @@
 
 {% include head.html %}
+
 {% include ga.html %}
 
-  {% include banner.html %}
+<div class="container py-3">
+  <header>
+    {% include navbar.html %}
+    {% include banner.html %}
+  </header>
   {{ content }}
   {% include footer.html %}
+
+</div>
 
 {% include end.html %}
