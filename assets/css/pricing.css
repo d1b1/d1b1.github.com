@@ -9,3 +9,12 @@ body {
 .pricing-header {
   max-width: 700px;
 }
+
+a { 
+  color: black;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+a:hover {
+  color: gray; /* Change to a slight light gray on hover */
+}
