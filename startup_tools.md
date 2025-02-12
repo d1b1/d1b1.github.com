@@ -247,6 +247,38 @@ these help!
           </div>
         </div>
 
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-img">
+                <img src="/assets/page/low-code-cto-cta-4.png" width="100%"/>
+            </div>
+            <div class="card-body">
+              <div class="card-min">
+                <h5 class="card-title">
+                  Low Code CTO
+                </h5>
+                <p class="card-text">
+                    Getting up to speed on low-code, no-code
+                    and all the tooling that goes with it, is easier
+                    a guide. 
+                </p>
+                <p>
+                  <span class="badge text-bg-dark">Terms</span>
+                  <span class="badge text-bg-dark">Approaches</span>
+                  <span class="badge text-bg-dark">Patterns</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://LowCodeCTO.com" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
+                    Start Reading &gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
@@ -295,7 +327,7 @@ these help!
         <p>
           This feature is a part of a growing body of micro apps that fall into the
           networking tech space. Networking is hard. It takes time and energy to find the
-          signals in professional networks. 
+          signals in professional networks.
         </p>
         <p>
           How to get into the beta testing program? Connect with me
