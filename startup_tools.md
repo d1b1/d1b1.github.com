@@ -250,7 +250,7 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-                <img src="/assets/page/low-code-cto-cta-4.png" width="100%"/>
+                <img src="/assets/page/low-code-cto-cta.png" width="100%"/>
             </div>
             <div class="card-body">
               <div class="card-min">
@@ -263,9 +263,9 @@ these help!
                     a guide. 
                 </p>
                 <p>
-                  <span class="badge text-bg-dark">Terms</span>
-                  <span class="badge text-bg-dark">Approaches</span>
-                  <span class="badge text-bg-dark">Patterns</span>
+                  <span class="badge text-bg-dark">low-code</span>
+                  <span class="badge text-bg-dark">no-code</span>
+                  <span class="badge text-bg-dark">ai-code</span>
                 </p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
