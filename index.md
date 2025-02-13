@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Home
+title: Stephan Smith, fCTO
 ---
 
 {% include head.html %}
@@ -9,7 +9,7 @@ title: Home
 
 <body>
 
-  {% include svgs.html %}
+  <!-- {% include svgs.html %} -->
   {% include colors.html %}
 
   <div class="container py-3">
@@ -30,11 +30,13 @@ title: Home
 
       {% include homepage/packages.html %}
       {% include homepage/package_stack_review.html %}
-      
+    
+
       {% include homepage/tools.html %}
       {% include homepage/perspective.html %}
       {% include homepage/references.html %} 
       {% include homepage/tldr.html %}
+
       {% include homepage/schedule_cta.html %}
 
       <!-- Blog CTA -->
