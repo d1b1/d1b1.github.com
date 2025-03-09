@@ -50,7 +50,7 @@ focus on SMBs, and others focus on larger enterprise clients and government agen
 #### Enterprise Solutions
 
 Domo, OutSystems are two examples of solutions targeting the enterprise market. When a vendor leads with SOC and security concerns, it's a clear sign they are speaking 
-to the CIO and CISO at large companies, who can block a vendor from their organizations. There are fewer of these vendors than you might expect.
+to the CIO at large companies, who can block a vendor from their organizations. There are fewer of these vendors than you might expect.
 
 The ecosystems for no-code for SMBs are huge. This is not a full list, but there are some standouts: Bubble.com, [Retool.com](https:/retool.com)
 

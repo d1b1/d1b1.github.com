@@ -17,7 +17,7 @@ sitemap: false
                 Stephan Smith
             </h4>
             <p style="color: green; margin-top: 0px;">
-                fractional CTO/CISO
+                fractional CTO
             </p> 
             <p stkyle="margin-top: 2em;">
                 <a href="tel:6179537947" style="text-decoration: none; color: #000">
