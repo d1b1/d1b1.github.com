@@ -2,3 +2,4 @@
 node_modules
 .jekyll-metadata
 _site
+.qodo
