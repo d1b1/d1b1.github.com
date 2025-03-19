@@ -8,13 +8,12 @@
     .then(data => {
       if (data.items.length > 0) {
         let post = data.items[0]; // Latest post
-        console.log(post)
         document.getElementById('beehiiv-widget').innerHTML = `
         <div class="row" style="border: 1px solid #eee; border-radius: 8px; padding: 20px; cursor: pointer; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: transform 0.2s ease, box-shadow 0.2s ease; margin-bottom: 20px; hover: {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1);}" onclick="window.open('${post.link}', '_blank')">
             <div class="col-12">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                     <span style="color: #666; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">
-                        From the Desk to the "Low Code CTO"
+                        From the "Low Code CTO":
                     </span>
                     <span style="color: #666; font-size: 0.9em;">
                         ${new Date(post.pubDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
