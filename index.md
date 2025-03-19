@@ -13,19 +13,15 @@ title: Stephan Smith, fCTO
   {% include colors.html %}
 
   <div class="container py-3">
+  
     <header>
       {% include colors.html %}
       {% include navbar.html %}
       {% include homepage/hero.html %}
-
       {% include homepage/profile.html %}
-
       {% include news.html %}
-
       {% include homepage/fcto_why.html %}
     </header>
-
-
 
     <main>
       <hr>
