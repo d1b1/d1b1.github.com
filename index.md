@@ -25,13 +25,15 @@ title: Stephan Smith, fCTO
 
     <main>
       <hr>
+
       {% include homepage/engagement.html %}
 
       <!-- {% include homepage/pricing.html %} -->
       <!-- {% include homepage/packages_legacy.html %} -->
 
-      {% include homepage/packages.html %}
-      {% include homepage/package_stack_review.html %}
+      {% include homepage/packages-ai.html %}
+      
+      <!-- {% include homepage/package_stack_review.html %} -->
     
 
       {% include homepage/tools.html %}
