@@ -85,7 +85,7 @@ these help!
                     Subscribe & Read &gt;
                   </a>
                 </div>
-                <small class="text-body-secondary">4k+ companies</small>
+                <small class="text-body-secondary">311 solutions</small>
               </div>
             </div>
           </div>
