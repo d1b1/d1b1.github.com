@@ -58,8 +58,40 @@ these help!
             </div>
           </div>
 
-          
         </div>
+
+                <div class="col">
+
+          <div class="card shadow-sm">
+            <div class="card-img">
+              <img src="/assets/images/low-code-cto-newsletter.png" width="100%"/>
+            </div>
+            <div class="card-body">
+                <div class="card-min">
+                <h5 class="card-title">Newsletter</h5>
+                <p class="card-text">
+                    Weekly low-code insights and wins from 
+                    a reformed code-first CTO. 
+                </p>
+                <p>
+                <span class="badge text-bg-success">scoring</span>
+                    <span class="badge text-bg-success">stacks</span>
+                    <span class="badge text-bg-success">approaches</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" target="_blank" href="https://lowcodeCTO.com/subscribe" class="btn btn-sm btn-outline-secondary">
+                    Subscribe & Read &gt;
+                  </a>
+                </div>
+                <small class="text-body-secondary">4k+ companies</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         
         <div class="col">
 
