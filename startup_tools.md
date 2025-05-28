@@ -187,13 +187,13 @@ these help!
 
         <div class="col">
 
-<div class="card shadow-sm">
+         <div class="card shadow-sm">
             <div class="card-img">
               <img src="/assets/page/techstars-companies.png" width="100%"/>
-            </div>
+             </div>
             <div class="card-body">
                 <div class="card-min">
-                <h5 class="card-title">Techstars Companies</h5>
+                <h5 class="card-title">Techstars Programs</h5>
                 <p class="card-text">
                     Here is a searchable database of 4k+ Techstars companies. Search by year, county, name or program.
                 </p>
@@ -214,6 +214,38 @@ these help!
             </div>
           </div>
         </div>
+
+         <div class="col">
+
+         <div class="card shadow-sm">
+            <div class="card-img">
+              <img src="/assets/images/startup-directory.png" width="100%"/>
+             </div>
+            <div class="card-body">
+                <div class="card-min">
+                <h5 class="card-title">Funded Startups</h5>
+                <p class="card-text">
+                    Database of funded startups via from
+                    large accelerator programs.
+                </p>
+                <p>
+                <span class="badge text-bg-success">funded</span>
+                    <span class="badge text-bg-success">ages</span>
+                    <span class="badge text-bg-success">founders</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" target="_blank" href="https://startups.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
+                    Search Startups &gt;
+                  </a>
+                </div>
+                <small class="text-body-secondary">4k+ companies</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
         <div class="col">
           <div class="card shadow-sm">
