@@ -30,34 +30,40 @@ these help!
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
+
           <div class="card shadow-sm">
             <div class="card-img">
-              <img src="/assets/page/techstars-companies.png" width="100%"/>
+              <img src="https://cdn.launchbylunch.co/assets/lander.png" width="100%"/>
             </div>
             <div class="card-body">
                 <div class="card-min">
-                <h5 class="card-title">Techstars Companies</h5>
+                <h5 class="card-title">Launch By Lunch</h5>
                 <p class="card-text">
-                    Here is a searchable database of 4k+ Techstars companies. Search by year, county, name or program.
+                    First ever AI + Low-Code Accelerator for non-technical founders.
                 </p>
                 <p>
-                <span class="badge text-bg-success">by year</span>
-                    <span class="badge text-bg-success">by program</span>
-                    <span class="badge text-bg-success">by industry</span>
+                <span class="badge text-bg-success">Vide Code</span>
+                    <span class="badge text-bg-success">Scale</span>
+                    <span class="badge text-bg-success">Cohort Support</span>
                 </p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a type="button" target="_blank" href="https://techstars.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
-                    Search Companies &gt;
+                  <a type="button" target="_blank" href="https://launchbylunch.co/" class="btn btn-sm btn-outline-secondary">
+                    Join Ai Accelerator &gt;
                   </a>
                 </div>
                 <small class="text-body-secondary">4k+ companies</small>
               </div>
             </div>
           </div>
+
+          
         </div>
+        
         <div class="col">
+
+
           <div class="card shadow-sm">
             <div class="card-img">
                 <img src="/assets/page/candid-company-search.png" width="100%"/>
@@ -142,6 +148,36 @@ these help!
                   </a>
                 </div>
                 <small class="text-body-secondary">8k+ Funds</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+
+<div class="card shadow-sm">
+            <div class="card-img">
+              <img src="/assets/page/techstars-companies.png" width="100%"/>
+            </div>
+            <div class="card-body">
+                <div class="card-min">
+                <h5 class="card-title">Techstars Companies</h5>
+                <p class="card-text">
+                    Here is a searchable database of 4k+ Techstars companies. Search by year, county, name or program.
+                </p>
+                <p>
+                <span class="badge text-bg-success">by year</span>
+                    <span class="badge text-bg-success">by program</span>
+                    <span class="badge text-bg-success">by industry</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" target="_blank" href="https://techstars.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
+                    Search Companies &gt;
+                  </a>
+                </div>
+                <small class="text-body-secondary">4k+ companies</small>
               </div>
             </div>
           </div>
