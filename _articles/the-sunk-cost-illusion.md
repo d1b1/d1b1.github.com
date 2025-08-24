@@ -1,5 +1,5 @@
 ---
-title: The Sunk Cost Illusion
+title: "The Sunk Cost Illusion"
 subtitle: Founders often mistake early code for progress. But the real challenge isn’t shipping features — it’s avoiding the trap of sunk cost thinking. This post breaks down why pausing before you commit is the smartest move you can make.
 layout: default
 published: true

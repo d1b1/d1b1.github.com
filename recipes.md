@@ -13,6 +13,8 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
       <h4>
         {{ article.title }}
       </h4>
+
+      {{ article.title }}
     </div>
     <div class="col-6">
       {{ article.subtitle }}
