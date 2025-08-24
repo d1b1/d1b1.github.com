@@ -173,7 +173,7 @@ details[open] .faq-answer {
     <summary>How many clients do you take on?</summary>
     <div class="faq-answer">
       <p>I work with three clients at a time. At most. This usually breaks down into
-      two advisory clients and one deep code client. In the past I would take on more,
+      **two advisory** clients and **one deep code** client. In the past I would take on more,
       but I have found that this balance works the best.</p>
     </div>
   </details>
@@ -235,23 +235,18 @@ details[open] .faq-answer {
   </details>
 
   <details>
-    <summary>Can you help me with a fundraise?</summary>
+    <summary>Can you help me with raising investor funds?</summary>
     <div class="faq-answer">
       <p>Yes. Within bounds. First I have a huge network of founders, investors and 
       advisors. There are countless ways I can help. But in the end, only the founder/CEO
       can raise.</p>
       <p>It's one of the only things that founders kind of have to do on their own.</p>
-    </div>
-  </details>
+      <p>
+      asdf
+      </p>
+      asdfasf
 
-  <details>
-    <summary>Do you fire clients?</summary>
-    <div class="faq-answer">
-      <p>Yes, but very very seldom. Firing a client means I did not choose well.
-      And. I value network, having a client relationship end with a firing is
-      not the way I operate.</p>
-      <p>It does happen. Its always about mixed expectations.</p>
-      <p>For me its like dropping a college class when I get a bad grade. Just not my style.</p>
+      asdfasdf
     </div>
   </details>
 
@@ -275,4 +270,16 @@ details[open] .faq-answer {
       <p>Network is everything.</p>
     </div>
   </details>
+
+  <details>
+    <summary>Do you fire clients?</summary>
+    <div class="faq-answer">
+      <p>Yes, but very very seldom. Firing a client means I did not choose well.
+      And. I value network, having a client relationship end with a firing is
+      not the way I operate.</p>
+      <p>It does happen. Its always about mismatched expectations.</p>
+      <p>For me its like dropping a college class when I get a bad grade. Just not my style.</p>
+    </div>
+  </details>
+
 </div>

@@ -1,0 +1,41 @@
+current directory: /Users/stephansmith/Documents/fCTO-Services/StephanSmith.solutions/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext
+/Users/stephansmith/.rbenv/versions/3.3.5/bin/ruby extconf.rb --with-openssl-dir\=/usr/local/opt/openssl@3 --with-cflags\=-std\=gnu11 --with-cxxflags\=-std\=gnu++17 -Wno-reserved-user-defined-literal -Wno-deprecated-declarations
+checking for pkg-config for openssl... ["-I/usr/local/Cellar/openssl@3/3.5.2/include ", "-L/usr/local/Cellar/openssl@3/3.5.2/lib", "-lssl -lcrypto"]
+-----
+Using OpenSSL from pkg-config -I/usr/local/Cellar/openssl@3/3.5.2/include  && -L/usr/local/Cellar/openssl@3/3.5.2/lib && -lssl -lcrypto
+-----
+checking for -lcrypto... yes
+checking for -lssl... yes
+checking for openssl/ssl.h... yes
+checking for openssl/err.h... yes
+checking for rb_trap_immediate in ruby.h,rubysig.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_fd_select()... yes
+checking for rb_fdset_t in ruby/intern.h... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_enable_interrupt()... no
+checking for rb_time_new()... yes
+checking for inotify_init() in sys/inotify.h... no
+checking for __NR_inotify_init in sys/syscall.h... no
+checking for writev() in sys/uio.h... yes
+checking for pipe2() in unistd.h... no
+checking for accept4() in sys/socket.h... no
+checking for SOCK_CLOEXEC in sys/socket.h... no
+checking for sys/event.h... yes
+checking for sys/queue.h... yes
+checking for clock_gettime()... yes
+checking for CLOCK_MONOTONIC_RAW in time.h... yes
+checking for CLOCK_MONOTONIC in time.h... yes
+CXXFLAGS=-fdeclspec
+creating Makefile
+
+current directory: /Users/stephansmith/Documents/fCTO-Services/StephanSmith.solutions/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20250824-60591-s1psca sitelibdir\=./.gem.20250824-60591-s1psca clean
+
+current directory: /Users/stephansmith/Documents/fCTO-Services/StephanSmith.solutions/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20250824-60591-s1psca sitelibdir\=./.gem.20250824-60591-s1psca
+compiling binder.cpp
+make: *** [binder.o] Error 1
+
+make failed, exit code 2
