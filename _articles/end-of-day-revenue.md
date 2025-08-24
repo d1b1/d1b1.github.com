@@ -1,5 +1,5 @@
 ---
-title: End of the Say Revenue Mindset
+title: The "End-of-the-Day-Revenue" Mindset
 subtitle: Everyone understands revenue. That’s why I use it as a forcing function. If it doesn’t earn value today, it’s not worth your weekend.
 layout: default
 published: true
