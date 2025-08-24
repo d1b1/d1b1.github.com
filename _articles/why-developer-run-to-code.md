@@ -1,9 +1,9 @@
 ---
-title: Why Developers Always Want to Build & the Cost
-subtitle: Every time I asked my team to evaluate SaaS tools, I watched the same thing happen. A predictable resistance. A build-first mindset. And over time, I realized: it wasn’t just bias — it was culture.
+title: Why Developers Run to Code-Centric Solutions
+subtitle: Founders often mistake early code for progress. But the real challenge isn’t shipping features — it’s avoiding the trap of sunk cost thinking. This post breaks down why pausing before you commit is the smartest move you can make.
 layout: default
 published: true
-date: 2025-08-08 00:00:00
+date: 2025-07-18 00:00:00
 order: 0
 topic: general
 sitemap: true
