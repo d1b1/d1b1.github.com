@@ -11,7 +11,7 @@ what I learn from and with clients. If you want to read as
 I write, [subscribe](https://lowcodecto.com/subscribe). One of
 the secrets of why a fCTO is helpful, is the network effect of
 working across startups and projects. Everyone benefits when
-ideas are moved and applied.
+ideas are **shared** and **applied**!
 
 
 {% assign articles = site.articles | sort: "date" | reverse %}
