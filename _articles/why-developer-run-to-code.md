@@ -20,13 +20,10 @@ It didn’t matter how many options I presented. It didn’t matter how much pro
 The Arguments Were Always the Same
 I started logging the objections. They fell into four categories — always:
 
-“There are features we’ll need that this tool won’t support.”
-
-“The documentation is bad.”
-
-“The pricing is too high.”
-
-“We can’t track changes or monitor them well.”
+- “There are features we’ll need that this tool won’t support.”
+- “The documentation is bad.”
+- “The pricing is too high.”
+- “We can’t track changes or monitor them well.”
 
 Valid concerns? Sometimes. However, these were usually signals of discomfort, rather than real blockers.
 
@@ -34,9 +31,7 @@ Valid concerns? Sometimes. However, these were usually signals of discomfort, ra
 Looking back, I lost those arguments for three reasons:
 
 - __Risk__: When I didn’t have deep experience with the stack, it was hard to push back. I couldn’t debug confidently. I couldn’t guarantee success.
-
 - __Experience Bias__: If a developer had worked with a tool before, I was often at a disadvantage. Their familiarity carried weight — even if it came with blind spots.
-
 - __Political Capital__: Developers have strong opinions about code. They want to build. They underestimate the cost and complexity of internal ownership. They rarely own support or operations. And pushing back too hard, too often? That risks morale, not just timelines.
 
 ## The Hidden Psychology
@@ -85,6 +80,5 @@ Use tools like the Low-Code Cookbook. Having vetted options upfront gives you a 
 This isn’t a developer vs management problem — it’s a culture problem.
 
 Until we stop tying value to lines of code, we’ll continue to make the same costly choices. We don’t need more control. We need more results.
-
 
 {% include articleFooter.html %}

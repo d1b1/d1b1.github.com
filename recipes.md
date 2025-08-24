@@ -14,7 +14,18 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
         {{ article.title }}
       </h4>
 
-      {{ article.title }}
+      {% assign now = 'now' | date: '%s' %}
+      {% assign published = article.date | date: '%s' %}
+      {% assign diff_seconds = now | minus: published %}
+      {% assign diff_days = diff_seconds | divided_by: 86400 %}
+      {% if diff_days == 0 %}
+        Published today
+      {% elsif diff_days == 1 %}
+        Published yesterday
+      {% else %}
+        {{ diff_days }} days ago
+      {% endif %}
+
     </div>
     <div class="col-6">
       {{ article.subtitle }}
