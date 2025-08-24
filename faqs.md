@@ -158,16 +158,14 @@ details[open] .faq-answer {
 </style>
 
 <div class="faq-container">
-  <div class="faq-header">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
-  </div>
-
   <details>
-    <summary>Do a frational code? (for you?)</summary>
+    <summary>Does a frational CTO code? (for you?)</summary>
     <div class="faq-answer">
-      <p>Every fractional will answer this question differently. For me, the anwser is both
+      <p>Every fractional will answer this question differently. For me, the answer is both
       yes and no. Currently I only take on one coding client at a time.</p>
+      <p>I do build out solutions for clients. I call these point solutions. Point solutions 
+        fall into two groups: 1. MVP Solution to prove a concept. 2. MVP solution to bridge to a funding event.
+      </p>
     </div>
   </details>
 
