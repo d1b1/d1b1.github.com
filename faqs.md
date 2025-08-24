@@ -1,0 +1,255 @@
+---
+layout: none
+title: Frequency Asked Questions
+sitemap: true
+---
+
+{% include head.html %}
+{% include ga.html %}
+{% include subStyles.css %}
+
+<body>
+
+    {% include colors.html %}
+
+    <div class="container py-3">
+
+        <header>
+            <div class="d-flex d-none d-md-block flex-column  flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <span class="badge bg-secondary" style="background-color:#000 !important; padding: 5px;">fCTO</span>
+                    &nbsp;
+                    <span class="fs-4">Fractional CTO</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="p-3 pb-md-4 mx-auto">
+
+                <h1 class="mb-4">
+                    Would you work well with a fractional?
+                </h1>
+
+                <div class="alert alert-success text-center p-5"role="alert">
+                    <h4 style="font-weight: 200;">
+                        This should be a must read. If you are thinking about using a fractional 
+                        anything, or anyone to solve a business problem, it might make sense to 
+                        understand some basics.
+                    </h4>
+                </div>
+
+                <br>
+                <br>
+           
+                <i class="mt-5">
+                    <center>
+                    The concept of a fractional CTO is a new idea for many. Here is<br> a quick overview
+                    that can help you understand what to expect.
+                   </center>
+                </i>
+                <br>
+
+                <h3 class="mt-5">
+                    What <u>Visibility</u> do you need?
+                </h3>
+
+                <p class="mt-3">
+                    Consider how I can assist you and the role you envision for me. 
+                    As the CEO or founder, where would you like me to fit in?
+                </p> 
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">1. "Behind the Throne"</h5>
+                            </div>
+                            <div class="card-body">
+                                <p style="height: 140px; font-size: 16px;">
+                                    This is when I work directly with you,
+                                    but am not visible to the public. This mode is valuable to founders or CEOs
+                                    who need to own the outcome of a project and messaging to 
+                                    a larger audience.
+                                </p>
+                                <i style="font-size: 16px;">
+                                    Off LinkedIn. Stealth.
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">2. "In front of the Throne"</h5>
+                            </div>
+                            <div class="card-body">
+                                <p style="height: 140px; font-size: 16px;">
+                                    In this mode, I work directly with you and am visible to the public. 
+                                    This approach is beneficial for founders or CEOs who need their company 
+                                    or outside stakeholders to see and value my contributions.
+                                </p>
+                                <i style="font-size: 16px;">
+                                    On LinkedIn. Visible.
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mt-5">
+                   What <u>Responsiveness</u> can you expect?
+                </h3>
+
+                <p class="mt-3">
+                    Different goals require different responsiveness.
+                </p>
+
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">1. Point Solutions</h5>
+                            </div>
+                            <div class="card-body" style="height: 300px;">
+                                <p style="height: 130px; font-size: 16px;">
+                                    Billed hourly. 100% directed to specific requests.
+                                    You call the ball and set the agenda.
+                                    Good for initial engagements. Strategy,
+                                    without execution.
+                                </p>
+                                <ul style="font-size: 14px; margin-left: -20px;">
+                                    <li style="font-size: 14px;"><b>Level:</b> By the hour</li>
+                                    <li style="font-size: 14px;"><b>Responsiveness:</b> 1-2 days</li>
+                                    <li style="font-size: 14px;"><b>Prepaid Hour</b>
+                                    </li>
+                                </ul>
+                            <a href="https://calendly.com/stephan-smith/on-demand" class="btn btn-primary w-100">Schedule a Meeting</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">2. Retainer</h5>
+                            </div>
+                            <div class="card-body" style="height: 300px;">
+                                <p style="height: 175px; font-size: 16px;">
+                                    Long-term engagements with a fixed price for addressing specific issues.
+                                </p>
+                                <ul style="font-size: 14px; margin-left: -20px;">
+                                    <li style="font-size: 14px;"><b>Level:</b> Min of 20% of a month.</li>
+                                    <li style="font-size: 14px;"><b>Responsiveness:</b> 1 day</li>
+                                    <li style="font-size: 14px;"><b>Prepaid Retainer</b>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">3. Package</h5>
+                            </div>
+                            <div class="card-body" style="height: 300px;">
+                                <p style="height: 175px; font-size: 16px;">
+                                    This package offers clients a deeper level of engagement and problem-solving,
+                                    where they purchase a set number of months for comprehensive involvement.
+                                </p>
+                                <ul style="font-size: 14px; margin-left: -20px;">
+                                    <li style="font-size: 14px; font-weight: light;"><b>Level:</b> Min. of 20% of a month.</li>
+                                    <li style="font-size: 14px;"><b>Responsiveness:</b> 1-2 day</li>
+                                    <li style="font-size: 14px;"><b>Prepaid Package</b>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mt-5">
+                    How to launch?
+                </h3>
+
+                <p>
+                    What is required to get started? After an introductory meeting, upon request,
+                    I will provide the following documents:
+                </p>
+
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">1. Signed MSA</h5>
+                            </div>
+                            <div class="card-body" style="height: 290px;">
+                                <p style="font-size: 16px;">
+                                    The Master Service Agreement (MSA) outlines the legal framework for our engagement. 
+                                    It covers important aspects such as intellectual property assignment, jurisdiction, 
+                                    and mediation processes. 
+                                </p>
+                                <p style="font-size: 16px;">
+                                    <b>No red lines.</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">2. Signed SOW</h5>
+                            </div>
+                            <div class="card-body" style="height: 290px;">
+                                <p style="font-size: 16px; height: 140px;">
+                                    The Statement of Work (SOW) outlines the specific details of our engagement;
+                                    scope, pricing, timeline, and payment information. When a project needs 
+                                    change, the SOW is updated and signed off.
+                                </p>
+                                <ul style="font-size: 16px; margin-left: -20px;">
+                                    <li style="font-size: 14px;">Includes Scope</li>
+                                    <li style="font-size: 14px;">Includes Pricing</li>
+                                    <li style="font-size: 14px;">Includes Timeline</li>
+                                    <li style="font-size: 14px;">Includes Payment Information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 fw-normal">3. Signed NDA</h5>
+                            </div>
+                            <div class="card-body" style="height: 290px;">
+                                <p style="font-size: 16px;">
+                                    I will sign your company's NDA. 
+                                </p>
+                                <p style="font-size: 16px;"></p>
+                                    Alternatively, I can provide my own NDA for our use if necessary.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <i>
+                    All payments should be made electronically via ACH, as specified in the Statement of Work (SOW).
+                </i>
+
+                <br>
+
+                <div class="ceo-note mt-3 p-4">
+                <h4>
+                    Lastly?
+                </h4>
+
+                <p class="fs-5"></p>
+                    I publish a free weekly newsletter that delves into innovative ideas and challenges common assumptions. 
+                    It's a great resource for staying informed and inspired. Sign up below to join our community!
+                </p>
+
+                <a class="btn btn-primary" href="https://lowcodecto.com">
+                    Subscribe to the "Low Code CTO"
+                </a>
+            </div>
+
+        </main>
+
+        {% include footer.html %}
