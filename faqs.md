@@ -31,3 +31,21 @@ No package or letter of intent needed. Just book the time you want.
 Yes, I stay in my lane. If a client needs what I can not offer, then 
 I have a huge network of other fractional CTOs I can pull in and/or hand
 off to.
+
+#### Do you work for equity?
+Err - No. I find equity clouds the converstation. There are time when it makes
+sense, but for the most part this is not an option.
+
+#### How do I terminate a CTO relationship?
+Easy, when things do not work, the relationship ends. I stay away from
+long and involved contracts. I operate the way lawyers operate. I offer a 
+single letter of intent.
+
+Simple is easier.
+
+#### Can I pay you once I raise?
+No. I know the feeling and the desire to have someone working and helping
+you get to a fundraise. In my experience, it's a bad idea. Fundraising always
+takes too long. Missing fundraising deadlines can kill a good working relationships.
+
+Founders do not need extra stress during a raise.
