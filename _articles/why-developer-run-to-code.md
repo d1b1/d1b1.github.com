@@ -1,5 +1,5 @@
 ---
-title: Why Developers Always Want to Build — and How It Costs Us
+title: Why Developers Always Want to Build & the Cost
 subtitle: Every time I asked my team to evaluate SaaS tools, I watched the same thing happen. A predictable resistance. A build-first mindset. And over time, I realized: it wasn’t just bias — it was culture.
 layout: default
 published: true

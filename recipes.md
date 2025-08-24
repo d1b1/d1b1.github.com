@@ -19,11 +19,11 @@ subtitle: For a non-technical founder the mix of code and no-code can be a chall
       {% assign diff_seconds = now | minus: published %}
       {% assign diff_days = diff_seconds | divided_by: 86400 %}
       {% if diff_days == 0 %}
-        Published today
+        <span style="font-size: 0.8em; color: #666;">Published today</span>
       {% elsif diff_days == 1 %}
-        Published yesterday
+        <span style="font-size: 0.8em; color: #666;">Published yesterday</span>
       {% else %}
-        {{ diff_days }} days ago
+        <span style="font-size: 0.8em; color: #666;">{{ diff_days }} days ago</span>
       {% endif %}
 
     </div>
