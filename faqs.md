@@ -194,7 +194,7 @@ details[open] .faq-answer {
     <summary>Can I hire you for just an hour?</summary>
     <div class="faq-answer">
       <p>Hells yes, sometimes an hour is all a founder needs to evolve their 
-      thinking and move forward. (Here is the calendar [link](https://calendly.com/stephan-smith/on-demand))</p>
+      thinking and move forward. (Here is the calendar [link](https://calendly.com/stephan-smith/on-demand)</p>
       <p>No package or letter of intent needed. Just book the time you want.</p>
     </div>
   </details>
@@ -227,7 +227,7 @@ details[open] .faq-answer {
   </details>
 
   <details>
-    <summary>Can I pay you after I raise XXXX?</summary>
+    <summary>Can I pay you after I raise funds?</summary>
     <div class="faq-answer">
       <p>No. I know the feeling and the desire to have someone working and helping
       you get to a fundraise. In my experience, it's a bad idea. Fundraising always
