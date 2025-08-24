@@ -4,7 +4,7 @@ subtitle: Everyone understands revenue. That’s why I use it as a forcing funct
 layout: default
 published: true
 date: 2025-08-15 00:00:00
-order: 1
+order: 0
 topic: general
 sitemap: true
 ---
@@ -24,7 +24,6 @@ I borrowed this from a scrum master I worked with at NPR in 2011, Jeremy. He pus
 ## No Room for Delay
 
 This isn't a trick. It's not a productivity hack. It's survival.
-
 Great idea? Someone else has it too.
 
 More features? No. One clean feature today beats ten half-finished ideas in two months.
@@ -38,11 +37,8 @@ So I make it clear: What can you do now — that's clickable by 3pm, usable by 5
 Founders love the idea of constraints — until they start giving themselves extra time. One more day. One more tweak. One more call with a dev. I have seen this in my own side projects. The new feature will be so cool, let's delay the launch one more month. It always turns into 2-3 months.
 
 But let's be honest:
-
 We all have meetings.
-
 We all have families.
-
 No one has enough hours in the day.
 
 For me, it's Saturday mornings at 6 a.m. That's my window. Not because I'm grinding — but because it's the time I'm not stealing from anyone else. I'm not asking my wife to carry the weight while I pretend to build something meaningful.
