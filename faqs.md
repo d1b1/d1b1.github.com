@@ -43,9 +43,19 @@ single letter of intent.
 
 Simple is easier.
 
-#### Can I pay you once I raise?
+#### Can I pay you after I raise XXXX?
 No. I know the feeling and the desire to have someone working and helping
 you get to a fundraise. In my experience, it's a bad idea. Fundraising always
 takes too long. Missing fundraising deadlines can kill a good working relationships.
 
 Founders do not need extra stress during a raise.
+
+#### Can you help me with a fundraise?
+Yes. Within bounds. First I have a huge network of founders, investors and 
+advisors. There are countless ways I can help. But in the end, only the founder/CEO
+can raise.
+
+It's one of the only things that founders kind of have to do on their own.
+
+##### sdfsdf
+asdfasdf
