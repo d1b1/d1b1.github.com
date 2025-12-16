@@ -85,6 +85,11 @@
     color: #000 !important;
   }
 
+  /* Fix testimonial-link in dark mode */
+  [data-bs-theme=dark] .testimonial-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
   .testimonial-avatar {
     border: 1px solid #EFEFEF;
     border-radius: 20px;
@@ -99,4 +104,18 @@
 
   .avatar:hover {
     filter: grayscale(0%);
+  }
+
+  /* Make link-secondary more readable in dark mode */
+  [data-bs-theme=dark] .link-secondary {
+    color: rgba(255, 255, 255, 0.75) !important;
+    -webkit-text-decoration-color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration-color: rgba(255, 255, 255, 0.75) !important;
+  }
+
+  [data-bs-theme=dark] .link-secondary:hover,
+  [data-bs-theme=dark] .link-secondary:focus {
+    color: rgba(255, 255, 255, 0.9) !important;
+    -webkit-text-decoration-color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration-color: rgba(255, 255, 255, 0.9) !important;
   }

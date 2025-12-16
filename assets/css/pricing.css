@@ -18,3 +18,22 @@ a {
 a:hover {
   color: gray; /* Change to a slight light gray on hover */
 }
+
+/* Fix links in dark mode - override the black color for better readability */
+[data-bs-theme=dark] a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-bs-theme=dark] a:hover {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Ensure link-secondary is readable in dark mode (already in min.css but adding here for consistency) */
+[data-bs-theme=dark] a.link-secondary {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+[data-bs-theme=dark] a.link-secondary:hover,
+[data-bs-theme=dark] a.link-secondary:focus {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
