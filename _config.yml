@@ -39,6 +39,11 @@ collections:
     output: true
     permalink: /backlog/:path/
     sort_by: order
+
+  solutions:
+    output: true
+    permalink: /solutions/:path/
+    sort_by: order
     
 
 # Markdown settings

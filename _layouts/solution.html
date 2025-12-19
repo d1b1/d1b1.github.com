@@ -1,0 +1,30 @@
+
+{% include head.html %}
+
+{% include ga.html %}
+
+<body>
+
+  {% include svgs.html %}
+
+  {% include colors.html %}
+
+<div class="container py-3">
+  <header>
+    {% include navbar.html %}
+    <div class="pricing-header p-3 pb-2 mt-5 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">
+        {{ page.title }}
+      </h1>
+      <p class="fs-5 mt-4 mb-2 text-body-secondary">
+        {{ page.subtitle }}
+      </p>
+    </div>
+    {% include solutionSubheader.html %}
+  </header>
+  {{ content }}
+  {% include footer.html %}
+
+</div>
+
+{% include end.html %}

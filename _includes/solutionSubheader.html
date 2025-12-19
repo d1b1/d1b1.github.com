@@ -1,0 +1,47 @@
+{% assign current_path = page.url %}
+<div class="row mb-4 mt-2">
+  <div class="col-12">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body py-3">
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+          {% if current_path contains 'diyCommunity' %}
+            <span class="badge bg-primary text-white px-3 py-2" style="font-size: 0.95rem;">
+              Do It Yourself
+            </span>
+          {% else %}
+            <a href="/solutions/diyCommunity/" class="text-decoration-none">
+              <span class="badge bg-light text-dark border px-3 py-2" style="font-size: 0.95rem;">
+                Do It Yourself
+              </span>
+            </a>
+          {% endif %}
+          <span class="text-muted d-none d-md-inline" style="font-size: 1.5rem;">→</span>
+          {% if current_path contains 'coFounder' %}
+            <span class="badge bg-primary text-white px-3 py-2" style="font-size: 0.95rem;">
+              Do It With You
+            </span>
+          {% else %}
+            <a href="/solutions/coFounder/" class="text-decoration-none">
+              <span class="badge bg-light text-dark border px-3 py-2" style="font-size: 0.95rem;">
+                Do It With You
+              </span>
+            </a>
+          {% endif %}
+          <span class="text-muted d-none d-md-inline" style="font-size: 1.5rem;">→</span>
+          {% if current_path contains 'rapidBuild' %}
+            <span class="badge bg-primary text-white px-3 py-2" style="font-size: 0.95rem;">
+              Do It For You
+            </span>
+          {% else %}
+            <a href="/solutions/rapidBuild/" class="text-decoration-none">
+              <span class="badge bg-light text-dark border px-3 py-2" style="font-size: 0.95rem;">
+                Do It For You
+              </span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
