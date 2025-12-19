@@ -9,6 +9,16 @@ order: 1
 
 {% include subStyles.css %}
 
+<script>
+  if (typeof dataLayer !== 'undefined' && window.location.pathname.includes('/solutions/coFounder')) {
+    dataLayer.push({
+      'event': 'fractional_cofounder_interest',
+      'funnel_step': 3,
+      'trigger': 'page_view'
+    });
+  }
+</script>
+
 You have the vision. You have the idea. You're ready to build your tech company—but you don't have to do it alone.
 
 As your fractional co-founder, I provide the support, experience, and structured guidance to accelerate your thinking and help you navigate every technical decision. You stay in the driver's seat, making the calls and owning the process, while I ensure you have access to the community, experts, and proven frameworks that get you to first customers and first revenue.
@@ -43,7 +53,7 @@ You're in the driver's seat, making informed decisions with confidence. You own 
   <div>
     <strong>$1,800/month</strong>
   </div>
-  <a href="https://LaunchbyLunch.co" target="_blank" class="btn btn-primary">Get A Fractional Co-Founder</a>
+  <a href="https://LaunchbyLunch.co" target="_blank" class="btn btn-primary" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'fractional_cofounder_interest', 'funnel_step': 3, 'trigger': 'cta_click'});}">Get A Fractional Co-Founder</a>
 </div>
 
 <div class="card mb-4 rounded-3 mt-4">

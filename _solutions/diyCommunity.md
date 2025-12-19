@@ -9,6 +9,16 @@ order: 3
 
 {% include subStyles.css %}
 
+<script>
+  if (typeof dataLayer !== 'undefined' && window.location.pathname.includes('/solutions/diyCommunity')) {
+    dataLayer.push({
+      'event': 'community_join',
+      'funnel_step': 2,
+      'trigger': 'page_view'
+    });
+  }
+</script>
+
 You want to build your idea yourself. We get it. But founding a tech company involves countless small learnings and lessons. Going it alone can be slow, expensive, and lonely.
 
 **Community is the solution.**
@@ -31,7 +41,7 @@ Join 200+ founders who are building tech companies just like you. Get the suppor
 
 #### Get Started
 
-<a href="https://innercircle.launchbylunch.co/checkout/inner-circle-membership" target="_blank" class="btn btn-primary">Start an Application</a> <a href="https://calendly.com/d/csqg-x7h-zxb/free-consultation" target="_blank">or schedule a free 30-min call</a>
+<a href="https://innercircle.launchbylunch.co/checkout/inner-circle-membership" target="_blank" class="btn btn-primary" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'community_join', 'funnel_step': 2, 'trigger': 'checkout_click'});}">Start an Application</a> <a href="https://calendly.com/d/csqg-x7h-zxb/free-consultation" target="_blank">or schedule a free 30-min call</a>
 
 <div class="card mb-4 rounded-3">
   <div class="card-header py-3">

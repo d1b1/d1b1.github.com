@@ -149,6 +149,40 @@
   <!-- Calendly link widget begin -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly event tracking -->
+  <script>
+    if (typeof window !== 'undefined' && typeof dataLayer !== 'undefined') {
+      // Track Calendly widget events
+      window.addEventListener('message', function(e) {
+        if (e.data.event && e.data.event.indexOf('calendly') === 0) {
+          var eventName = e.data.event;
+          var eventData = {
+            'event': 'calendly_interaction',
+            'calendly_event': eventName
+          };
+          
+          // Map Calendly events to funnel steps
+          if (eventName === 'calendly.event_scheduled' || eventName === 'calendly.event_type_viewed') {
+            // Determine which funnel step based on URL or page context
+            var currentPath = window.location.pathname;
+            if (currentPath.includes('/solutions/rapidBuild') || currentPath.includes('/solutions/coFounder')) {
+              if (currentPath.includes('/solutions/rapidBuild')) {
+                eventData.event = 'rapid_build_interest';
+                eventData.funnel_step = 4;
+                eventData.trigger = 'calendly_' + eventName.replace('calendly.', '');
+              } else if (currentPath.includes('/solutions/coFounder')) {
+                eventData.event = 'fractional_cofounder_interest';
+                eventData.funnel_step = 3;
+                eventData.trigger = 'calendly_' + eventName.replace('calendly.', '');
+              }
+            }
+          }
+          
+          dataLayer.push(eventData);
+        }
+      });
+    }
+  </script>
   <!-- Calendly link widget end -->
 
   <!-- Article Structured Data -->

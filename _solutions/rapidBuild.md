@@ -9,6 +9,16 @@ order: 2
 
 {% include subStyles.css %}
 
+<script>
+  if (typeof dataLayer !== 'undefined' && window.location.pathname.includes('/solutions/rapidBuild')) {
+    dataLayer.push({
+      'event': 'rapid_build_interest',
+      'funnel_step': 4,
+      'trigger': 'page_view'
+    });
+  }
+</script>
+
 This is where I come in. This works when you know what you want, and want to go fast. This solution will get you to first revenue.
 
 I build the application, leading the effort, but I involve you in each step, so at the end you understand the tech stack. You can then take the code and technology stack and build a team around it.
@@ -31,6 +41,6 @@ I lead the technical effort, but you're involved in every decision and every ste
 
 #### Get Started
 
-<a href="https://calendly.com/stephan-smith/fractional-co-founder" target="_blank" class="btn btn-primary">Book a Free Session</a>
+<a href="https://calendly.com/stephan-smith/fractional-co-founder" target="_blank" class="btn btn-primary" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'rapid_build_interest', 'funnel_step': 4, 'trigger': 'calendly_click'});}">Book a Free Session</a>
 
 {% include solutionFooter.html %}
