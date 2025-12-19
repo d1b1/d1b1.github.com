@@ -33,4 +33,4 @@ I lead the technical effort, but you're involved in every decision and every ste
 
 <a href="https://calendly.com/stephan-smith/fractional-co-founder" target="_blank" class="btn btn-primary">Book a Free Session</a>
 
-{% include articleFooter.html %}
+{% include solutionFooter.html %}

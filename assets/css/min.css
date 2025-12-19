@@ -94,13 +94,18 @@
     border: 1px solid #EFEFEF;
     border-radius: 20px;
     margin-right: 10px;
-    width: 40px;
+    width: 100px;
     margin-bottom: 25px;
   }
 
   /* .avatar {
     filter: grayscale(100%)
   } */
+
+  .avatar {
+    border: 1px solid #EFEFEF;
+    border-radius: 20px;
+  }
 
   .avatar:hover {
     filter: grayscale(0%);

@@ -20,6 +20,7 @@ title: Stephan Smith, fCTO
       {% include homepage/hero.html %}
       {% include homepage/profile.html %}
       {% include news.html %}
+      <hr>
       {% include homepage/fcto_why.html %}
     </header>
 
@@ -41,7 +42,9 @@ title: Stephan Smith, fCTO
       {% include homepage/references.html %} 
       {% include homepage/tldr.html %}
 
-      {% include homepage/schedule_cta.html %}
+      <!-- {% include homepage/schedule_cta.html %} -->
+
+      {% include homepage/newsletters.html %}
 
       <!-- Blog CTA -->
       <!-- {% include blog/cta.html %} -->

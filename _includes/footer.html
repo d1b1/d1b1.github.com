@@ -43,10 +43,93 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-  })
+  function initializePopovers() {
+    // Wait for Bootstrap to be available
+    if (typeof bootstrap !== 'undefined') {
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        // Check if this is a hover-triggered popover
+        var triggerAttr = popoverTriggerEl.getAttribute('data-bs-trigger')
+        var isHoverTrigger = triggerAttr === 'hover'
+        
+        var popoverOptions = {}
+        if (isHoverTrigger) {
+          // Use manual trigger for hover popovers so we can control the behavior
+          popoverOptions.trigger = 'manual'
+          popoverOptions.delay = { show: 200, hide: 300 }
+        }
+        
+        var popover = new bootstrap.Popover(popoverTriggerEl, popoverOptions)
+        
+        // Only add custom hover handling for hover-triggered popovers
+        if (isHoverTrigger) {
+          var timeout
+          var isOverPopover = false
+          
+          // Show popover on hover
+          popoverTriggerEl.addEventListener('mouseenter', function() {
+            clearTimeout(timeout)
+            popover.show()
+          })
+          
+          // Hide popover when leaving trigger, but check if mouse is over popover
+          popoverTriggerEl.addEventListener('mouseleave', function() {
+            timeout = setTimeout(function() {
+              if (!isOverPopover) {
+                popover.hide()
+              }
+            }, 100)
+          })
+          
+          // Track when mouse enters popover tip
+          popoverTriggerEl.addEventListener('shown.bs.popover', function() {
+            // Use a small delay to ensure popover is in DOM
+            setTimeout(function() {
+              // Find the popover tip - Bootstrap 5 adds it to body
+              var popoverTip = document.querySelector('.popover:not(.d-none)')
+              
+              if (popoverTip) {
+                var tipEnterHandler = function() {
+                  clearTimeout(timeout)
+                  isOverPopover = true
+                }
+                
+                var tipLeaveHandler = function() {
+                  isOverPopover = false
+                  timeout = setTimeout(function() {
+                    popover.hide()
+                  }, 100)
+                }
+                
+                popoverTip.addEventListener('mouseenter', tipEnterHandler)
+                popoverTip.addEventListener('mouseleave', tipLeaveHandler)
+                
+                // Clean up when popover is hidden
+                var cleanupHandler = function() {
+                  popoverTip.removeEventListener('mouseenter', tipEnterHandler)
+                  popoverTip.removeEventListener('mouseleave', tipLeaveHandler)
+                  popoverTriggerEl.removeEventListener('hidden.bs.popover', cleanupHandler)
+                }
+                popoverTriggerEl.addEventListener('hidden.bs.popover', cleanupHandler, { once: true })
+              }
+            }, 10)
+          })
+        }
+        
+        return popover
+      })
+    } else {
+      // If Bootstrap isn't ready yet, wait a bit and try again
+      setTimeout(initializePopovers, 100)
+    }
+  }
+  
+  // Initialize popovers when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializePopovers)
+  } else {
+    initializePopovers()
+  }
 </script>
 
 <!-- <script id="optinly_script" async="true" data-app_id='c590af28-1816-419a-b003-fc9c4a462efe' src='https://cdn.optinly.net/v1/optinly.js' type='text/javascript'></script> -->

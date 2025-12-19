@@ -54,4 +54,4 @@ You're in the driver's seat, making informed decisions with confidence. You own 
   </div>
 </div>
 
-{% include articleFooter.html %}
+{% include solutionFooter.html %}
