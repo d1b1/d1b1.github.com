@@ -1,0 +1,46 @@
+{% if page.url != '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    }{% if page.url contains '/articles/' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "{{ site.url }}/recipes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }{% elsif page.url contains '/solutions/' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions",
+      "item": "{{ site.url }}/#packages"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }{% else %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }{% endif %}
+  ]
+}
+</script>
+{% endif %}

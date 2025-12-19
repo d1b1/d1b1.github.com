@@ -4,11 +4,14 @@
 {% include ga.html %}
 
 <div class="container py-3">
-  <header>
+  <header role="banner">
     {% include navbar.html %}
     {% include banner.html %}
   </header>
-  {{ content }}
+  <main role="main">
+    <!-- {% include articleExcerpt.html %} -->
+    {{ content }}
+  </main>
   {% include footer.html %}
 
 </div>

@@ -1,0 +1,8 @@
+{% if page.layout == 'default' and page.subtitle %}
+<div class="article-excerpt mb-4 p-3 bg-light border-start border-primary border-3" role="note" aria-label="Article Summary" itemscope itemtype="https://schema.org/Article">
+  <p class="lead mb-0"><strong>Summary:</strong> <span itemprop="description">{{ page.subtitle }}</span></p>
+  {% if page.topic %}
+  <p class="small mb-0 mt-2"><strong>Topic:</strong> <span itemprop="articleSection">{{ page.topic }}</span></p>
+  {% endif %}
+</div>
+{% endif %}

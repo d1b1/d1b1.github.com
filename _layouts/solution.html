@@ -10,7 +10,7 @@
   {% include colors.html %}
 
 <div class="container py-3">
-  <header>
+  <header role="banner">
     {% include navbar.html %}
     <div class="pricing-header p-3 pb-2 mt-5 mx-auto text-center">
       <h1 class="display-4 fw-normal text-body-emphasis">
@@ -22,7 +22,9 @@
     </div>
     {% include solutionSubheader.html %}
   </header>
-  {{ content }}
+  <main role="main">
+    {{ content }}
+  </main>
   {% include footer.html %}
 
 </div>

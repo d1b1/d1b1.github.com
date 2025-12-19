@@ -46,7 +46,7 @@ You're in the driver's seat, making informed decisions with confidence. You own 
   <a href="https://LaunchbyLunch.co" target="_blank" class="btn btn-primary">Get A Fractional Co-Founder</a>
 </div>
 
-<div class="card mb-4 rounded-3 shadow-sm mt-4">
+<div class="card mb-4 rounded-3 mt-4">
   <div class="card-body">
     <p class="mb-0">
       Sometimes the fastest way to market is having someone who talks to you like a founder, not like an employee.

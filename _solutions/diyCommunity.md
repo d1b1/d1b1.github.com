@@ -17,7 +17,7 @@ We have a community of 200+ members who are building the same thing you are. You
 
 #### Option 1: Join the Community
 
-**$60/month**
+**$59/month**
 
 Join 200+ founders who are building tech companies just like you. Get the support, energy, and network you need without the isolation.
 
@@ -33,7 +33,7 @@ Join 200+ founders who are building tech companies just like you. Get the suppor
 
 <a href="https://innercircle.launchbylunch.co/checkout/inner-circle-membership" target="_blank" class="btn btn-primary">Start an Application</a> <a href="https://calendly.com/d/csqg-x7h-zxb/free-consultation" target="_blank">or schedule a free 30-min call</a>
 
-<div class="card mb-4 rounded-3 shadow-sm">
+<div class="card mb-4 rounded-3">
   <div class="card-header py-3">
     <h4 class="my-0 fw-normal">
       Why Community Matters

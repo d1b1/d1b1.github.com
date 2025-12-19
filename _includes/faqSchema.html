@@ -1,0 +1,42 @@
+{% if page.url == '/faqs/' or page.url == '/faqs.html' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a fractional CTO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fractional CTO (fCTO) is an on-demand technical co-founder who helps founders solve problems quickly and practically when you can't find or afford a full-time technical co-founder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do you need a fractional CTO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need a fractional CTO when you can't find or afford a full-time, salaried and equity-motivated technical co-founder. When you need point solutions, an outside perspective, and options—without the full-time commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does fractional CTO pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fractional CTO services are typically offered through point solutions (hourly), retainers (minimum 20% of a month), or packages (set number of months for comprehensive involvement). All payments are made electronically via ACH."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes a fractional CTO different from a consultant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fractional CTO is not just an advisor—they're a coder at heart. When needed, they roll up their sleeves and dig in: configure cloud providers, debug CI/CD processes, upgrade libraries, integrate auth providers, and write code. They bring real experience building systems and solutions, not just theory."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}

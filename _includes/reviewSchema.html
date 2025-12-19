@@ -1,0 +1,46 @@
+{% comment %}
+  Review Schema for testimonials/references
+  Usage: Include this in pages with testimonials
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stephan Smith Solutions",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "5",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Karen Kelly"
+      },
+      "reviewBody": "Stephan and I work together frequently, and his collaborative nature is a huge plus. He brings clarity and practical solutions to our tech challenges, breaking down complex technical decisions into actionable steps.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Yvan Castilloux"
+      },
+      "reviewBody": "Stephan has been helping us in figuring out how we should get to SOC2 compliance within a reasonable budget. He's looked at our tech stack and gave us practical recommendations on how it should evolve over time.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
+  ]
+}
+</script>

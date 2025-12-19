@@ -1,6 +1,7 @@
 ---
 layout: none
 title: Stephan Smith, fCTO
+description: Boston-based fractional CTO helping startups get revenue positive faster. On-demand technical co-founder for founders who need practical tech solutions without full-time commitment.
 sitemap: true
 ---
 

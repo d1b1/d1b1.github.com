@@ -52,8 +52,7 @@ that are fast to access.
 
 #### A CDN Wrapper
 I found [TwicPics.com](https://twicpics.com). This is a service that does just what AWS CloudFront does. It
-just does it all without having to set up an AWS account, set up IAM, and set up credentials. (The 'CISO' in me views AWS
-as a huge cybersecurity issue waiting to happen.)
+just does it all without having to set up an AWS account, set up IAM, and set up credentials. (The 'CISO' in me views AWS as a huge cybersecurity issue waiting to happen.)
 
 So I signed up for a [Twicpics.com](https://twicpics.com) account, set up a workspace, and set a URL path. The URL
 path gives me a cleaner URL to use in my '[Low Code Cookbook](https://low-code.stephansmith.solutions)'. The

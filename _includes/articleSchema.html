@@ -1,0 +1,33 @@
+{% if page.layout == 'default' and page.date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.subtitle | default: page.description }}",
+  "image": "{{ site.url }}{{ page.linkCard | default: '/assets/brand/banner5.png' }}",
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+  "author": {
+    "@type": "Person",
+    "name": "Stephan Smith",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Stephan Smith Solutions",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/brand/banner5.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }{% if page.topic %},
+  "articleSection": "{{ page.topic }}",
+  "keywords": "{{ page.topic }}, fractional CTO, startup technology{% if page.topic == 'gluecode' %}, low-code, no-code{% endif %}"
+  {% endif %}
+}
+</script>
+{% endif %}

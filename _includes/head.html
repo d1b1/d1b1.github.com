@@ -7,8 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#317EFB" />
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive.">
-  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description | default: page.subtitle | default: "Stephan is a Boston based devCTO and seasoned startup founder, who helps CEOs get revenue positive." }}">
+  <title>{{ page.title }} | Stephan Smith Solutions</title>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  
   <link href="/assets/css/css@3.css" rel="stylesheet">
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/css/min.css" rel="stylesheet">
@@ -20,9 +24,111 @@
   <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
 
-  <meta property="og:title" content="{{ page.linkCardTitle | default: "Fractional CTO Stephan Smith" }}">
-  <meta property="og:description" content="{{ page.linkCardDesc | default: "When your CEO needs help making tech decisions that impact revenue." }}">
-  <meta property="og:image" content="{{ page.linkCard | default: "/assets/brand/banner5.png" }}">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  <meta property="og:title" content="{{ page.linkCardTitle | default: page.title | default: "Fractional CTO Stephan Smith" }}">
+  <meta property="og:description" content="{{ page.linkCardDesc | default: page.subtitle | default: page.description | default: "When your CEO needs help making tech decisions that impact revenue." }}">
+  {% assign og_image = page.linkCard | default: "/assets/brand/banner5.png" %}
+  {% unless og_image contains "http" %}
+    {% assign og_image = site.url | append: og_image %}
+  {% endunless %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:site_name" content="Stephan Smith Solutions">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  <meta name="twitter:title" content="{{ page.linkCardTitle | default: page.title | default: "Fractional CTO Stephan Smith" }}">
+  <meta name="twitter:description" content="{{ page.linkCardDesc | default: page.subtitle | default: page.description | default: "When your CEO needs help making tech decisions that impact revenue." }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
+  <!-- AI & SEO Meta Tags -->
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% else %}
+  <meta name="keywords" content="fractional CTO, fractional chief technology officer, startup CTO, technical co-founder, Boston CTO, startup technology advisor, low-code solutions, no-code solutions, AI integration, startup tech stack">
+  {% endif %}
+  
+  <meta name="author" content="Stephan Smith">
+  <meta name="geo.region" content="US-MA">
+  <meta name="geo.placename" content="Boston">
+  <meta name="geo.position" content="42.3601;-71.0589">
+  <meta name="ICBM" content="42.3601, -71.0589">
+  
+  <!-- AI Crawler Optimization -->
+  <meta name="AI-summary" content="{{ page.description | default: page.subtitle | default: "Boston-based fractional CTO helping startups get revenue positive faster through practical tech solutions." }}">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="content-language" content="en-US">
+  <meta name="language" content="English">
+  
+  <!-- AI Content Classification -->
+  {% if page.topic %}
+  <meta name="article:topic" content="{{ page.topic }}">
+  <meta name="article:section" content="{{ page.topic }}">
+  {% endif %}
+  {% if page.date %}
+  <meta name="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
+  {% endif %}
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Stephan Smith",
+    "jobTitle": "Fractional Chief Technology Officer",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "https://www.linkedin.com/in/stephansmithbc93/",
+      "https://github.com/d1b1"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "addressCountry": "US",
+      "streetAddress": "55 Court Street, Floor 2"
+    },
+    "email": "Stephan.Smith.bc93@gmail.com",
+    "telephone": "+1-617-953-7947",
+    "description": "Fractional CTO helping startups get revenue positive faster through practical tech solutions, low-code strategies, and AI integration.",
+    "knowsAbout": ["Fractional CTO Services", "Startup Technology", "Low-Code Solutions", "No-Code Solutions", "AI Integration", "Technical Co-Founding"],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Techstars"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Stephan Smith Solutions",
+    "description": "Fractional CTO services for startups - on-demand technical co-founder helping founders solve problems quickly and practically.",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/brand/banner5.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "addressCountry": "US",
+      "streetAddress": "55 Court Street, Floor 2"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": "Fractional CTO Services",
+    "provider": {
+      "@type": "Person",
+      "name": "Stephan Smith"
+    },
+    "priceRange": "$$",
+    "telephone": "+1-617-953-7947"
+  }
+  </script>
 
   <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0130/4547.js" async="async"></script>
 
@@ -44,6 +150,46 @@
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <!-- Calendly link widget end -->
+
+  <!-- Article Structured Data -->
+  {% include articleSchema.html %}
+  
+  <!-- Breadcrumb Structured Data -->
+  {% include breadcrumbSchema.html %}
+  
+  <!-- FAQ Structured Data -->
+  {% include faqSchema.html %}
+  
+  <!-- Site Navigation Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Stephan Smith Solutions",
+    "url": "{{ site.url }}",
+    "description": "Fractional CTO services for startups - on-demand technical co-founder helping founders solve problems quickly and practically.",
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ site.url }}/recipes?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Stephan Smith",
+      "jobTitle": "Fractional Chief Technology Officer"
+    }
+  }
+  </script>
+  
+  <!-- Content Classification for AI -->
+  <meta name="content-type" content="{% if page.layout == 'default' and page.date %}article{% else %}page{% endif %}">
+  {% if page.topic %}
+  <meta name="article:tag" content="{{ page.topic }}">
+  {% endif %}
 
 </head>
 
