@@ -3,6 +3,7 @@ layout: default
 title: Pre-AI Stack Tools
 subtitle: Traditional development tools and technologies I've worked with
 published: true
+sitemap: true
 ---
 
 {% include subStyles.css %}

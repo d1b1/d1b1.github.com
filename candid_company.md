@@ -3,6 +3,7 @@ title: Candid Company Faces
 layout: wide
 subtitle: Faces + Names makes networking more intentional, April 2024 
 published: true
+sitemap: true
 linkCardTitle: Candid Company, April 2024
 linkCard: assets/page/candid_company.png
 linkCardDesc: Faces + Names = Better Engagements!

@@ -3,6 +3,7 @@ title: Startup Tools
 layout: default
 subtitle: Finding resources, investors and partners is a challenge. 
 published: true
+sitemap: true
 ---
 
 Finding mentors, peers, investors and funds is an eternal challenge

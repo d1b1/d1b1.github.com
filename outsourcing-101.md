@@ -3,6 +3,7 @@ title: Outsourcing 101
 layout: default
 subtitle: It seems easy, but not all outsourcing providers are equal. 
 published: true
+sitemap: true
 ---
 
 

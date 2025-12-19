@@ -2,6 +2,7 @@
 title: My Perspective
 layout: default
 subtitle: Startups are all unique, but the pathways, pitfalls and blockers are not. Constant reinvention is a requirement to turn a vision into a reality.
+sitemap: true
 ---
 
 {% include subStyles.css %}

@@ -2,6 +2,7 @@
 title: Networking Tech
 layout: default
 subtitle: LinkedIn does the job, but just barely. 
+sitemap: false
 ---
 
 {% include subStyles.css %}

@@ -1,6 +1,7 @@
 ---
 layout: none
 title: Stephan Smith, fCTO
+sitemap: true
 ---
 
 {% include head.html %}

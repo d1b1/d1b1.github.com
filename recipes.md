@@ -2,6 +2,7 @@
 title: Low-Code Recipes
 layout: default
 subtitle: For a non-technical founder the mix of code and no-code can be a challenge. Here are some approaches to demystify the decision-making processes.
+sitemap: true
 ---
 
 {% include subStyles.css %}

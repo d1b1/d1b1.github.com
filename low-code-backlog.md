@@ -2,6 +2,7 @@
 title: Low-Code Backlog
 layout: default
 subtitle: The world of solutions and patterns that fall under the heading of low-code is huge. This is the holding pen for solutions that need to get reviewed and assets for their potential role.
+sitemap: true
 ---
 
 {% include subStyles.css %}
