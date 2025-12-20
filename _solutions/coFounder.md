@@ -47,14 +47,54 @@ We meet weekly through a structured process designed to keep you moving forward.
 
 You're in the driver's seat, making informed decisions with confidence. You own the process from start to finish, and when you're done, you're ready for your first customers and first revenue—not just with a product, but with the knowledge and experience to keep building.
 
-#### Investment
 
-<div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-  <div>
-    <strong>$1,800/month</strong>
+<div class="card mb-4 rounded-3 shadow-sm">
+  <div class="card-header py-3">
+    <h4 class="my-0 fw-normal text-center">Fractional Co-Founder Package</h4>
   </div>
-  <a href="https://LaunchbyLunch.co" target="_blank" class="btn btn-primary" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'fractional_cofounder_interest', 'funnel_step': 3, 'trigger': 'cta_click'});}">Get A Fractional Co-Founder</a>
+  <div class="card-body text-center py-4">
+    <div class="mb-3">
+      <div class="fs-2 fw-bold mb-1">$1,800</div>
+      <div class="text-muted">per month</div>
+    </div>
+    <ul class="list-unstyled text-start mb-4" style="max-width: 300px; margin: 0 auto;">
+      <li class="mb-2">✓ Monthly subscription</li>
+      <li class="mb-2">✓ Weekly strategic sessions</li>
+      <li class="mb-2">✓ Founder-to-founder support</li>
+      <li class="mb-2">✓ Access to community & experts</li>
+    </ul>
+    <p class="text-muted mb-3" style="font-size: 0.9rem;">
+      <strong>Recommended:</strong> We recommend a 3-month minimum engagement for basic projects.
+    </p>
+    <div class="row g-4 mt-4">
+      <div class="col-md-6">
+        <div class="border rounded p-4 h-100 d-flex flex-column" style="background-color: #f8f9fa;">
+          <div class="mb-3">
+            <span class="badge bg-secondary mb-3" style="font-size: 0.75rem; letter-spacing: 0.5px;">STEP 1</span>
+            <h5 class="mb-2" style="font-size: 1.1rem; font-weight: 600;">Book an Intro Session</h5>
+            <p class="mb-0 text-muted" style="font-size: 0.9rem; line-height: 1.5;">See about compatibility and discuss your needs</p>
+          </div>
+          <div class="mt-auto pt-3">
+            <a href="https://calendly.com/stephan-smith/fractional-co-founder" target="_blank" class="btn btn-primary btn-lg w-100" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'fractional_cofounder_interest', 'funnel_step': 3, 'trigger': 'calendly_click'});}">Schedule an Introduction</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="border rounded p-4 h-100 d-flex flex-column" style="background-color: #f8f9fa;">
+          <div class="mb-3">
+            <span class="badge bg-primary mb-3" style="font-size: 0.75rem; letter-spacing: 0.5px;">STEP 2</span>
+            <h5 class="mb-2" style="font-size: 1.1rem; font-weight: 600;">Start Your Package</h5>
+            <p class="mb-0 text-muted" style="font-size: 0.9rem; line-height: 1.5;">Purchase the first month. Recurring monthly billing, cancel anytime.</p>
+          </div>
+          <div class="mt-auto pt-3">
+            <a href="https://buy.stripe.com/5kQ9AMeYVfmd6VW42ifAc00" target="_blank" class="btn btn-primary btn-lg w-100" onclick="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'fractional_cofounder_interest', 'funnel_step': 3, 'trigger': 'cta_click'});}">Start a Package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <div class="card mb-4 rounded-3 mt-4">
   <div class="card-body">
