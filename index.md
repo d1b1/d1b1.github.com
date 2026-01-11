@@ -24,6 +24,7 @@ sitemap: true
       {% include news.html %}
       <hr>
       {% include homepage/fcto_why.html %}
+      {% include homepage/fractional-tools.html %}
     </header>
 
     <main>
