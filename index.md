@@ -33,6 +33,7 @@ sitemap: true
       {% include homepage/engagement-smb.html %}
 
       {% include homepage/pricing-smb.html %}
+      {% include homepage/who-i-work-with-smb.html %}
       <!-- {% include homepage/packages_legacy.html %} -->
       <!-- {% include homepage/packages-ai.html %} -->
       
