@@ -1,18 +1,19 @@
 ---
 title: Low-Code Recipes
 layout: default
-subtitle: For a non-technical founder the mix of code and no-code can be a challenge. Here are some approaches to demystify the decision-making processes.
+subtitle: Practical approaches to tech stack decisions for growth-stage SMBs navigating code vs. low-code trade-offs
 sitemap: true
 ---
 
 {% include subStyles.css %}
 
-I write weekly-ish, as a way to expand ideas and to apply
-what I learn from and with clients. If you want to read as
-I write, [subscribe](https://lowcodecto.com/subscribe). One of
-the secrets of why a fCTO is helpful, is the network effect of
-working across startups and projects. Everyone benefits when
-ideas are **shared** and **applied**!
+I write regularly about tech leadership challenges I see working with growth-stage SMBs. These articles 
+share practical approaches to common decisions: when to use custom code vs. low-code solutions, how to 
+reduce delivery risk, and ways to optimize tech costs without sacrificing outcomes. If you want to read 
+as I write, [subscribe](https://lowcodecto.com/subscribe).
+
+The value of interim tech leadership comes from applying learnings across different companies and 
+situations. Everyone benefits when ideas are **shared** and **applied**.
 
 
 {% assign articles = site.articles | sort: "date" | reverse %}
@@ -46,13 +47,13 @@ ideas are **shared** and **applied**!
 
 <div class="mt-5 mb-5 tech-note">
     <h5>
-     The CEO Perspective
+     The Executive Perspective
     </h5>
     <p>
-        These articles are written to give CEOs and Founders with
-        a non-technical perspective on decisions that are often left
-        to developers to address. Look for these panels to understand
-        the impact.
+        These articles are written for CEOs and executive teams at growth-stage SMBs who need to make 
+        informed tech decisions without getting lost in technical details. Each article focuses on business 
+        outcomes: cost, speed, risk, and delivery cadence—helping you understand the trade-offs and 
+        make better choices for your business.
     </p>
 </div>
 

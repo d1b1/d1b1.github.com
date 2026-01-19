@@ -1,14 +1,14 @@
 ---
-title: Startup Tools
+title: Tech Leadership Resources
 layout: default
-subtitle: Finding resources, investors and partners is a challenge. 
+subtitle: Tools and resources for growth-stage SMBs navigating tech decisions
 published: true
 sitemap: true
 ---
 
-Finding mentors, peers, investors and funds is an eternal challenge
-for all startups. Here is a growing list of tools and resources. Hope
-these help!
+Making informed tech decisions requires access to the right resources. Here are tools and databases I've built 
+to help growth-stage SMBs navigate compliance, tech stack choices, and delivery challenges—without getting 
+overwhelmed by options.
 
 <!-- {% include subStyles.css %} -->
 
@@ -34,45 +34,14 @@ these help!
 
           <div class="card shadow-sm">
             <div class="card-img">
-              <img src="https://cdn.launchbylunch.co/assets/lander.png" width="100%"/>
-            </div>
-            <div class="card-body">
-                <div class="card-min">
-                <h5 class="card-title">Launch By Lunch</h5>
-                <p class="card-text">
-                    First ever AI + Low-Code Accelerator for non-technical founders.
-                </p>
-                <p>
-                <span class="badge text-bg-success">Vide Code</span>
-                    <span class="badge text-bg-success">Scale</span>
-                    <span class="badge text-bg-success">Cohort Support</span>
-                </p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" target="_blank" href="https://launchbylunch.co/" class="btn btn-sm btn-outline-secondary">
-                    Join Ai Accelerator &gt;
-                  </a>
-                </div>
-                <small class="text-body-secondary">4k+ companies</small>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-                <div class="col">
-
-          <div class="card shadow-sm">
-            <div class="card-img">
               <img src="/assets/images/low-code-cto-newsletter.png" width="100%"/>
             </div>
             <div class="card-body">
                 <div class="card-min">
                 <h5 class="card-title">Newsletter</h5>
                 <p class="card-text">
-                    Weekly low-code insights and wins from 
-                    a reformed code-first CTO. 
+                    Weekly insights on tech leadership, delivery cadence, and 
+                    low-code solutions for growth-stage SMBs.
                 </p>
                 <p>
                 <span class="badge text-bg-success">scoring</span>
@@ -105,8 +74,8 @@ these help!
                 <div class="card-min">
                 <h5 class="card-title">Venture Lane</h5>
                 <p class="card-text">
-                    Searchable look-book of Candid Company attendees;
-                    operators, advisors, founders and investors.
+                    Searchable directory of operators, advisors, and tech leaders 
+                    from the Boston tech community.
                 </p>
                 <p>
                     <span class="badge text-bg-success">by tag</span>
@@ -128,129 +97,6 @@ these help!
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-img">
-              <img src="/assets/page/investors-search.png" width="100%"/>
-            </div>
-            <div class="card-body">
-                <div class="card-min">
-                <h5 class="card-title">
-                    Startup Investors
-                </h5>
-                <p class="card-text">
-                    Here is a database of 30k+ investors, programs and funds.
-                </p>
-                <p>
-                <span class="badge text-bg-success">by type</span>
-                    <span class="badge text-bg-success">by investment stage</span>
-                    <span class="badge text-bg-success">by industry</span>
-                    <span class="badge text-bg-success">by geography</span>
-                </p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://investors.StephanSmith.solutions" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
-                    Search Investors &gt;
-                  </a>
-                </div>
-                <small class="text-body-secondary">30k+ Investors</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-img">
-                <img src="/assets/page/fund-search.png" width="100%"/>
-            </div>
-            <div class="card-body">
-              <div class="card-min">
-                <h5 class="card-title">8k+ Funds</h5>
-                <p class="card-text">
-                    Here is a database of 8k+ investment funds.
-                </p>
-                <p>
-                <span class="badge text-bg-success">by structure</span>
-                    <span class="badge text-bg-success">by investment theses</span>
-                    <span class="badge text-bg-success">by country</span>
-                </p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://funds.StephanSmith.solutions" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">
-                    Search Funds &gt;
-                  </a>
-                </div>
-                <small class="text-body-secondary">8k+ Funds</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-
-         <div class="card shadow-sm">
-            <div class="card-img">
-              <img src="/assets/page/techstars-companies.png" width="100%"/>
-             </div>
-            <div class="card-body">
-                <div class="card-min">
-                <h5 class="card-title">Techstars Programs</h5>
-                <p class="card-text">
-                    Here is a searchable database of 4k+ Techstars companies. Search by year, county, name or program.
-                </p>
-                <p>
-                <span class="badge text-bg-success">by year</span>
-                    <span class="badge text-bg-success">by program</span>
-                    <span class="badge text-bg-success">by industry</span>
-                </p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" target="_blank" href="https://techstars.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
-                    Search Companies &gt;
-                  </a>
-                </div>
-                <small class="text-body-secondary">4k+ companies</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-         <div class="col">
-
-         <div class="card shadow-sm">
-            <div class="card-img">
-              <img src="/assets/images/startup-directory.png" width="100%"/>
-             </div>
-            <div class="card-body">
-                <div class="card-min">
-                <h5 class="card-title">Funded Startups</h5>
-                <p class="card-text">
-                    Database of funded startups via from
-                    large accelerator programs.
-                </p>
-                <p>
-                <span class="badge text-bg-success">funded</span>
-                    <span class="badge text-bg-success">ages</span>
-                    <span class="badge text-bg-success">founders</span>
-                </p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" target="_blank" href="https://startups.stephansmith.solutions/" class="btn btn-sm btn-outline-secondary">
-                    Search Startups &gt;
-                  </a>
-                </div>
-                <small class="text-body-secondary">4k+ companies</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-img">
                 <img src="/assets/page/less-code.png" width="100%"/>
             </div>
             <div class="card-body">
@@ -259,8 +105,8 @@ these help!
                   Low Code Cookbook
                 </h5>
                 <p class="card-text">
-                    An ever-growing database of 'no code' and 'low code' products, services,
-                    libraries and patterns.
+                    Database of low-code and no-code solutions to help you evaluate 
+                    alternatives to custom development—reducing cost and delivery time.
                 </p>
                 <p>
                     <span class="badge text-bg-success">by service</span>
@@ -327,9 +173,8 @@ these help!
                   SOC2 AI Prep Agent
                 </h5>
                 <p class="card-text">
-                    Getting SOC2 audit ready with an Ai
-                    Agent that gives you low-effort and 
-                    high-impact tasks.
+                    AI-powered compliance assistant that helps growth-stage SMBs 
+                    prepare for SOC2 audits with budget-conscious, prioritized tasks.
                 </p>
                 <p>
                   <span class="badge text-bg-success">OpenAi</span>
@@ -359,9 +204,8 @@ these help!
                   Low Code CTO
                 </h5>
                 <p class="card-text">
-                    Getting up to speed on low-code, no-code
-                    and all the tooling that goes with it, is easier
-                    a guide. 
+                    Educational resource on low-code, no-code, and AI tools 
+                    for tech leaders making stack decisions.
                 </p>
                 <p>
                   <span class="badge text-bg-dark">low-code</span>

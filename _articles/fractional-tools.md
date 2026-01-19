@@ -1,6 +1,6 @@
 ---
 title:  What is Fractional.tools?
-subtitle: A perfect example of building a solution that leverages existing software.
+subtitle: An example of leveraging existing tools to deliver outcomes without a rebuild
 layout: default
 published: true
 order: 0
@@ -11,75 +11,43 @@ sitemap: true
 
 {% include subStyles.css %}
 
-#### Building my own Tooling
-I build tools for others. Either directly, or with them, as an advisor. I love coding. But 
-coding for myself is a personal no-no. I have long avoided the urge to build my own tooling. 
-For most technical needs, there are plenty of out-of-the-box applications.
+#### A Different Approach to Tech
 
-So building a time and billing system was not something I would do myself, or that 
-I recommend for the clients I work with. 
+As a fractional CTO, I help growth-stage SMBs avoid unnecessary complexity and cost. Fractional.tools 
+is a practical example of that approach: instead of building a new system from scratch, I leveraged 
+existing tools (Google Calendar) to automate time tracking and invoicing.
 
-So in the summer of 2024 I changed my mind.
+The problem was straightforward: tracking time across multiple clients was manual and error-prone. 
+Spreadsheets weren't great. Traditional SaaS solutions felt like more work—requiring context switching 
+and adding administrative overhead.
 
-I had been a fractional CTO for a year. I had 5-8 clients at different stages 
-with different needs. Keeping track of the time I worked was a challenge. Spreadsheets are not 
-great. SaaS solutions like Harvest App were even worse than a notepad or a spreadsheet.
+#### The Solution: Leverage What You Already Use
 
-#### Change of Mindset
-In the summer of 2024, AI had started to change my thinking about how software 
-can impact the basic economics of code. Since that summer AI has continued to 
-have more and more impacts on how we hire, how we build teams, and how we leverage
-human experience.
+I noticed that my entire day already involved keeping Google Calendar updated. The UI was familiar 
+and worked well on both desktop and mobile. More importantly, every calendar entry already had 
+a date, start time, and end time—exactly what I needed for billing.
 
-### One Size Fits All Software
-My biggest insight in that period was that the reason I disliked a lot of time and billing
-systems was how the tool felt. The idea of using software has a feel. When I use some software
-it just feels like more work. 
+Instead of building a new system or adopting another SaaS tool, I connected to the Calendar API 
+and automated the workflow. By adding a simple client code to each entry, I could group time by 
+client and generate invoices automatically.
 
-Maybe it's the color scheme, maybe it's the layout of features. I almost never see myself
-or my approach in the software I use. I started to look for software that generated a strong
-positive emotional reaction. Github.com. I like it. The tools fit the use case. 
+#### Measurable Outcomes
 
-I am still working on my definition.
+This approach delivered immediate results:
+- **Faster invoicing** — Automated generation from calendar entries
+- **Reduced errors** — No manual time entry or calculation mistakes
+- **More time on client work** — Eliminated administrative overhead
+- **No rebuild required** — Leveraged existing tools instead of building new systems
 
-#### Enter Google Calendars
-I started to notice that my entire day involved keeping my Google Calendar updated.
+The key insight: for fractional consultants, an invoice is simply a bill rate and a date range. 
+The calendar already had all the data—it just needed to be connected to billing logic.
 
-I noticed that the UI and UX on both desktop and mobile were pleasing. 
+#### Available Now
 
-I also noticed that a calendar entry had no need for me to enter a time of day. Every 
-calendar entry has a date, start time and end time. All I needed was to add a client, and 
-my calendar would tell me how much to bill at the end of the month.
-
-#### Version 1 - Local
-My first version was a simple application that ran on my laptop. It connected to the Calendar
-API and let me track client work. By adding a simple code to the entry summary, I had groups
-of times for each client.
-
-My first goal was to test if I could get the utility out of a different approach to tooling. I 
-decided to continue and break my long-held aversion to writing my own tools. 
-
-Three months in and I was hooked. Thankfully. Building my own time and billing system
-was a real distraction from actual client work.
-
-#### Version 2 - On the Cloud
-In November I made the jump to the cloud. Now my solution worked from anywhere. 
-
-That was when I had my second insight. For a fractional, an invoice is a bill rate, and a start and end date 
-for a report. 
-
-Over the next few months, I fit new features into times between work. In December, Vibe coding 
-became a reality. 
-
-#### Version 3 - AI Tooling
-My last big insight was the ability to scale a single-person solution into a production-ready system.
-
-#### It's Live
-Now we are launching Fractional Tools and making it available for others to use.
-
-So if you have more than one client at a time. If you bill hourly or use retainers, then 
-this is the solution. The best part is that while we have an app, the user never needs to
-leave their calendar.
+Fractional.tools is now available for other fractional consultants. If you bill hourly or use 
+retainers, this solution eliminates the administrative overhead without requiring you to leave 
+your calendar. The best part: you never need to switch tools or learn a new system—you're 
+already using Google Calendar.
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="https://fractional.tools">
