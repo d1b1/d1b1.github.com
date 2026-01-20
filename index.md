@@ -24,7 +24,7 @@ sitemap: true
       {% include news.html %}
       <hr>
       {% include homepage/fcto_why-smb.html %}
-      {% include homepage/fractional-tools-smb.html %}
+      <!-- {% include homepage/fractional-tools-smb.html %} -->
     </header>
 
     <main>
@@ -40,8 +40,8 @@ sitemap: true
       <!-- {% include homepage/package_stack_review.html %} -->
     
 
-      {% include homepage/tools-smb.html %}
-      {% include homepage/perspective-smb.html %}
+      <!-- {% include homepage/tools-smb.html %} -->
+      <!-- {% include homepage/perspective-smb.html %} -->
       {% include homepage/references.html %}
       {% include homepage/aws-insight.html %}
 
