@@ -1,7 +1,7 @@
 ---
 layout: none
 title: Stephan Smith, fCTO
-description: Interim tech leadership for growth-stage SMBs when tech impacts revenue or risk. Restore delivery cadence, reduce risk, and drive measurable outcomes—without a rebuild.
+description: Technology problems rarely show up as failures. They show up as decisions no one revisits. Senior technical judgment for CEOs and CFOs who need clarity on tech decisions.
 sitemap: true
 ---
 
@@ -20,37 +20,27 @@ sitemap: true
       {% include colors.html %}
       {% include navbar.html %}
       {% include homepage/hero-smb.html %}
-      {% include homepage/profile-smb.html %}
-      {% include news.html %}
+      <hr>
+      {% include homepage/patterns-smb.html %}
+      <hr>
+      {% include homepage/normalize-smb.html %}
       <hr>
       {% include homepage/fcto_why-smb.html %}
-      <!-- {% include homepage/fractional-tools-smb.html %} -->
+      <hr>
+      {% include homepage/engagement-smb.html %}
+      <hr>
+      {% include homepage/cta-smb.html %}
     </header>
 
     <main>
       <hr>
-
-      {% include homepage/engagement-smb.html %}
-
-      {% include homepage/pricing-smb.html %}
+      {% include homepage/profile-smb.html %}
+      <hr>
       {% include homepage/who-i-work-with-smb.html %}
-      <!-- {% include homepage/packages_legacy.html %} -->
-      <!-- {% include homepage/packages-ai.html %} -->
-      
-      <!-- {% include homepage/package_stack_review.html %} -->
-    
-
-      <!-- {% include homepage/tools-smb.html %} -->
-      <!-- {% include homepage/perspective-smb.html %} -->
+      <hr>
       {% include homepage/references.html %}
+      <hr>
       {% include homepage/aws-insight.html %}
-
-      <!-- {% include homepage/schedule_cta.html %} -->
-
-      <!-- {% include homepage/newsletters.html %} -->
-
-      <!-- Blog CTA -->
-      <!-- {% include blog/cta.html %} -->
     </main>
 
   {% include footer.html %}
