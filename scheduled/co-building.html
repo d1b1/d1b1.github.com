@@ -3,6 +3,7 @@ layout: none
 title: Co-Building Call Scheduled
 description: Your co-building session with fractional CTO Stephan Smith has been scheduled. Prepare for our call by understanding how co-building accelerates your time to impact and revenue.
 sitemap: false
+permalink: /co-building/
 ---
 
 {% include head.html %}
@@ -91,10 +92,36 @@ sitemap: false
                     </div>
                     <div class="col-md-3 order-md-1">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto avatar"
-                            alt="Stephan Smith, Technical Judgment for Startups and Growth-Stage SMBs" src="assets/clients/stephan-smith-avatar.png" loading="eager">
+                            alt="Stephan Smith, Technical Judgment for Startups and Growth-Stage SMBs" src="/assets/clients/stephan-smith-avatar.png" loading="eager">
                     </div>
                 </div>
 
+            </div>
+
         </main>
+
+        <script>
+        (function () {
+          var params = new URLSearchParams(window.location.search);
+          var uuid = params.get('invitee_uuid');
+          var email = params.get('invitee_email');
+          var fullName = params.get('invitee_full_name');
+          var eventType = params.get('event_type_name');
+          var eventStart = params.get('event_start_time');
+
+          var userId = uuid || email;
+          if (!userId || typeof window.hj !== 'function') {
+            return;
+          }
+
+          var attrs = {};
+          if (email) attrs.email = email;
+          if (fullName) attrs.fullName = fullName;
+          if (eventType) attrs.eventType = eventType;
+          if (eventStart) attrs.eventStart = eventStart;
+
+          window.hj('identify', userId, attrs);
+        })();
+        </script>
 
         {% include footer.html %}

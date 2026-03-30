@@ -3,6 +3,7 @@ layout: none
 title: Tech Stack Sanity Check - Appointment Scheduled
 description: Your 30-minute intro session for the Tech Stack Sanity Check has been scheduled. Prepare for our call by understanding how we'll help you right-size your tech decisions.
 sitemap: false
+permalink: /tech-stack-sanity-check/
 ---
 
 {% include head.html %}
@@ -66,7 +67,32 @@ sitemap: false
                     </p>
                 </div>
 
+            </div>
 
         </main>
+
+        <script>
+        (function () {
+          var params = new URLSearchParams(window.location.search);
+          var uuid = params.get('invitee_uuid');
+          var email = params.get('invitee_email');
+          var fullName = params.get('invitee_full_name');
+          var eventType = params.get('event_type_name');
+          var eventStart = params.get('event_start_time');
+
+          var userId = uuid || email;
+          if (!userId || typeof window.hj !== 'function') {
+            return;
+          }
+
+          var attrs = {};
+          if (email) attrs.email = email;
+          if (fullName) attrs.fullName = fullName;
+          if (eventType) attrs.eventType = eventType;
+          if (eventStart) attrs.eventStart = eventStart;
+
+          window.hj('identify', userId, attrs);
+        })();
+        </script>
 
         {% include footer.html %}

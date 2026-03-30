@@ -4,6 +4,7 @@
     "servdir": "^0.0.3"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve"
+    "start": "node -e \"console.log('\\n=== Jekyll serve (local dev) ===\\n  • First build can take 1–2 minutes (plugins minify JS, etc.).\\n  • Success = you see: Server address: http://127.0.0.1:4000/\\n  • Open that URL in the browser. Press Ctrl+C here to stop.\\n')\" && JEKYLL_ENV=development bundle exec jekyll serve --livereload",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build"
   }
 }
